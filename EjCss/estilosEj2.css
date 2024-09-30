@@ -1,0 +1,74 @@
+h1#titulo {
+    color: teal;
+}
+
+p strong {
+    color: red;
+}
+
+p span.destacado {
+    color: orange;
+}
+
+h2#subtitulo {
+    color: blue;
+}
+
+p a[href] {
+    color: red;
+}
+
+p a[href] em {
+    color: blue;
+}
+
+p span.especial {
+    color: blueviolet;
+}
+
+table caption {
+    color: blue;
+}
+
+table thead {
+    color: orange;
+}
+
+table tfoot {
+    color: red;
+}
+
+table tbody th.especial {
+    color: orange;
+}
+
+table tbody th {
+    color: red;
+}
+
+table tbody td {
+    color: green;
+}
+
+table tbody td strong {
+    color: orange;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+div#adicional {
+    color: olive;
+}
+
+div#adicional span#especial {
+    color: fuchsia;
+}
+
+div#adicional a[href] {
+    color: green;
+}

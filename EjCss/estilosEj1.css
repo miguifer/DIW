@@ -1,0 +1,22 @@
+* {
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #555;
+}
+
+#primero p {
+    color: #336699;
+}
+
+a[href] {
+    color: #CC3300;
+}
+
+#primero em { background: #FFFFCC; padding: .1em; }
+
+em.especial { background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
+
+.normal span { font-weight: bold; }
+

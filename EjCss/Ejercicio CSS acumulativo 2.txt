@@ -1,0 +1,7 @@
+A partir del ejercicio anterior resuelto, determinar las reglas CSS necesarias para añadir los siguientes bordes:
+
+1. Eliminar el borde gris que muestran por defecto todos los elementos. 
+2. El elemento #menu debe tener un borde inferior de 1 píxel y azul (#004C99). 
+3. El elemento #noticias muestra un borde de 1 píxel y gris claro (#C5C5C5). 
+4. El elemento #publicidad debe mostrar un borde discontinuo de 1 píxel y de color #CC6600. 
+5. El lateral formado por el elemento #secundario muestra un borde de 1 píxel y de color #CC6600. 6. El elemento #pie debe mostrar un borde superior y otro inferior de 1 píxel y color gris claro #C5C5C5.

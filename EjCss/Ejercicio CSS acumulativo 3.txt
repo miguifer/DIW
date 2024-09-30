@@ -1,0 +1,7 @@
+A partir del ejercicio anterior resuelto, determinar las reglas CSS necesarias para añadir los siguientes bordes:
+
+1. Los elementos #noticias y #pie tiene un color de fondo gris claro (#F8F8F8). 
+2. El elemento #publicidad muestra un color de fondo amarillo claro (#FFF6CD). 
+3. Los elementos <h2> del lateral #secundario muestran un color de fondo #DB905C y un pequeño padding de .2em. 
+4. El fondo del elemento #menu se construye mediante una pequeña imagen llamada fondo_menu.gif. 
+5. El logotipo del sitio se muestra mediante una imagen de fondo del elemento <h1> contenido en el elemento #cabecera (la imagen se llama logo.gif).

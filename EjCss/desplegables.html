@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
         /* .enlace {
             color: red;
         }
@@ -102,14 +101,27 @@
 
         ul {
             padding: 0%;
+            display: flex;
+
         }
 
-        .mainmenu li:hover .submenu { /*esto lo despliega*/
-            display: block;
+        
+
+        ul { /* en horizontal */
+            padding: 0%;
+            display: flex;
+            list-style: none;
+        }
+
+        .mainmenu li:hover .submenu {
+            /*esto lo despliega*/
+            display: grid;
+
         }
 
         .submenu {
-            display: none; /* lo oculta  */
+            display: none;
+            /* lo oculta  */
             transition: all 1s ease-out;
 
         }
@@ -127,6 +139,21 @@
 </head>
 
 <body>
+
+    <nav class="navigation">
+        <ul class="mainmenu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a>
+                <ul class="submenu">
+                    <li><a href="">Tops</a></li>
+                    <li><a href="">Bottoms</a></li>
+                    <li><a href="">Footwear</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact Us</a>
+        </ul>
+    </nav>
 
     <nav class="navigation">
         <ul class="mainmenu">

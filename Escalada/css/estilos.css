@@ -1,19 +1,34 @@
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
+
+.logo {
+    height: 150px;
+}
 
 h1 {
     text-align: center;
     flex-grow: 1;
     font-size: 72px;
     font-weight: bold;
+    margin-right: 150px;
+
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     color: #8B4513;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    color: #003366;
+    font-weight: bold;
 }
 
 
@@ -30,6 +45,8 @@ body {
     font-size: 16px;
 }
 
+/* Barra de navegación */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -37,7 +54,7 @@ body {
 }
 
 .navbar a {
-    font-size: 16px;
+    font-size: 24px;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -46,9 +63,9 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
+    font-size: 24px;
     color: white;
+    border: none;
     padding: 14px 16px;
     background-color: inherit;
 }
@@ -79,6 +96,8 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Barra de navegación */
 
 footer {
     text-align: center;

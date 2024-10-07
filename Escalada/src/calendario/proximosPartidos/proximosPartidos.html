@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proximosPartidos</title>
     <link rel="stylesheet" href="../../../css/estilos.css">
+    <link rel="stylesheet" href="../css/calendarioCSS.css">
+
 </head>
 
 <body>
     <header>
-        <a href="../../../index.html"><img src="../../../media/logo.png" alt="logo" height="200"></a>
+        <a href="../../../index.html"><img src="../../../media/logo.png" alt="logo" height="150"></a>
         <h1>Próximos partidos</h1>
     </header>
     <nav>
@@ -42,30 +44,39 @@
     </nav>
     <img src="../../../media/banner.png" alt="banner" width="100%">
 
-    <main class="proximos-partidos">
-        <h2>Próximos Partidos</h2>
-        <div class="partidos-container">
-            <article class="partido">
-                <h3>Partido 1: Club Cumbre y Roca vs. Club Montañés</h3>
-                <p><strong>Fecha:</strong> 15 de octubre de 2024</p>
-                <p><strong>Hora:</strong> 10:00 AM</p>
-                <p><strong>Lugar:</strong> Estadio Cumbre, Calle de la Escalada, 123</p>
-            </article>
-
-            <article class="partido">
-                <h3>Partido 2: Club Cumbre y Roca vs. Club Roca Alta</h3>
-                <p><strong>Fecha:</strong> 22 de octubre de 2024</p>
-                <p><strong>Hora:</strong> 3:00 PM</p>
-                <p><strong>Lugar:</strong> Campo de Roca Alta, Avenida del Deporte, 456</p>
-            </article>
-
-            <article class="partido">
-                <h3>Partido 3: Club Cumbre y Roca vs. Club Valle Verde</h3>
-                <p><strong>Fecha:</strong> 29 de octubre de 2024</p>
-                <p><strong>Hora:</strong> 5:00 PM</p>
-                <p><strong>Lugar:</strong> Estadio Valle Verde, Paseo de la Naturaleza, 789</p>
-            </article>
-        </div>
+    <main>
+        <h2>Calendario de Partidos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Equipo Local</th>
+                    <th>Equipo Visitante</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15/10/2024</td>
+                    <td>Equipo A</td>
+                    <td>Equipo B</td>
+                    <td>Estadio Local</td>
+                </tr>
+                <tr>
+                    <td>22/10/2024</td>
+                    <td>Equipo C</td>
+                    <td>Equipo D</td>
+                    <td>Estadio Visitante</td>
+                </tr>
+                <tr>
+                    <td>29/10/2024</td>
+                    <td>Equipo E</td>
+                    <td>Equipo F</td>
+                    <td>Estadio Local</td>
+                </tr>
+                <!-- Agrega más partidos según sea necesario -->
+            </tbody>
+        </table>
     </main>
 
 

@@ -1,0 +1,32 @@
+.plantilla-socios {
+    text-align: center;
+    /* Centra el texto */
+    padding: 20px;
+    /* Añade espacio alrededor del contenido */
+}
+
+.socios-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas de igual tamaño */
+    grid-template-rows: repeat(3, auto);
+    /* 3 filas automáticas */
+    gap: 20px;
+    /* Espacio entre los elementos */
+}
+
+.socios-container figure {
+    margin: 0;
+    /* Elimina márgenes por defecto */
+    text-align: left;
+    /* Centra el texto del figcaption */
+}
+
+.socios-container img {
+    width: 100%;
+    /* Hace que la imagen ocupe el ancho del contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    object-fit: cover;
+    /* Cubre el área del grid sin distorsionar */
+}

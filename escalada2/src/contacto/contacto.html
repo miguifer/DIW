@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html"><img src="../../media/logo.png" alt="logo" height="200"></a>
+        <h1>Contacto</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Calendario
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../../src/calendario/proximosPartidos/proximosPartidos.html">Próximos partidos</a>
+                    <a href="../../src/calendario/resultados/resultados.html">Resultados</a>
+                </div>
+            </div>
+            <a href="../../src/plantillaSocios/plantillaSocios.html">Plantilla / Socios</a>
+            <a href="../../src/galeria/galeria.html">Galería</a>
+            <div class="dropdown">
+                <button class="dropbtn">Sobre nosotros
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../../src/sobreNosotros/historia/historia.html">Historia</a>
+                    <a href="../../src/sobreNosotros/organigrama/organigrama.html">Organigrama</a>
+                    <a href="../../src/sobreNosotros/patrocinadores/patrocinadores.html">Patrocinadores</a>
+                </div>
+            </div>
+            <a href="contacto.html">Contacto</a>
+
+        </div>
+    </nav>
+    <img src="../../media/banner.png" alt="banner" width="100%">
+    <main>
+        <section class="contacto">
+            <h2>Envíanos un Mensaje</h2>
+            <form action="" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="info">
+            <h2>Información de Contacto</h2>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: contacto@cumbreyroca.com</p>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy;Mi Empresa, Todos los derechos reservados.
+        </p>
+
+    </footer>
+</body>
+
+</html>

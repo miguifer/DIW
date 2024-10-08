@@ -1,112 +1,112 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-
+/* Aseguro el tamaño del logo */
 .logo {
-    height: 150px;
+  height: 150px;
 }
 
 h1 {
-    text-align: center;
-    flex-grow: 1;
-    font-size: 72px;
-    font-weight: bold;
-    margin-right: 150px;
-
+  text-align: center;
+  flex-grow: 1; /* Se reparte el hueco dentro del header (contenedor flex) */
+  font-size: 72px;
+  font-weight: bold;
+  margin-right: 150px; /* Mismo margen que ancho del logo para así centrar el título */
 }
 
 h2 {
-    font-size: 32px;
-    color: #8B4513;
-    font-weight: bold;
+  font-size: 32px;
+  color: #8b4513;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 24px;
-    color: #003366;
-    font-weight: bold;
-}
-
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #FFFF;
+  font-size: 24px;
+  color: #003366;
+  font-weight: bold;
 }
 
 body {
-    background-color: #D3D3D3;
-    font-family: sans-serif;
-    font-size: 16px;
+  background-color: #d3d3d3;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-/* Barra de navegación */
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #2E8B57;
+main {
+  max-width: 1200px; /* Estrechar el contenido*/
+  margin: auto; /* Mismos margenes a ambos, así evito calcular px*/
+  padding: 20px;
+  background-color: #ffff;
 }
 
-.navbar a {
-    font-size: 24px;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
+/* INICIO Css de Barra de navegación: */
 
-
+nav {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
 }
 
-.dropdown .dropbtn {
-    font-size: 24px;
-    color: white;
-    border: none;
-    padding: 14px 16px;
-    background-color: inherit;
+.navigation {
+  background-color: #2e8b57;
 }
 
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: #6C6E6B;
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+.navigation li {
+  position: relative;
 }
 
-.dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.navigation a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  background-color: #2e8b57;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.navigation a:hover {
+  background-color: #6c6e6b;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.navigation ul ul {
+  display: none;
+  position: absolute;
+  background-color: #f4a460;
+  width: 100%;
 }
 
-/* Barra de navegación */
+.navigation li:hover > ul {
+  display: block;
+}
+
+.navigation ul ul a {
+  padding: 10px 20px;
+  color: black;
+  padding: 10px;
+}
+
+.navigation ul ul a:hover {
+  background-color: #d48d5b; 
+}
+
+/* FIN Css de Barra de navegación: */
 
 footer {
-    text-align: center;
-    max-width: 1200px;
-    /* Ancho máximo del contenido */
-    margin: 0 auto;
-    /* Centrar el contenido horizontalmente */
-    padding: 20px;
-    /* Espacio interno alrededor del contenido */
-    background-color: #FFFF;
-    color: #003366;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #6c6e6b;
+  color: white;
+  font-size: 16px;
 }

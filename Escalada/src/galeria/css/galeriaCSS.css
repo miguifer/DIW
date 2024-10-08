@@ -1,0 +1,28 @@
+.gallery {
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid figure {
+    margin: 0;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+

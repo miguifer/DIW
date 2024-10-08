@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>patrocinadores</title>
-    <link rel="stylesheet" href="../../../css/estilos.css">
-    <link rel="stylesheet" href="css/patrocinadoresCSS.css">
-</head>
+    <link rel="stylesheet" href="../../../css/estilos.css" />
+    <link rel="stylesheet" href="css/patrocinadoresCSS.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="../../../index.html"><img src="../../../media/logo.png" alt="logo" height="150"></a>
-        <h1>Patrocinadores</h1>
+      <a href="../../../index.html"
+        ><img src="../../../media/logo.png" alt="logo" height="150"
+      /></a>
+      <h1>Patrocinadores</h1>
     </header>
-    <nav>
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">Calendario
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../../../src/calendario/proximosPartidos/proximosPartidos.html">Próximos partidos</a>
-                    <a href="../../../src/calendario/resultados/resultados.html">Resultados</a>
-                </div>
-            </div>
-            <a href="../../../src/plantillaSocios/plantillaSocios.html">Plantilla / Socios</a>
-            <a href="../../../src/galeria/galeria.html">Galería</a>
-            <div class="dropdown">
-                <button class="dropbtn">Sobre nosotros
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../../../src/sobreNosotros/historia/historia.html">Historia</a>
-                    <a href="../../../src/sobreNosotros/organigrama/organigrama.html">Organigrama</a>
-                    <a href="patrocinadores.html">Patrocinadores</a>
-                </div>
-            </div>
-            <a href="../../../src/contacto/contacto.html">Contacto</a>
-
-        </div>
+    <nav class="navigation">
+      <ul class="mainmenu">
+        <li>
+          <a href="">Calendario</a>
+          <ul class="submenu">
+            <li>
+              <a href="src/calendario/proximosPartidos/proximosPartidos.html"
+                >Próximos partidos</a
+              >
+            </li>
+            <li>
+              <a href="src/calendario/resultados/resultados.html">Resultados</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="src/plantillaSocios/plantillaSocios.html"
+            >Plantilla / Socios</a
+          >
+        </li>
+        <li><a href="src/galeria/galeria.html">Galería</a></li>
+        <li>
+          <a href="">Sobre nosotros</a>
+          <ul class="submenu">
+            <li>
+              <a href="src/sobreNosotros/historia/historia.html">Historia</a>
+            </li>
+            <li>
+              <a href="src/sobreNosotros/organigrama/organigrama.html"
+                >Organigrama</a
+              >
+            </li>
+            <li>
+              <a href="src/sobreNosotros/patrocinadores/patrocinadores.html"
+                >Patrocinadores</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="src/">Contacto</a></li>
+      </ul>
     </nav>
-    <img src="../../../media/banner.png" alt="banner" width="100%">
+
+    <img src="../../../media/banner.png" alt="banner" width="100%" />
     <main>
-        <section class="patrocinadores">
-            <h2>Nuestros Patrocinadores</h2>
-            <div class="patrocinador">
-                <img src="media/pa1.png" alt="Logo Patrocinador 1">
-                <p>Red Bull</p>
-            </div>
-            <div class="patrocinador">
-                <img src="media/pa2.jpg" src="media/logo2.png" alt="Logo Patrocinador 2">
-                <p>Bodegas Marqués de Riscal</p>
-            </div>
-        </section>
+      <section class="sponsors">
+        <h2>Nuestros Patrocinadores</h2>
+        <div class="sponsor-list">
+          <div class="sponsor">
+            <a href="https://www.patrocinador1.com">
+              <img src="media/pa1.png" alt="Patrocinador 1" />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://www.patrocinador2.com">
+              <img src="media/pa2.jpg" alt="Patrocinador 2" />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://www.patrocinador3.com">
+              <img src="media/pa3.jpg" alt="Patrocinador 3" />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://www.patrocinador4.com">
+              <img src="media/pa4.jpg" alt="Patrocinador 4" />
+            </a>
+          </div>
+          <div class="sponsor">
+            <a href="https://www.patrocinador4.com">
+              <img src="media/pa5.jpg" alt="Patrocinador 4" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>
-            &copy;Mi Empresa, Todos los derechos reservados.
-        </p>
-
+      <p>&copy;Mi Empresa, Todos los derechos reservados.</p>
     </footer>
-</body>
-
+  </body>
 </html>

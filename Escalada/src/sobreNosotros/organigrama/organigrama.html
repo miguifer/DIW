@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>organigrama</title>
-    <link rel="stylesheet" href="../../../css/estilos.css">
-    <link rel="stylesheet" href="css/organigramaCSS.css">
+    <link rel="stylesheet" href="../../../css/estilos.css" />
+    <link rel="stylesheet" href="css/organigramaCSS.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <a href="../../../index.html"><img src="../../../media/logo.png" alt="logo" height="150"></a>
-        <h1>Organigrama</h1>
+      <a href="../../../index.html"
+        ><img src="../../../media/logo.png" alt="logo" height="150"
+      /></a>
+      <h1>Organigrama</h1>
     </header>
-    <nav>
-        <div class="navbar">
-            <div class="dropdown">
-                <button class="dropbtn">Calendario
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../../../src/calendario/proximosPartidos/proximosPartidos.html">Próximos partidos</a>
-                    <a href="../../../src/calendario/resultados/resultados.html">Resultados</a>
-                </div>
-            </div>
-            <a href="../../../src/plantillaSocios/plantillaSocios.html">Plantilla / Socios</a>
-            <a href="../../../src/galeria/galeria.html">Galería</a>
-            <div class="dropdown">
-                <button class="dropbtn">Sobre nosotros
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="../../../src/sobreNosotros/historia/historia.html">Historia</a>
-                    <a href="organigrama.html">Organigrama</a>
-                    <a href="../../../src/sobreNosotros/patrocinadores/patrocinadores.html">Patrocinadores</a>
-                </div>
-            </div>
-            <a href="../../../src/contacto/contacto.html">Contacto</a>
-
-        </div>
+    <nav class="navigation">
+      <ul class="mainmenu">
+        <li>
+          <a href="">Calendario</a>
+          <ul class="submenu">
+            <li>
+              <a href="src/calendario/proximosPartidos/proximosPartidos.html"
+                >Próximos partidos</a
+              >
+            </li>
+            <li>
+              <a href="src/calendario/resultados/resultados.html">Resultados</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="src/plantillaSocios/plantillaSocios.html"
+            >Plantilla / Socios</a
+          >
+        </li>
+        <li><a href="src/galeria/galeria.html">Galería</a></li>
+        <li>
+          <a href="">Sobre nosotros</a>
+          <ul class="submenu">
+            <li>
+              <a href="src/sobreNosotros/historia/historia.html">Historia</a>
+            </li>
+            <li>
+              <a href="src/sobreNosotros/organigrama/organigrama.html"
+                >Organigrama</a
+              >
+            </li>
+            <li>
+              <a href="src/sobreNosotros/patrocinadores/patrocinadores.html"
+                >Patrocinadores</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="src/">Contacto</a></li>
+      </ul>
     </nav>
-    <img src="../../../media/banner.png" alt="banner" width="100%">
+
+    <img src="../../../media/banner.png" alt="banner" width="100%" />
 
     <main>
-        <h2>Estructura del Equipo</h2>
-        <div class="organigrama">
-            <div class="nivel">
-                <div class="puesto">Director Técnico<br>Miguel Fernández</div>
-            </div>
-            <div class="nivel">
-                <div class="puesto">Asistente Técnico<br>María Gómez</div>
-                <div class="puesto">Preparador Físico<br>Carlos López</div>
-                <div class="puesto">Entrenador de Porteros<br>Lucía Martínez</div>
-            </div>
-            <div class="nivel">
-                <div class="puesto">Capitán<br>Fernando Ruiz</div>
-                <div class="puesto">Jugadores<br>Equipo A</div>
-            </div>
+      <h2>Estructura del Equipo</h2>
+      <div class="organigrama">
+        <div class="nivel">
+          <div class="puesto">Director Técnico<br />Miguel Fernández</div>
         </div>
+        <div class="nivel">
+          <div class="puesto">Asistente Técnico<br />María Gómez</div>
+          <div class="puesto">Preparador Físico<br />Carlos López</div>
+          <div class="puesto">Entrenador de Porteros<br />Lucía Martínez</div>
+        </div>
+        <div class="nivel">
+          <div class="puesto">Capitán<br />Fernando Ruiz</div>
+          <div class="puesto">Jugadores<br />Equipo A</div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <p>
-            &copy;Mi Empresa, Todos los derechos reservados.
-        </p>
-
+      <p>&copy;Mi Empresa, Todos los derechos reservados.</p>
     </footer>
-</body>
-
+  </body>
 </html>

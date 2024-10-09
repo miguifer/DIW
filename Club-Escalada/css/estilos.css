@@ -54,10 +54,15 @@ body {
   font-size: 16px;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 main {
   max-width: 1200px; /* Estrechar el contenido*/
   margin: auto; /* Mismos margenes a ambos, así evito calcular px*/
-  padding: 20px;
+  padding: 40px;
+  padding-top: 5px;
   background-color: #ffff;
 }
 

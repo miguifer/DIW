@@ -1,28 +1,24 @@
-.gallery {
-    text-align: center;
-}
-
-.gallery-grid {
+.galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
 }
 
-.gallery-grid figure {
+.galeria-grid figure {
     margin: 0;
     border: 2px solid #4CAF50;
-    border-radius: 5px;
-    overflow: hidden;
+    padding: 20px;
 }
 
-.gallery-grid img {
+.galeria-grid img {
     width: 100%;
     height: auto;
 }
 
 figcaption {
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #2e8b57;
     text-align: center;
+    color:  white;
 }
 

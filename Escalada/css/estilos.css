@@ -5,9 +5,12 @@ header {
   padding: 10px;
 }
 
-/* Aseguro el tamaño del logo */
 .logo {
   height: 150px;
+}
+
+.banner {
+  width: 100%;
 }
 
 h1 {
@@ -16,6 +19,16 @@ h1 {
   font-size: 72px;
   font-weight: bold;
   margin-right: 150px; /* Mismo margen que ancho del logo para así centrar el título */
+  color: #003366;
+}
+
+.titulo {
+  text-align: center;
+  flex-grow: 1; /* Se reparte el hueco dentro del header (contenedor flex) */
+  font-size: 72px;
+  font-weight: bold;
+  margin-right: 150px; /* Mismo margen que ancho del logo para así centrar el título */
+  color: black;
 }
 
 h2 {
@@ -81,7 +94,6 @@ nav {
 .navigation ul ul {
   display: none;
   position: absolute;
-  background-color: #f4a460;
   width: 100%;
 }
 
@@ -91,12 +103,12 @@ nav {
 
 .navigation ul ul a {
   padding: 10px 20px;
-  color: black;
+  color: white;
   padding: 10px;
 }
 
 .navigation ul ul a:hover {
-  background-color: #d48d5b; 
+  background-color: #d48d5b;
 }
 
 /* FIN Css de Barra de navegación: */

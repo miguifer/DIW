@@ -9,8 +9,13 @@ header {
   height: 150px;
 }
 
+img {
+  border-radius: 8px;
+}
+
 .banner {
   width: 100%;
+  border-radius: 0px;
 }
 
 h1 {
@@ -64,14 +69,9 @@ nav {
 }
 
 article {
-  border: 1px solid #2E8B57;
+  border: 1px solid #2e8b57;
   border-radius: 8px;
   padding: 10px;
-}
-
-img {
-  border-radius: 8px;
-
 }
 
 .navigation {
@@ -98,7 +98,6 @@ img {
   background-color: #2e8b57;
   margin-left: 30px;
   margin-right: 30px;
-
 }
 
 .navigation a:hover {
@@ -127,22 +126,24 @@ img {
 
 /* FIN Css de Barra de navegación: */
 
+
+
 footer {
-  background-color: black; 
-  color: white; 
-  padding: 20px; 
-  text-align: center; 
-  
+  background-color: #6c6e6b;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 .footer-menu {
-  list-style: none; 
-  padding: 0; 
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .footer-menu a {
-  color: white; 
-  text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
 
 .footer-menu a:hover {
@@ -150,12 +151,19 @@ footer {
 }
 
 .social a {
-  color: white; 
-  margin: 5px; 
-  text-decoration: none; 
+  color: white;
+  margin: 5px;
+  text-decoration: none;
 }
 
 .social a:hover {
-  color: #3498db; 
+  color: #3498db;
 }
 
+.copy {
+  margin: 0;
+}
+
+.navegacion-foot {
+  margin-top: 10px;
+}

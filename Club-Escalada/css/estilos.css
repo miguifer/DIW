@@ -114,11 +114,33 @@ nav {
 /* FIN Css de Barra de navegación: */
 
 footer {
-  text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #6c6e6b;
-  color: white;
-  font-size: 16px;
+  background-color: black; 
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
 }
+
+.footer-menu {
+  list-style: none; 
+  padding: 0; 
+}
+
+.footer-menu a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.footer-menu a:hover {
+  color: #3498db; /* Color al pasar el ratón */
+}
+
+.social a {
+  color: white; 
+  margin: 5px; 
+  text-decoration: none; 
+}
+
+.social a:hover {
+  color: #3498db; 
+}
+

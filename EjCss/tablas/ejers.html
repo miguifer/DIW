@@ -31,31 +31,32 @@
         text-align: left;
       } */
 
+      /* tabla 2*/
 
-
-      .tabla2,
+      /* .tabla2,
       tr,
       td {
         border: 1px solid #ddd;
         border-collapse: collapse;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
+        font-size: small;
       }
 
-      td {
-        padding: 5px;
+      .tabla2 td {
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-left: 200px;
         padding-right: 200px;
-
       }
 
-      .tabla2 thead {
+      .tabla2 td.tabla2fondoAzul {
         background-color: #009688;
         color: white;
         font-weight: bold;
       }
 
-      .tabla2fondoAzul {
+      .tabla2 thead {
         background-color: #009688;
         color: white;
         font-weight: bold;
@@ -68,8 +69,10 @@
       .tabla2 tbody tr:hover{
         background-color: #c7e2e0;
       }
-
-
+      
+      .tabla2 caption {
+        font-size: 32px;
+      } */
     </style>
   </head>
   <body>
@@ -118,7 +121,7 @@
       <tfoot></tfoot>
     </table> -->
 
-    <table class="tabla2">
+    <!-- <table class="tabla2">
       <thead>
         <tr>
           <td>Nº</td>
@@ -131,33 +134,134 @@
         <tr>
           <td class="tabla2fondoAzul">1</td>
           <td>Producto a</td>
-          <td>Producto a</td>
-          <td>Producto a</td>
+          <td>60€</td>
+          <td>6</td>
         </tr>
         <tr>
           <td class="tabla2fondoAzul">1</td>
           <td>Producto a</td>
-          <td>Producto a</td>
-          <td>Producto a</td>
+          <td>60€</td>
+          <td>6</td>
         </tr>
         <tr>
           <td class="tabla2fondoAzul">1</td>
           <td>Producto a</td>
-          <td>Producto a</td>
-          <td>Producto a</td>
+          <td>60€</td>
+          <td>6</td>
         </tr>
         <tr>
           <td class="tabla2fondoAzul">1</td>
           <td>Producto a</td>
-          <td>Producto a</td>
-          <td>Producto a</td>
+          <td>60€</td>
+          <td>6</td>
         </tr>
       </tbody>
       <tfoot></tfoot>
       <caption>
-        <b>Tabla 1. </b
-        >Lista de Prodcutos
+        <b>Tabla de Ejemplo 1. </b>
       </caption>
+    </table> -->
+
+    <style>
+      .tabla3,
+      tr,
+      td {
+        border-collapse: collapse;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+
+      .tabla3 tbody td {
+        border-left: 1px solid black;
+      }
+
+      .tabla3 tfoot td {
+        border-left: 1px solid black;
+      }
+
+      .tabla3 tbody td.menuLateral {
+        border-left: 0;
+      }
+
+      .tabla3 tfoot td.menuLateral {
+        border-left: 0;
+      }
+
+      .menuLateral {
+        font-weight: bold;
+      }
+      .menuLateral {
+        text-align: right;
+      }
+
+      .tabla3 tfoot {
+        font-weight: bold;
+      }
+
+      .tabla3 tbody,
+      tfoot {
+        text-align: center;
+      }
+    </style>
+
+    <table class="tabla3">
+      <thead>
+        <tr>
+          <td>&nbsp;</td>
+          <td class="menuLateral" style="color: green">Plan básico</td>
+          <td class="menuLateral" style="color: red">Plan económico</td>
+          <td class="menuLateral" style="color: blue">Plan plus</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="menuLateral">Publicaciones mensuales</td>
+          <td>1</td>
+          <td>2</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td class="menuLateral">Asistencia intermediarios</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td class="menuLateral">Respuestas</td>
+          <td>Email</td>
+          <td>Email</td>
+          <td>Teamviewer</td>
+        </tr>
+        <tr>
+          <td class="menuLateral">Envío de newsletters</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td class="menuLateral">Minitareas</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td class="menuLateral">¿Quieres añadir el alojamiento web?</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="menuLateral">&nbsp;</td>
+          <td>0€</td>
+          <td style="font-size: 30px">0€</td>
+          <td>0€</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>

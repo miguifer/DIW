@@ -4,79 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* .tabla1,
-      tr,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 4px;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .tabla1 thead {
-        font-weight: bold;
-        text-align: center;
-        background-image: url("ejers/fondo_gris.gif");
-      }
-
-      .tabla1 tbody {
-        text-align: center;
-      }
-      .tabla1 tbody tr:nth-child(odd) {
-        background-color: rgba(218, 218, 83, 0.611);
-      }
-
-      .tabla1azul {
-        background-color: rgb(198, 198, 239);
-        text-align: left;
-      } */
-
-      /* tabla 2*/
-
-      /* .tabla2,
-      tr,
-      td {
-        border: 1px solid #ddd;
-        border-collapse: collapse;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        font-size: small;
-      }
-
-      .tabla2 td {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 200px;
-        padding-right: 200px;
-      }
-
-      .tabla2 td.tabla2fondoAzul {
-        background-color: #009688;
-        color: white;
-        font-weight: bold;
-      }
-
-      .tabla2 thead {
-        background-color: #009688;
-        color: white;
-        font-weight: bold;
-      }
-
-      .tabla2 tbody tr:nth-child(odd) {
-        background-color: #f2f2f2;
-      }
-
-      .tabla2 tbody tr:hover{
-        background-color: #c7e2e0;
-      }
-      
-      .tabla2 caption {
-        font-size: 32px;
-      } */
-    </style>
   </head>
+
+  <style>
+    .tabla1,
+    table,
+    tr,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+    .tabla1 thead {
+      font-weight: bold;
+      text-align: center;
+      background-image: url("ejers/fondo_gris.gif");
+    }
+
+    .tabla1 tbody tr:nth-child(odd) {
+      background-color: rgba(218, 218, 83, 0.611);
+    }
+
+    .tabla1 tbody td:first-child {
+      font-weight: bold;
+      background-color: rgb(198, 198, 239);
+      text-align: left;
+    }
+  </style>
+
   <body>
-    <!-- <table class="tabla1">
+    <table class="tabla1">
       <thead>
         <tr>
           <td>Cambios</td>
@@ -88,30 +47,28 @@
       </thead>
       <tbody>
         <tr>
-          <td class="tabla1azul"><img src="ejers/euro.png" />Dolar</td>
+          <td><img src="ejers/euro.png" />Dolar</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
         </tr>
         <tr>
-          <td class="tabla1azul"><img src="ejers/dolar.png" />Dolar/Yen</td>
+          <td><img src="ejers/dolar.png" />Dolar/Yen</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
         </tr>
         <tr>
-          <td class="tabla1azul">
-            <img src="ejers/libra (1).png" />Libra/Dolar
-          </td>
+          <td><img src="ejers/libra (1).png" />Libra/Dolar</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
         </tr>
         <tr>
-          <td class="tabla1azul"><img src="ejers/yen.png" />Yen/Euro</td>
+          <td><img src="ejers/yen.png" />Yen/Euro</td>
           <td>1.2524</td>
           <td>1.2524</td>
           <td>1.2524</td>
@@ -119,9 +76,73 @@
         </tr>
       </tbody>
       <tfoot></tfoot>
-    </table> -->
+    </table>
 
-    <!-- <table class="tabla2">
+    <style>
+      .tabla2,
+      table,
+      tr,
+      td {
+        border: 2px solid #ddd;
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: small;
+      }
+
+      .tabla2 thead {
+        background-color: #009688;
+        color: white;
+        font-weight: bold;
+      }
+
+      .tabla2 thead td {
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .tabla2 thead td:first-child {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .tabla2 tbody td {
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .tabla2 tbody td:first-child {
+        font-weight: bold;
+        background-color: #009688;
+        text-align: left;
+        color: white;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .tabla2 tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      .tabla2 tbody tr:hover {
+        background-color: #c7e2e0;
+      }
+
+      caption {
+        caption-side: bottom;
+        font-weight: bold;
+      }
+    </style>
+
+    <table class="tabla2">
       <thead>
         <tr>
           <td>Nº</td>
@@ -132,123 +153,82 @@
       </thead>
       <tbody>
         <tr>
-          <td class="tabla2fondoAzul">1</td>
-          <td>Producto a</td>
-          <td>60€</td>
-          <td>6</td>
+          <td>1</td>
+          <td>Producto A</td>
+          <td>25€</td>
+          <td>50</td>
         </tr>
         <tr>
-          <td class="tabla2fondoAzul">1</td>
-          <td>Producto a</td>
-          <td>60€</td>
-          <td>6</td>
+          <td>2</td>
+          <td>Producto B</td>
+          <td>14€</td>
+          <td>30</td>
         </tr>
         <tr>
-          <td class="tabla2fondoAzul">1</td>
-          <td>Producto a</td>
-          <td>60€</td>
-          <td>6</td>
+          <td>3</td>
+          <td>Producto C</td>
+          <td>40€</td>
+          <td>20</td>
         </tr>
         <tr>
-          <td class="tabla2fondoAzul">1</td>
-          <td>Producto a</td>
-          <td>60€</td>
-          <td>6</td>
+          <td>4</td>
+          <td>Producto D</td>
+          <td>32€</td>
+          <td>10</td>
         </tr>
       </tbody>
       <tfoot></tfoot>
       <caption>
-        <b>Tabla de Ejemplo 1. </b>
+        <b>Tabla de Ejemplo</b>
       </caption>
-    </table> -->
+    </table>
 
     <style>
-      .tabla3,
-      tr,
-      td {
-        border-collapse: collapse;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 20px;
-      }
-
-      .tabla3 tbody td {
-        border-left: 1px solid black;
-      }
-
-      .tabla3 tfoot td {
-        border-left: 1px solid black;
-      }
-
-      .tabla3 tbody td.menuLateral {
-        border-left: 0;
-      }
-
-      .tabla3 tfoot td.menuLateral {
-        border-left: 0;
-      }
-
-      .menuLateral {
-        font-weight: bold;
-      }
-      .menuLateral {
-        text-align: right;
-      }
-
-      .tabla3 tfoot {
-        font-weight: bold;
-      }
-
-      .tabla3 tbody,
-      tfoot {
-        text-align: center;
-      }
+      
     </style>
 
     <table class="tabla3">
       <thead>
         <tr>
           <td>&nbsp;</td>
-          <td class="menuLateral" style="color: green">Plan básico</td>
-          <td class="menuLateral" style="color: red">Plan económico</td>
-          <td class="menuLateral" style="color: blue">Plan plus</td>
+          <td>Plan básico</td>
+          <td>Plan económico</td>
+          <td>Plan plus</td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="menuLateral">Publicaciones mensuales</td>
+          <td>Publicaciones mensuales</td>
           <td>1</td>
           <td>2</td>
           <td>4</td>
         </tr>
         <tr>
-          <td class="menuLateral">Asistencia intermediarios</td>
+          <td>Asistencia intermediarios</td>
           <td>No</td>
           <td>No</td>
           <td>Si</td>
         </tr>
         <tr>
-          <td class="menuLateral">Respuestas</td>
+          <td>Respuestas</td>
           <td>Email</td>
           <td>Email</td>
           <td>Teamviewer</td>
         </tr>
         <tr>
-          <td class="menuLateral">Envío de newsletters</td>
+          <td>Envío de newsletters</td>
           <td>0</td>
           <td>1</td>
           <td>1</td>
         </tr>
         <tr>
-          <td class="menuLateral">Minitareas</td>
+          <td>Minitareas</td>
           <td>0</td>
           <td>0</td>
           <td>1</td>
         </tr>
         <tr>
-          <td class="menuLateral">¿Quieres añadir el alojamiento web?</td>
+          <td>¿Quieres añadir el alojamiento web?</td>
           <td>1</td>
           <td>1</td>
           <td>1</td>
@@ -256,9 +236,9 @@
       </tbody>
       <tfoot>
         <tr>
-          <td class="menuLateral">&nbsp;</td>
+          <td>&nbsp;</td>
           <td>0€</td>
-          <td style="font-size: 30px">0€</td>
+          <td>0€</td>
           <td>0€</td>
         </tr>
       </tfoot>

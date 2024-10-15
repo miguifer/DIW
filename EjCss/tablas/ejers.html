@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
 
-  <style>
+  <!-- <style>
     .tabla1,
     table,
     tr,
@@ -32,7 +32,7 @@
       background-color: rgb(198, 198, 239);
       text-align: left;
     }
-  </style>
+  </style> -->
 
   <body>
     <table class="tabla1">
@@ -78,7 +78,7 @@
       <tfoot></tfoot>
     </table>
 
-    <style>
+    <!-- <style>
       .tabla2,
       table,
       tr,
@@ -140,7 +140,7 @@
         caption-side: bottom;
         font-weight: bold;
       }
-    </style>
+    </style> -->
 
     <table class="tabla2">
       <thead>
@@ -184,7 +184,61 @@
     </table>
 
     <style>
-      
+      .tabla3,
+      table,
+      tr,
+      td {
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .tabla3 tbody td:first-child {
+        text-align: right;
+        font-weight: bold;
+        max-width: 160px;
+      }
+
+      .tabla3 tbody td:nth-child(2) {
+        border-right: 1px solid black;
+      }
+
+      .tabla3 tbody td:nth-child(3) {
+        border-right: 1px solid black;
+      }
+
+      .tabla3 tfoot td:nth-child(2) {
+        border-right: 1px solid black;
+      }
+
+      .tabla3 tfoot td:nth-child(3) {
+        border-right: 1px solid black;
+      }
+
+      .tabla3 thead td {
+        font-weight: bold;
+      }
+
+      .tabla3 thead td:nth-child(2) {
+        color: green;
+      }
+
+      .tabla3 thead td:nth-child(3) {
+        color: red;
+      }
+
+      .tabla3 thead td:nth-child(4) {
+        color: blue;
+      }
+
+      .tabla3 tfoot {
+        font-weight: bold;
+      }
+
+      .tabla3 tfoot td:nth-child(3) {
+        font-size: xx-large;
+      }
     </style>
 
     <table class="tabla3">

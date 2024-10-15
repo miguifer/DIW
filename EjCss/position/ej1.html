@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 100px;
+        color: purple;
+        border: dotted;
+      }
+      .s1 {
+        position: static;
+      }
+      .s2 {
+        position: static;
+        top: 80px;
+        left: 40px;
+      }
+      .s3 {
+        position: static;
+      }
+
+      .r1 {
+        position: relative;
+      }
+      .r2 {
+        position: relative;
+        top: 100px;
+        left: 300px;
+      }
+      .r3 {
+        position: relative;
+      }
+
+      .f1 {
+        position: fixed;
+      }
+      .f2 {
+        position: fixed;
+        top: 100px;
+        left: 300px;
+      }
+      .f3 {
+        position: fixed;
+      }
+
+      .a1 {
+        position: absolute;
+      }
+      .a2 {
+        position: absolute;
+        top: 200px;
+        left: 600px;
+      }
+      .a3 {
+        position: absolute;
+      }
+
+      .a {
+        position: static; /*cambia este valor a static para ver la diferencia*/
+        width: 300px;
+        height: 300px;
+        border: 2px dotted purple;
+      }
+      .b {
+        position: absolute; /*Se posiciona de forma relativa al primer elemento padre que tiene una posición distinta a static*/
+        background-color: #eeeeee;
+        top: 60px;
+        right: 0px;
+        width: 200px;
+        height: 80px;
+        border: 3px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propiedad position: static</h1>
+    <p class="s1">Bloque 1 static</p>
+    <p class="s2">Bloque 2 static</p>
+    <p class="s3">Bloque 3 static</p>
+    <br /><br /><br />
+    <h1>Propiedad position: relative</h1>
+    <p class="r1">Bloque 1 relative</p>
+    <p class="r2">Bloque 2 relative</p>
+    <p class="r3">Bloque 3 relative</p>
+    <br /><br /><br />
+    <!-- <h1>Propiedad position: fixed</h1>
+    <p class="f1">Bloque 1 fixed</p>
+    <p class="f2">Bloque 2 fixed</p>
+    <p class="f3">Bloque 3 fixed</p> -->
+    <br /><br /><br />
+    <h1>Propiedad position: absolute</h1>
+    <p class="a1">Bloque 1 absolute</p>
+    <p class="a2">Bloque 2 absolute</p>
+    <p class="a3">Bloque 3 absolute</p>
+    <br /><br /><br />
+    <h1>Propiedad position: absolute extendida</h1>
+    <div class="a">
+      <p>absolute</p>
+      <p> absolute</p>
+      <p>absolute</p>
+      <p>absolute</p>
+      <p>absolute</p>
+      <div class="b">
+        <p>relative</p>
+      </div>
+    </div>
+  </body>
+</html>

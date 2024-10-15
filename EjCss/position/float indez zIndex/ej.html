@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a {
+        float: left;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        background-color: blue;
+      }
+      .b {
+        float: right;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        background-color: green;
+      }
+      .c {
+        float: right;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        background-color: red;
+      }
+      .d {
+        float: none;
+        clear: both;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        background-color: purple;
+      }
+      .e {
+        float: left;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        background-color: blue;
+      }
+
+      .f {
+        float: right;
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+        background-color: green;
+      }
+
+      p {
+        clear: both;
+      }
+
+      .z1{
+        width: 150px;
+        height: 200px;
+        background-color: purple;
+        position: relative;
+        z-index: 3;
+      }
+      .z2{
+        width: 150px;
+        height: 200px;
+        background-color: black;
+        position: relative;
+        left: 50px;
+        top: -110px;
+        z-index: 1;
+      }
+      .z3{
+        width: 150px;
+        height: 200px;
+        background-color: grey;
+        position: relative;
+        left: 100px;
+        top: -210px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">div a1</div>
+    <div class="a">div a2</div>
+
+    <div class="b">div b1</div>
+    <div class="b">div b2</div>
+
+    <div class="c">div c</div>
+    <div class="d">div d</div>
+
+    <div class="e">div e</div>
+    <div class="f">div f</div>
+    <h4>Tetxo sin propiedad clear</h4>
+    <p>Tetxo con propiedad clear:both</p>
+
+    <h3></h3>
+    <div class="z1">z1</div>
+    <div class="z2">z2</div>
+    <div class="z3">z3</div>
+  </body>
+</html>

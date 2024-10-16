@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: Helvetica, sans-serif, Arial;
 }
 
 .menu_arriba {
@@ -69,7 +70,7 @@ placeholder {
   left: 500px;
 }
 
-.contenido img {
+.contenido, img {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 
@@ -83,3 +84,47 @@ placeholder {
   width: 483px;
   height: 651px;
 }
+
+.usuario {
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 483px;
+  height: 100px;
+  border-bottom: 2px solid rgb(228, 223, 223);
+}
+
+.fotoPerfil {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 50px;
+  height: auto;
+  border: 2px solid rgb(219, 18, 179);
+  border-radius: 100%;
+}
+
+.nomUsuario {
+  font-weight: bold;
+  position: absolute;
+  top: 40px;
+  left: 90px;
+}
+
+.verificado {
+  position: absolute;
+  top: 37px;
+  left: 177px;
+  width: 20px;
+  height: auto;
+}
+
+.Seguir {
+  font-weight: bold;
+  color: rgb(79, 148, 237);
+  position: absolute;
+  top: 40px;
+  left: 210px;
+}
+

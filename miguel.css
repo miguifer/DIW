@@ -1,0 +1,17 @@
+* {
+  background-color: rgb(227, 222, 222);
+  font-family: Helvetica, sans-serif, Arial;
+}
+.boton {
+  padding: 20px;
+  background-color: white;
+  border: 2px solid rgb(104, 103, 103);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 32px;
+  color: black;
+}
+.boton:hover {
+  background-color: rgb(193, 223, 194);
+  color: rgb(14, 106, 14);
+}

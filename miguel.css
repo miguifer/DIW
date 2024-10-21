@@ -3,30 +3,136 @@
   box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho */
 }
 
+body {
+  background-color: rgb(243, 243, 247);
+  max-width: 1200px; /* Estrechar el contenido*/
+  margin: auto; /* Mismos margenes a ambos, así evito calcular px*/
+}
+
+header {
+  margin-top: 100px;
+}
+
 .contenedor {
   display: flex;
 }
 
 .barraLateral {
-  background-color: yellow;
+  background-color: white;
   width: 30%; /* Ancho del sidebar */
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.barraTitulo {
+  background-color: white(192, 27, 123);
+  border-bottom: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 70px;
+}
+
+.barraContenido {
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .main {
-  background-color: green;
   width: 70%; /* Ancho del contenido principal */
   display: flex;
   flex-direction: column; /* Permite apilar el contenido principal y trabajos */
+  margin-left: 10px;
 }
 
 .info-personal {
   flex: 1; /* Toma el espacio restante */
-  padding: 20px; /* Añade espacio */
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.infoTitulo {
+  background-color: white(144, 204, 32);
+  border-bottom: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 70px;
+}
+
+.infoContenido {
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 .trabajos {
-  background-color: burlywood;
-  padding: 20px; /* Añade espacio */
+  background-color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.trabajosTitulo {
+  background-color: white;
+  border-bottom: 1px solid grey;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 70px;
+}
+
+.trabajosContenido {
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 /* Estilos de botón */
@@ -43,9 +149,4 @@
 
 .boton:hover {
   background-color: #0056b3; /* Sombra más oscura al pasar el cursor */
-}
-
-.fotoTrabajo {
-  width: 200px;
-  height: auto;
 }

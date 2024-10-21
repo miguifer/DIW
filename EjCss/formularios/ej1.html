@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        background-color: rgb(238, 237, 224);
+        float: left;
+        width: 475px;
+        height: 140px;
+        display: flex;
+        border-radius: 5px;
+      }
+      img {
+        width: 200px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .datos-productos {
+        position: relative;
+        top: 20px;
+      }
+
+      .borrar {
+        position: relative;
+        left: 150px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 2px;
+        width: 20px;
+        text-align: center;
+      }
+
+
+      .precio {
+        color: grey;
+      }
+      .colores li {
+        width: 20px;
+        display: inline-block;
+        height: 20px;
+        border-radius: 12.5px;
+        margin-top: 10px;
+        border: 1px solid black;
+      }
+      .colores li:nth-child(1) {
+        background-image: url(leopardo.jpg);
+        background-size: contain;
+      }
+      .colores li:nth-child(2) {
+        background-image: url(negro.jpg);
+        background-size: contain;
+      }
+      .colores li:nth-child(3) {
+        background-image: url(rojo.jpg);
+        background-size: cover;
+      }
+      .colores li:nth-child(4) {
+        background-image: url(verde.jpg);
+        background-size: cover;
+      }
+      .colores li:nth-child(5) {
+        background-image: url(amarillo.avif);
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <figure>
+          <img src="zapato.jpg" alt="zapatos" />
+        </figure>
+        <div class="datos-productos">
+          <div class="borrar">x</div>
+          <div class="nombre"><strong>Crocs de Rayo</strong></div>
+          <div class="precio">69,99 $</div>
+          <div class="colores">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <!-- <form method="post" action="/send/">
+                <input type="radio" name="category" value="user" checked />
+                Particular
+                <input type="radio" name="category" value="business" /> Empresa
+              </form> -->
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
+

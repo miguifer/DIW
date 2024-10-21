@@ -131,3 +131,22 @@ h3 {
   background-color: #004099;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra en hover */
 }
+
+.trabajos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.trabajosContenido img {
+  width: 100%;
+  height: 95%;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+
+}
+
+.trabajo img:hover {
+  transform: scale(1.05);
+}

@@ -1,152 +1,133 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
-  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho */
+  box-sizing: border-box;
 }
 
 body {
   background-color: rgb(243, 243, 247);
-  max-width: 1200px; /* Estrechar el contenido*/
-  margin: auto; /* Mismos margenes a ambos, así evito calcular px*/
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 header {
-  margin-top: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #555;
+}
+
+h3 {
+  font-size: 22px;
+  color: #444;
 }
 
 .contenedor {
   display: flex;
+  margin-top: 30px;
 }
 
 .barraLateral {
   background-color: white;
-  width: 30%; /* Ancho del sidebar */
+  width: 30%;
   border-radius: 5px;
-  margin-right: 10px;
-  padding-top: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
-.barraTitulo {
-  background-color: white(192, 27, 123);
-  border-bottom: 1px solid grey;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  height: 70px;
+.barraTitulo h3 {
+  background-color: rgb(192, 27, 123);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 0;
 }
 
-.barraContenido {
-  background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  height: 100%;
+.barraContenido p {
+  color: #555;
+  font-size: 16px;
 }
 
 .main {
-  width: 70%; /* Ancho del contenido principal */
+  width: 70%;
   display: flex;
-  flex-direction: column; /* Permite apilar el contenido principal y trabajos */
-  margin-left: 10px;
+  flex-direction: column;
 }
 
 .info-personal {
-  flex: 1; /* Toma el espacio restante */
   background-color: white;
   border-radius: 5px;
-  margin-right: 10px;
-  padding-top: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.infoTitulo {
-  background-color: white(144, 204, 32);
-  border-bottom: 1px solid grey;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  height: 70px;
+.infoTitulo h3 {
+  background-color: rgb(144, 204, 32);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 0;
 }
 
-.infoContenido {
-  background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  height: 100%;
+.infoContenido p {
+  font-size: 16px;
+  color: #333;
 }
 
 .trabajos {
   background-color: white;
   border-radius: 5px;
-  margin-right: 10px;
-  padding-top: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.trabajosTitulo {
-  background-color: white;
-  border-bottom: 1px solid grey;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  height: 70px;
+.trabajosTitulo h3 {
+  background-color: rgb(0, 123, 255);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 0;
 }
 
 .trabajosContenido {
-  background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-  height: 100%;
+  margin-top: 15px;
 }
 
-/* Estilos de botón */
-.boton {
+.trabajosContenido .boton {
   display: inline-block;
   padding: 10px 15px;
   margin: 5px 0;
-  background-color: #007bff; /* Color primario */
+  background-color: rgb(0, 123, 255);
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s; /* Transición suave */
+  transition: background-color 0.3s;
 }
 
 .boton:hover {
-  background-color: #0056b3; /* Sombra más oscura al pasar el cursor */
+  background-color: #0056b3;
+}
+
+.boton:hover {
+  background-color: #004099;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra en hover */
 }

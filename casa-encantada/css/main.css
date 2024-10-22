@@ -20,8 +20,9 @@ nav {
   background-color: white;
   color: white;
   height: 100px;
-  border-bottom: 2px solid grey;
+  border-bottom: 3px solid grey;
 }
+
 
 .nav {
   max-width: 1200px;

@@ -58,77 +58,67 @@
         </div>
         <div class="Presentacion">
           <div class="descripcion">
-            <div>
+            <div class="centro">
               <p>
-                Nuestro escape room está ubicado en el corazón de Logroño, en
-                una antigua mansión que ha sido restaurada para crear una
-                atmósfera espeluznante. Las instalaciones cuentan con:
+                Nuestro escape room está ubicado en el corazón de
+                <a class="rojo">Logroño</a>, en una antigua mansión que ha sido
+                restaurada para crear una atmósfera espeluznante. Las
+                instalaciones cuentan con:
               </p>
               <ul>
                 <li>
-                  <strong>Salas temáticas:</strong> Cada habitación está
-                  diseñada con atención al detalle, creando un ambiente
-                  inmersivo.
+                  <strong><a class="rojo">Salas temáticas</a>:</strong> Cada
+                  habitación está diseñada con atención al detalle, creando un
+                  ambiente inmersivo.
                 </li>
                 <li>
-                  <strong>Efectos especiales:</strong> Iluminación tenue,
-                  sonidos inquietantes y efectos visuales que aumentan la
-                  tensión.
-                </li>
-                <li>
-                  <strong>Zona de espera:</strong> Un área donde los grupos
-                  pueden relajarse antes de su experiencia, equipada con snacks
-                  y bebidas.
+                  <strong><a class="rojo">Efectos especiales</a>:</strong>
+                  Iluminación tenue, sonidos inquietantes y efectos visuales que
+                  aumentan la tensión.
                 </li>
               </ul>
             </div>
             <img src="media/presentacion.jpg" />
           </div>
           <div class="niveles">
-            <img src="media/presentacion.jpg" />
-            <div>
+            <img src="media/niveles.jpg" />
+            <div class="centro">
               <h4>Niveles de Terror:</h4>
               <ul>
                 <li>
-                  <strong>Aventura Suave:</strong> Ideal para familias y grupos
-                  con niños. Enfocada en acertijos y misterio, sin sustos
-                  extremos.
+                  <strong><a class="suave">Aventura Suave</a>:</strong> Ideal
+                  para familias y grupos con niños. Enfocada en acertijos y
+                  misterio, sin sustos extremos.
                 </li>
                 <li>
-                  <strong>Terror Moderado:</strong> Para aquellos que buscan un
-                  desafío equilibrado. Incluye elementos de suspense y sustos
-                  moderados.
+                  <strong><a class="rojo">Terror moderado</a>:</strong> Para
+                  aquellos que buscan un desafío equilibrado. Incluye elementos
+                  de suspense y sustos moderados.
                 </li>
                 <li>
-                  <strong>Terror Extremo:</strong> Solo para los más valientes.
-                  Experiencia intensa con sustos sorprendentes y desafíos
-                  psicológicos.
+                  <strong><a class="extremo">Terror extremo</a>:</strong> Solo
+                  para los más valientes. Experiencia intensa con sustos
+                  sorprendentes y desafíos psicológicos.
                 </li>
               </ul>
             </div>
           </div>
           <div class="servicios">
-            <div>
+            <div class="centro">
               <h4>Público Objetivo:</h4>
               <p>
                 Grupos de amigos, familias, colegios y empresas que buscan una
-                actividad emocionante y colaborativa. No se recomienda para
+                actividad emocionante y colaborativa.
+                <a class="rojo"><strong> No se recomienda</strong></a> para
                 personas con problemas cardíacos, fobias severas o condiciones
                 de salud que puedan verse afectadas por un ambiente de miedo.
               </p>
-
-              <h4>Servicios Ofrecidos:</h4>
-              <ul>
-                <li>Guías expertos para acompañar a los grupos.</li>
-                <li>Opción de fotos y videos durante la experiencia.</li>
-                <li>Salas adaptadas para personas con discapacidad.</li>
-              </ul>
             </div>
-            <img src="media/presentacion.jpg" />
+            <img src="media/servicios.jpg" />
           </div>
           <div class="precios">
-            <img src="media/presentacion.jpg" />
-            <div>
+            <img src="media/precio.jpg" />
+            <div class="centro">
               <h4>Precios Individuales:</h4>
               <ul>
                 <li>Aventura Suave: $15 por persona</li>
@@ -143,25 +133,134 @@
                 <li>Grupos de más de 10 personas: 20% de descuento</li>
               </ul>
 
-              <h4>Paquete Especial para Eventos:</h4>
-              <p>
-                Organizamos cumpleaños, despedidas de soltero/a y eventos
-                corporativos. Contáctanos para más información y precios
-                personalizados.
-              </p>
+              <a class="rojo"
+                >(El descuento para grupos se realiza en el establecimiento el
+                día de la actividad)</a
+              >
             </div>
+          </div>
+          <div class="precioEspecial">
+            <h4>Paquete Especial para Eventos:</h4>
+            <p>
+              Organizamos cumpleaños, despedidas de soltero/a y eventos
+              corporativos. Contáctanos para más información y precios
+              personalizados.
+            </p>
+            <p>
+              <strong
+                ><a class="rojo">(Solo bajo reserva telefónica)</a></strong
+              >
+            </p>
           </div>
         </div>
       </section>
-      <section id="Galería"></section>
-      <section id="Reserva"></section>
+      <section id="Galería">
+        <div class="galeria-grid">
+          <figure>
+            <img src="media/casa.jpeg" />
+          </figure>
+          <figure>
+            <img src="media/casa2.jpg" />
+          </figure>
+          <figure>
+            <img src="media/susto.jpg" />
+          </figure>
+          <figure>
+            <img src="media/cocina.jpg" />
+          </figure>
+          <figure>
+            <img src="media/pasillo.jpg" />
+          </figure>
+          <figure>
+            <img src="media/baño.jpg" />
+          </figure>
+        </div>
+      </section>
+      <section id="Reserva">
+        <h2>Formulario de Reserva</h2>
+        <form id="reservaForm" onsubmit="handleSubmit(event)">
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required />
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de Contacto</legend>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de la Reserva</legend>
+            <label for="actividad">Actividad u Opción Escogida:</label>
+            <select id="actividad" name="actividad" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="aventura-suave">Aventura Suave</option>
+              <option value="terror-moderado">Terror Moderado</option>
+              <option value="terror-extremo">Terror Extremo</option>
+            </select>
+
+            <label for="numPersonas">Número de Personas:</label>
+            <input
+              type="number"
+              id="numPersonas"
+              name="numPersonas"
+              min="1"
+              required
+            />
+
+            <label
+              >¿Hay niños o personas con discapacidad o movilidad
+              reducida?</label
+            >
+            <div>
+              <label
+                ><input type="checkbox" name="necesidadesEspeciales" />
+                Sí</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Peticiones Adicionales</legend>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+          </fieldset>
+
+          <button type="reset">Limpiar</button>
+          <button type="submit">Reservar</button>
+        </form>
+      </section>
+
+      <!-- <script>
+        function handleSubmit(event) {
+          event.preventDefault(); 
+          alert("La reserva se ha hecho.");
+        }
+      </script> -->
     </main>
     <footer>
       <div>
-        <p class="copy">
+        <p>
           &copy; 2024 por <a href="#Inicio">Escape Room Horror</a>. Todos los
           derechos reservados.
         </p>
+        <a href="guiaEstilos/index.html"
+          ><strong
+            >Click para ver la GUÍA DE ESTILOS utilizada para crear la
+            página</strong
+          ></a
+        >
       </div>
     </footer>
   </body>

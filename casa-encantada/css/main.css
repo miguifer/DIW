@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Con esto utilizas la fuente */
@@ -16,48 +17,56 @@
 /* Con esto utilizas la fuente */
 
 nav {
-  /* background-color: #00080b; */
-  background-color: white;
+  background-color: #00080b;
   color: white;
   height: 100px;
   border-bottom: 3px solid grey;
 }
 
-
 .nav {
   max-width: 1200px;
   margin: auto;
-  background-color: green;
+  background-color: #00080b;
   height: 100px;
   width: 1200px;
   display: flex;
 }
 
-.logo {
-  width: 100px;
-  height: auto;
+.fotoLogo {
+  align-content: center;
 }
 
-.letrasLogo{
-    align-content: center;
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.letrasLogo {
+  align-content: center;
 }
 
 .letrasLogo h1 + h1 {
-    margin-top: -20px; 
+  margin-top: -20px;
 }
 
 .cabecera {
   display: flex;
+  align-content: center;
 }
 
 .menu {
   list-style-type: none;
   display: flex;
-  margin-left: 350px;
+  margin-left: 400px;
 }
 .menu a {
   text-decoration: none;
   margin-right: 100px;
+}
+
+.menu a:hover {
+  color: red;
 }
 
 .menu li {
@@ -67,6 +76,14 @@ nav {
 
 .menu li a {
   color: white;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  background-color: green;
+  height: 1200px;
+  width: 1200px;
 }
 
 body {

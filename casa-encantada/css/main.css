@@ -24,6 +24,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -46,8 +47,8 @@ body {
 nav {
   background-color: #00080b;
   height: 100px;
-  border-bottom: 1px solid grey;
   width: 100%;
+  border-bottom: 1px solid grey;
 }
 
 .nav {
@@ -57,6 +58,7 @@ nav {
   height: 100px;
   width: 1200px;
   display: flex;
+  border-bottom: 1px solid grey;
 }
 
 .fotoLogo {
@@ -211,7 +213,7 @@ nav {
   text-align: center;
   border: 2px solid #c0090d;
   width: 700px;
-  height: 90px;
+  height: 120px;
   align-content: center;
   max-width: 1200px;
   margin: auto;
@@ -272,10 +274,11 @@ nav {
 
 /* Reserva */
 #Reserva {
-  height: 1300px;
+  height: auto;
   margin-top: 20px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  margin-bottom: 20px;
 }
 
 #Reserva h2 {
@@ -284,15 +287,18 @@ nav {
   color: black;
   -webkit-text-stroke: 0.001em white;
   font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .reservaForm {
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
-  padding: 10px;
-  border: 1px solid #b71c1c;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.951);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c0090d;
+  color: white;
+  font-size: 20px;
 }
 
 fieldset {
@@ -302,14 +308,12 @@ fieldset {
 
 legend {
   font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #b71c1c;
+  color: #c0090d;
 }
 
 label {
   display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+  margin: 10px 0 5px;
 }
 
 input[type="text"],
@@ -317,44 +321,35 @@ input[type="tel"],
 input[type="email"],
 input[type="date"],
 input[type="number"],
-select,
-textarea {
-  width: 98%;
+select {
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1em;
-}
-
-.botones {
-  display: flex;
-  justify-content: space-between;
+  border-radius: 5px;
 }
 
 button {
+  background-color: #c0090d;
+  color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
-  background-color: #b71c1c;
-  color: white;
-  font-size: 1em;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 20px;
 }
 
 button:hover {
-  background-color: #00080b;
-  color: white;
-}
-
-input[type="checkbox"] {
-  margin-right: 5px;
+  background-color: white;
+  color: #c0090d;
 }
 
 textarea {
   resize: none;
+  width: 530px;
+  border-radius: 4px;
 }
+
 /* Form*/
 
 footer {

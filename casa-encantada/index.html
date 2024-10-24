@@ -178,7 +178,8 @@
       </section>
       <section id="Reserva">
         <h2>Formulario de Reserva</h2>
-        <form id="reservaForm" onsubmit="handleSubmit(event)">
+
+        <form class="reservaForm">
           <fieldset>
             <legend>Datos Personales</legend>
             <label for="nombre">Nombre:</label>
@@ -200,15 +201,18 @@
             <input type="email" id="email" name="email" required />
           </fieldset>
 
-          <fieldset>
+          <fieldset class="datosReserva">
             <legend>Datos de la Reserva</legend>
+            <label for="fecha">Fecha de la Reserva:</label>
+            <input type="date" id="fecha" name="fecha" required /><br />
+
             <label for="actividad">Actividad u Opción Escogida:</label>
             <select id="actividad" name="actividad" required>
               <option value="" disabled selected>Selecciona una opción</option>
               <option value="aventura-suave">Aventura Suave</option>
               <option value="terror-moderado">Terror Moderado</option>
-              <option value="terror-extremo">Terror Extremo</option>
-            </select>
+              <option value="terror-extremo">Terror Extremo</option></select
+            ><br />
 
             <label for="numPersonas">Número de Personas:</label>
             <input
@@ -217,37 +221,31 @@
               name="numPersonas"
               min="1"
               required
-            />
+            /><br />
 
             <label
               >¿Hay niños o personas con discapacidad o movilidad
               reducida?</label
             >
             <div>
-              <label
-                ><input type="checkbox" name="necesidadesEspeciales" />
-                Sí</label
-              >
+              <label>
+                <input type="checkbox" name="necesidadesEspeciales" />
+                Sí
+              </label>
             </div>
           </fieldset>
 
           <fieldset>
             <legend>Peticiones Adicionales</legend>
-            <label for="comentarios">Comentarios:</label>
+            <label for="comentarios">Comentarios:</label><br />
             <textarea id="comentarios" name="comentarios" rows="4"></textarea>
           </fieldset>
-
-          <button type="reset">Limpiar</button>
-          <button type="submit">Reservar</button>
+          <div class="botones">
+            <button type="reset">Limpiar</button>
+            <button type="submit">Reservar</button>
+          </div>
         </form>
       </section>
-
-      <!-- <script>
-        function handleSubmit(event) {
-          event.preventDefault(); 
-          alert("La reserva se ha hecho.");
-        }
-      </script> -->
     </main>
     <footer>
       <div>
@@ -257,7 +255,8 @@
         </p>
         <a href="guiaEstilos/index.html"
           ><strong
-            >Click para ver la GUÍA DE ESTILOS utilizada para crear la
+            >Click para ver la
+            <span class="sub">GUÍA DE ESTILOS</span> utilizada para crear la
             página</strong
           ></a
         >

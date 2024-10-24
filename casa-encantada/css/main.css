@@ -248,7 +248,7 @@ nav {
 
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 
@@ -270,102 +270,92 @@ nav {
 
 /* Galeria*/
 
-/* Form*/
 /* Reserva */
 #Reserva {
-  height: auto;
-  background-color: #00080b;
+  height: 1300px;
   margin-top: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-#Reserva h2{
+#Reserva h2 {
   text-align: center;
   font-family: "Jolly Lodger", serif;
-  color: #c0090d;
+  color: black;
+  -webkit-text-stroke: 0.001em white;
   font-size: 60px;
 }
 
-/* Estilos generales del formulario */
-form {
+.reservaForm {
   max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #c0090d;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #b71c1c;
   border-radius: 8px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.951);
 }
 
-/* Estilos para los fieldsets */
 fieldset {
-  border: 1px solid #ccc;
+  border: none;
   margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 8px;
 }
 
-/* Estilo para los legend */
 legend {
-  font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #b71c1c;
 }
 
-/* Estilos para etiquetas y entradas */
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-weight: bold;
 }
 
 input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[type="date"],
 input[type="number"],
 select,
 textarea {
-  width: 100%;
+  width: 98%;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-/* Estilo para el textarea */
-textarea {
-  resize: none;
-}
-
-/* Estilo para los botones */
-button {
-  background-color: #c0392b;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   font-size: 1em;
 }
 
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #b71c1c;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
 button:hover {
-  background-color: #a93226; /* Color más oscuro al pasar el ratón */
+  background-color: #00080b;
+  color: white;
 }
 
-/* Estilo para el botón de limpiar */
-button[type="reset"] {
-  background-color: #2ecc71; /* Color verde para el botón de limpiar */
-}
-
-button[type="reset"]:hover {
-  background-color: #27ae60; /* Color más oscuro al pasar el ratón */
-}
-
-/* Estilo para los checkboxes */
 input[type="checkbox"] {
   margin-right: 5px;
 }
 
+textarea {
+  resize: none;
+}
 /* Form*/
-
-
 
 footer {
   border-top: 1px grey solid;
@@ -385,4 +375,8 @@ footer a:hover {
   text-decoration: none;
   color: white;
   transition: 0.5s;
+}
+
+footer p {
+  margin-bottom: 10px;
 }

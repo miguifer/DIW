@@ -1,0 +1,89 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: greenyellow;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.guia {
+  background-color: white;
+  padding: 10px;
+  height: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.d1,
+.d2,
+.d3,
+.d4 {
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.nombreCuadrado {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.contenido,
+.paleta {
+  padding: 20px;
+}
+
+.paleta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5,
+.c6,
+.c7,
+.c8,
+.c9,
+.c10,
+.c11,
+.c12 {
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 100px;
+  border: 1px solid white;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.f1,
+.f2,
+.f3,
+.f4 {
+  background-color: blue;
+  width: 100%;
+  height: 150px;
+  border: 1px solid white;
+}
+
+.maqueta {
+  background-color: aquamarine;
+  width: 100%;
+  height: 300px;
+}
+
+.nav, .main, .foot {
+    background-color: blueviolet;
+    border: 1px solid white;
+    width: 100%;
+    height: 100px;
+}

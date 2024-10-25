@@ -43,6 +43,12 @@ body {
   background-color: #00080b;
 }
 
+hr{
+  color: grey;
+  height: 1px;
+  margin-top: 30px
+}
+
 /* barra superior */
 nav {
   background-color: #00080b;
@@ -284,19 +290,24 @@ nav {
 #Reserva h2 {
   text-align: center;
   font-family: "Jolly Lodger", serif;
-  color: black;
-  -webkit-text-stroke: 0.001em white;
-  font-size: 60px;
-  margin-bottom: 20px;
+  color: #c0090d;
+  -webkit-text-stroke: 0.001em #00080b;
+  font-size: 70px;
+  margin-bottom: 10px;
 }
 
 .reservaForm {
-  max-width: 600px;
+  font-family: Helvetica, sans-serif, Arial;
+  width: 900px;
   margin: auto;
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #c0090d;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #c0090d;
+  border-bottom: 1px solid #c0090d;
+  border-right: 1px solid #c0090d;
+
   color: white;
   font-size: 20px;
 }
@@ -346,13 +357,44 @@ button:hover {
 
 textarea {
   resize: none;
-  width: 530px;
+  width: 100%;
   border-radius: 4px;
 }
+
+.contenedor {
+  display: flex;
+}
+
+.fotoReserva img {
+  width: 300px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 1px solid #c0090d;
+  border-bottom: 1px solid #c0090d;
+  border-left: 1px solid #c0090d;
+}
+
+label.required::after {
+  content: "*";
+  color: #c0090d;
+  margin-left: 5px;
+}
+
+.animated-imput {
+  transition: 1s;
+}
+
+.animated-imput:focus {
+  background-color: #c0090d;
+  color: white;
+}
+
 
 /* Form*/
 
 footer {
+  margin-top: 100px;
   border-top: 1px grey solid;
   border-bottom: 1px solid grey;
   background-color: #00080b;

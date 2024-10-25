@@ -6,6 +6,10 @@
     <title>Escape Room Horror - Inicio. Escaperoom de terror en Logroño</title>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" sizes="32x32" href="media/logoWeb.jpg" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Agrega las fuente del título / menu -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -154,6 +158,7 @@
           </div>
         </div>
       </section>
+      <hr>
       <section id="Galería">
         <div class="galeria-grid">
           <figure>
@@ -176,75 +181,128 @@
           </figure>
         </div>
       </section>
+      <hr>
       <section id="Reserva">
-        <h2>Formulario de Reserva</h2>
-
-        <form class="reservaForm">
-          <fieldset>
-            <legend>Datos Personales</legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required />
-
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required />
-
-            <label for="dni">DNI:</label>
-            <input type="text" id="dni" name="dni" required />
-          </fieldset>
-
-          <fieldset>
-            <legend>Datos de Contacto</legend>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </fieldset>
-
-          <fieldset class="datosReserva">
-            <legend>Datos de la Reserva</legend>
-            <label for="fecha">Fecha de la Reserva:</label>
-            <input type="date" id="fecha" name="fecha" required /><br />
-
-            <label for="actividad">Actividad u Opción Escogida:</label>
-            <select id="actividad" name="actividad" required>
-              <option value="" disabled selected>Selecciona una opción</option>
-              <option value="aventura-suave">Aventura Suave</option>
-              <option value="terror-moderado">Terror Moderado</option>
-              <option value="terror-extremo">Terror Extremo</option></select
-            ><br />
-
-            <label for="numPersonas">Número de Personas:</label>
-            <input
-              type="number"
-              id="numPersonas"
-              name="numPersonas"
-              min="1"
-              required
-            /><br />
-
-            <label
-              >¿Hay niños o personas con discapacidad o movilidad
-              reducida?</label
-            >
-            <div>
-              <label>
-                <input type="checkbox" name="necesidadesEspeciales" />
-                Sí
-              </label>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Peticiones Adicionales</legend>
-            <label for="comentarios">Comentarios:</label><br />
-            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-          </fieldset>
-          <div class="botones">
-            <button type="reset">Limpiar</button>
-            <button type="submit">Reservar</button>
+        <h2>- Formulario de Reserva -</h2>
+        <div class="contenedor">
+          <div class="fotoReserva">
+            <img src="media/vertical.jpg" />
           </div>
-        </form>
+          <form class="reservaForm">
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <label for="nombre" class="required">Nombre:</label>
+              <input
+                class="animated-imput"
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+              />
+
+              <label for="apellidos">Apellidos:</label>
+              <input
+                class="animated-imput"
+                type="text"
+                id="apellidos"
+                name="apellidos"
+              />
+
+              <label for="dni" class="required">DNI:</label>
+              <input
+                class="animated-imput"
+                type="text"
+                id="dni"
+                name="dni"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos de Contacto</legend>
+              <label for="telefono" class="required">Teléfono:</label>
+              <input
+                class="animated-imput"
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+              />
+
+              <label for="email" class="required">Email:</label>
+              <input
+                class="animated-imput"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="datosReserva">
+              <legend>Datos de la Reserva</legend>
+              <label for="fecha">Fecha de la Reserva:</label>
+              <input
+                class="animated-imput"
+                type="date"
+                id="fecha"
+                name="fecha"
+                required
+              /><br />
+
+              <label for="actividad">Actividad u Opción Escogida:</label>
+              <select
+                class="animated-imput"
+                id="actividad"
+                name="actividad"
+                required
+              >
+                <option value="" disabled selected>
+                  Selecciona una opción
+                </option>
+                <option value="aventura-suave">Aventura Suave</option>
+                <option value="terror-moderado">Terror Moderado</option>
+                <option value="terror-extremo">Terror Extremo</option></select
+              ><br />
+
+              <label for="numPersonas">Número de Personas:</label>
+              <input
+                class="animated-imput"
+                type="number"
+                id="numPersonas"
+                name="numPersonas"
+                min="1"
+                required
+              /><br />
+
+              <labe
+                >¿Hay niños o personas con discapacidad o movilidad
+                reducida?</labe
+              >
+              <div>
+                <label>
+                  <input type="checkbox" name="necesidadesEspeciales" />
+                  Sí
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Peticiones Adicionales</legend>
+              <label for="comentarios">Comentarios:</label><br />
+              <textarea
+                class="animated-imput"
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+              ></textarea>
+            </fieldset>
+            <div class="botones">
+              <button type="reset">Limpiar</button>
+              <button type="submit">Reservar</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>

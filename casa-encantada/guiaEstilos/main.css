@@ -1,6 +1,30 @@
+/* Con esto utilizas las fuente */
+.eater-regular {
+  font-family: "Eater", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jolly-lodger-regular {
+  font-family: "Jolly Lodger", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.agdasima-regular {
+  font-family: "Agdasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.agdasima-bold {
+  font-family: "Agdasima", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Con esto utilizas las fuente */
+
 * {
-  font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -57,5 +81,147 @@ body {
   width: 100%;
   height: 100px;
   border: 1px solid white;
+  color: white;
+  align-content: center;
+  text-align: center;
 }
 
+.c1 {
+  background-color: #000000;
+}
+.c2 {
+  background-color: #000000;
+}
+
+.c4 {
+  background-color: #010a0e;
+}
+.c5 {
+  background-color: #ffa500;
+}
+.c6 {
+  background-color: #c0090d;
+}
+.c7 {
+  background-color: #808080;
+}
+.c8 {
+  background-color: #aaa9a9;
+}
+.c9 {
+  background-color: #ffffff;
+  color: black;
+}
+
+.p4 {
+  font-family: Helvetica, sans-serif, Arial;
+}
+
+.p5 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+  background-color: #c0090d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: white;
+  color: #c0090d;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label.required::after {
+  content: "*";
+  color: #c0090d;
+  margin-left: 5px;
+}
+
+.animated-imput {
+  transition: 1s;
+}
+
+.animated-imput:focus {
+  background-color: #c0090d;
+  color: white;
+}
+
+.menu {
+  list-style-type: none;
+  position: relative;
+  left: -40px;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.menu li {
+  font-size: 24px;
+}
+
+.menu li a {
+  color: #aaa9a9;
+  font-weight: bold;
+}
+
+.reservar {
+  position: relative;
+  top: 40px;
+  background-color: #c0090d;
+  width: 200px;
+  height: 80px;
+  align-content: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #000000;
+  padding: 30px;
+}
+
+.reservar:hover {
+  color: #c0090d;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.f a {
+  text-decoration: none;
+  color: #c0090d;
+}
+
+.f a:visited {
+  color: white;
+}
+
+.f a:hover {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}

@@ -54,7 +54,7 @@ nav {
   background-color: #00080b;
   height: 100px;
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #808080;
 }
 
 .nav {
@@ -64,7 +64,7 @@ nav {
   height: 100px;
   width: 1200px;
   display: flex;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #808080;
 }
 
 .fotoLogo {
@@ -104,7 +104,7 @@ nav {
 }
 
 .menu a:hover {
-  color: white;
+  color: #ffffff;
   transition: 0.5s;
 }
 
@@ -114,7 +114,7 @@ nav {
 }
 
 .menu li a {
-  color: rgb(170, 169, 169);
+  color: #aaa9a9;
   font-weight: bold;
 }
 
@@ -172,7 +172,7 @@ nav {
   align-content: center;
   text-decoration: none;
   color: white;
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 
 .reservar:hover {
@@ -237,7 +237,7 @@ nav {
 }
 
 .suave {
-  color: orange;
+  color: #ffa500;
 }
 
 .extremo {
@@ -406,6 +406,10 @@ footer {
 footer a {
   text-decoration: none;
   color: #c0090d;
+}
+
+footer a:visited {
+  color: white;
 }
 
 footer a:hover {

@@ -211,9 +211,12 @@ label.required::after {
   transition: 0.5s;
 }
 
+
+
 .f a {
   text-decoration: none;
   color: #c0090d;
+  
 }
 
 .f a:visited {

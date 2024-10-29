@@ -25,17 +25,35 @@
 * {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90px;
+}
+
+.logo:hover {
+  transition: 1s;
+  transform: scale(1.05);
+}
+
+h2 {
+  -webkit-text-stroke: 0.05em #00080b;
 }
 
 body {
-  background-color: greenyellow;
+  background-color: #010a0e;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
 
 .guia {
-  background-color: white;
+  background-color: #c0090d;
+  border-radius: 8px;
   padding: 10px;
   height: 900px;
   display: grid;
@@ -45,7 +63,7 @@ body {
 .d2,
 .d3,
 .d4 {
-  background-color: grey;
+  background-color: rgb(61, 65, 69);
   width: 100%;
   height: 100%;
   border: 1px solid black;
@@ -54,6 +72,7 @@ body {
 .nombreCuadrado {
   text-align: center;
   border-bottom: 1px solid black;
+  color: white;
 }
 
 .contenido {
@@ -213,5 +232,39 @@ body {
   font-size: 20px;
 }
 
+.butNormal,
+.butHover {
+  margin-bottom: 20px;
+}
 
+.imputLabel {
+  padding: 20px;
+  padding-left: 0;
+}
 
+.botones {
+  border-bottom: 1px solid black;
+}
+
+.imputLabel {
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+}
+
+.checkes {
+  margin-top: 10px;
+}
+
+.formHover input {
+  background-color: #c0090d;
+  color: white;
+  border-radius: 5px;
+}
+
+.formNormal input {
+  border-radius: 5px;
+}
+
+.formNormal {
+  margin-bottom: 10px;
+}

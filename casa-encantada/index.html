@@ -158,7 +158,7 @@
           </div>
         </div>
       </section>
-      <hr>
+      <hr />
       <section id="Galería">
         <div class="galeria-grid">
           <figure>
@@ -181,14 +181,14 @@
           </figure>
         </div>
       </section>
-      <hr>
+      <hr />
       <section id="Reserva">
         <h2>- Formulario de Reserva -</h2>
         <div class="contenedor">
           <div class="fotoReserva">
             <img src="media/vertical.jpg" />
           </div>
-          <form class="reservaForm">
+          <form id="reservaForm" class="reservaForm" onsubmit="return false;">
             <fieldset>
               <legend>Datos Personales</legend>
               <label for="nombre" class="required">Nombre:</label>
@@ -275,7 +275,7 @@
                 required
               /><br />
 
-               <label
+              <label
                 >¿Hay niños o personas con discapacidad o movilidad
                 reducida?</label
               >
@@ -302,14 +302,20 @@
               <button type="submit">Reservar</button>
             </div>
           </form>
-        </div>
+          <script>
+            document
+              .getElementById("reservaForm")
+              .addEventListener("submit", function () {
+                alert("La reserva se ha hecho.");
+              });
+          </script>
+        </div>  
       </section>
     </main>
     <footer>
       <div>
         <p>
-          &copy; 2024 por Escape Room Horror. Todos los
-          derechos reservados.
+          &copy; 2024 por Escape Room Horror. Todos los derechos reservados.
         </p>
         <a href="guiaEstilos/index.html"
           ><strong

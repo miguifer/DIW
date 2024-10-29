@@ -245,6 +245,31 @@ nav {
   font-family: "Eater", serif;
 }
 
+/* LISTAS PERSONALIZADAS */
+
+li {
+  list-style: none; 
+  padding: 0; 
+  position: relative; 
+  padding-left: 30px; 
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px; 
+  background-image: url('../media/calavera.ico');
+  background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+/* LISTAS PERSONALIZADAS */
+
+
 /* Presentacion*/
 
 /* Galeria*/

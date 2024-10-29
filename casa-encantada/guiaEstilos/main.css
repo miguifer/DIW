@@ -121,7 +121,63 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
-button {
+.navNormal {
+  color: #aaa9a9;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navHover {
+  color: white;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.reservaNormal {
+  color: white;
+  background-color: #c0090d;
+  width: 150px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.reservaHover {
+  color: #c0090d;
+  background-color: white;
+  width: 150px;
+  height: 48px;
+  text-align: center;
+  border: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.footNormal {
+  font-family: "Times New Roman", Times, serif;
+  color: #c0090d;
+}
+
+.footNormalHover {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+.footVisited {
+  font-family: "Times New Roman", Times, serif;
+  color: #ffa500;
+}
+
+.enlaceNav {
+  border-bottom: 1px solid black;
+}
+.enlaceReserva {
+  border-bottom: 1px solid black;
+}
+
+.butNormal {
   background-color: #c0090d;
   color: white;
   padding: 10px 20px;
@@ -131,100 +187,31 @@ button {
   font-size: 20px;
 }
 
-button:hover {
+.butHover {
   background-color: white;
   color: #c0090d;
-}
-
-label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="date"],
-input[type="number"],
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-label.required::after {
-  content: "*";
-  color: #c0090d;
-  margin-left: 5px;
-}
+.reservaForm {
+  font-family: Helvetica, sans-serif, Arial;
+  width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #c0090d;
+  border-bottom: 1px solid #c0090d;
+  border-right: 1px solid #c0090d;
 
-.animated-imput {
-  transition: 1s;
-}
-
-.animated-imput:focus {
-  background-color: #c0090d;
   color: white;
-}
-
-.menu {
-  list-style-type: none;
-  position: relative;
-  left: -40px;
-}
-.menu a {
-  text-decoration: none;
-}
-
-.menu a:hover {
-  color: #ffffff;
-  transition: 0.5s;
-}
-
-.menu li {
-  font-size: 24px;
-}
-
-.menu li a {
-  color: #aaa9a9;
-  font-weight: bold;
-}
-
-.reservar {
-  position: relative;
-  top: 40px;
-  background-color: #c0090d;
-  width: 200px;
-  height: 80px;
-  align-content: center;
-  text-decoration: none;
-  color: white;
-  border: 1px solid #000000;
-  padding: 30px;
-}
-
-.reservar:hover {
-  color: #c0090d;
-  background-color: white;
-  transition: 0.5s;
+  font-size: 20px;
 }
 
 
 
-.f a {
-  text-decoration: none;
-  color: #c0090d;
-  
-}
-
-.f a:visited {
-  color: white;
-}
-
-.f a:hover {
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}

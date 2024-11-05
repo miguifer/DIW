@@ -46,20 +46,30 @@ main {
   float: left;
 }
 
-main h1:hover {
-  border-bottom: 1px solid #797137;
+.tit_list {
+  text-decoration: underline wavy 2px #797137;
 }
 
 main section {
-    float: left;
+  float: left;
+  padding: 20px;
+  max-width: 50%;
+  margin-bottom: 40px;
 }
 
 aside {
   width: 20%;
   padding: 20px;
-  color: #ffffff;
-  background-color: #333333;
+  color: #333333;
+  background-color: #eeeeee;
   float: right;
+}
+
+aside li {
+  list-style: none;
+}
+aside li::before {
+  content: "😂😂";
 }
 
 body {
@@ -68,8 +78,77 @@ body {
 }
 
 footer {
-    background-color: #333333;
-    color: #ffffff;
-    padding: 20px;
-    
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    border-bottom: none;
+  }
+
+  aside {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    padding: 2%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    border-bottom: none;
+  }
+  aside {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  main section {
+    float: none;
+    max-width: 100%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

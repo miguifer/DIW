@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+}
+
+#header {
+  background-color: black;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#header a {
+  text-decoration: none;
+  color: white;
+}
+
+#header li {
+  list-style: none;
+}
+
+#logo_text {
+  background-color: rgb(43, 40, 40);
+}
+
+#logo_text h2 {
+  padding-bottom: 20px;
+}
+
+#menubar {
+  background-color: grey;
+}
+
+#menu {
+  display: flex;
+  padding: 10px;
+  justify-content: right;
+}
+
+#menu li {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: brown;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+
+#banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#banner img {
+  width: 100%;
+  height: 200px;
+  border: 5px solid grey;
+}
+
+#site_content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#sidebar_container {
+  width: 15%;
+  float: left;
+  margin-right: 1%;
+}
+
+.sidebar {
+  border: 1px solid grey;
+  border-radius: 10;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.sidebar li,
+#content li {
+  list-style: none;
+}
+
+.sidebar li::before,
+#content li::before {
+  content: ""; /* Necesario para que el pseudo-elemento se muestre */
+  display: inline-block;
+  width: 20px; /* Ancho de la imagen */
+  height: 20px; /* Alto de la imagen */
+  background-image: url("lista.png"); /* Imagen personalizada */
+  background-size: contain; /* Ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  vertical-align: middle; /* Alinea la imagen con el texto */
+}
+
+#content {
+  width: 84%;
+  height: auto;
+  padding: 10px;
+  float: right;
+}
+
+#content h1,
+p,
+ul {
+  padding: 10px;
+}
+
+#footer {
+  clear: both;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: block;
+}

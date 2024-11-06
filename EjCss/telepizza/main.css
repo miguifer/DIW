@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: red;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 170px;
+  vertical-align: middle;
+}
+
+.top_nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.top_nav div {
+  margin-left: 30px;
+}
+
+.idioma li {
+  margin-left: 10px;
+}
+
+.top_nav ul {
+  display: flex;
+}
+
+.top_nav li a {
+  color: white;
+}
+
+.top_nav img {
+  margin-right: 10px;
+  margin-left: 40px;
+}
+
+.cesta {
+  background-color: white;
+  border-radius: 20px;
+  width: 250px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cesta li a {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.unete li a:hover {
+  text-decoration: underline 2px white;
+}
+
+.cesta li a::before {
+  content: "";
+  background-image: url("cesta.png");
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.seleccionado {
+  text-decoration: underline 2px white;
+}
+
+.menu2 {
+    background-color: green;
+    height: 100px;
+}
+
+.desplegable {
+    display: flex;
+    justify-content: center;
+}
+
+.desplegable ul{
+    display: flex;
+    background-color: aqua;
+    width: fit-content;
+}

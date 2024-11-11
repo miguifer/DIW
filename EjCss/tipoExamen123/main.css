@@ -55,13 +55,16 @@
 }
 
 #banner {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#banner img {
+  background-image: url("paisaje.jpg");
   width: 100%;
   height: 200px;
   border: 5px solid grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+margin-top: 20px;
+margin-bottom: 20px;
+
 }
 
 #site_content {

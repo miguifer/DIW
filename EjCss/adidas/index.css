@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+nav {
+  width: 100%;
+  height: 160px;
+}
+
+.negro {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.principal {
+  background-image: url("adidas.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 80px;
+}
+
+.minis {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.minis ul {
+  display: flex;
+  list-style: none;
+}
+
+.minis ul li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.minis ul li a:hover {
+  text-decoration: underline 1px black;
+}
+
+.menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.menu ul li .gris {
+  color: gray;
+  font-weight: 10;
+}
+
+.menu ul li {
+  height: 40px;
+  align-content: center;
+}
+
+.menu ul li:hover {
+  border-bottom: 2px solid black;
+}
+
+.secun {
+  background-color: rgb(190, 190, 190);
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+}

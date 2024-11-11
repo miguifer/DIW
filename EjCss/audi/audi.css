@@ -16,22 +16,23 @@
 
 .logo {
   background-image: url("audi.png");
-  width: 100px;
-  height: 35px;
+  width: 10%;
+  height: 20%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .buscar {
   background-image: url("buscar.png");
-  width: 30px;
-  height: 30px;
+  width: 10%;
+  height: 20%;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 40%;
+  background-size: contain;
+  background-position: 100%;
 }
-    
+
 .nav .lista {
+  width: 80%;
 }
 
 .nav .lista ul {

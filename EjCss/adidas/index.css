@@ -93,3 +93,10 @@ nav {
   text-align: center;
   align-content: center;
 }
+
+.menu2 {
+  background-color: aqua;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}

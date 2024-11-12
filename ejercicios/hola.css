@@ -1,0 +1,10 @@
+:root {
+    --gris: #f4f4f4f4;
+    --fuente: 16px;
+}
+
+
+.texto {
+    color: var(--gris);
+    font: var(--fuente);
+}

@@ -1,0 +1,268 @@
+00:00:00.003373 main     VirtualBox COM Server 7.0.18 r162988 win.amd64 (May  2 2024 10:02:33) release log
+00:00:00.003374 main     Log opened 2024-11-11T19:19:30.284812500Z
+00:00:00.003375 main     Build Type: release
+00:00:00.003379 main     OS Product: Windows 10
+00:00:00.003380 main     OS Release: 10.0.19045
+00:00:00.003380 main     OS Service Pack: 
+00:00:00.052880 main     DMI Product Name: OptiPlex 7080
+00:00:00.060926 main     DMI Product Version: 
+00:00:00.060937 main     Firmware type: UEFI
+00:00:00.061143 main     Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.061161 main     Host RAM: 7906MB (7.7GB) total, 2288MB (2.2GB) available
+00:00:00.061164 main     Executable: C:\Program Files\Oracle\VirtualBox\VBoxSVC.exe
+00:00:00.061165 main     Process ID: 1036
+00:00:00.061165 main     Package type: WINDOWS_64BITS_GENERIC
+00:00:00.112894          VirtualBox: object creation starts
+00:00:00.114506          Home directory: 'C:\Users\Vespertino\.VirtualBox'
+00:00:00.114734          Installed Drivers:
+00:00:00.116537            C:\WINDOWS\system32\DRIVERS\VBoxNetLwf.sys (Version: 7.0.18.12988)
+00:00:00.117108            C:\WINDOWS\system32\DRIVERS\VBoxUSBMon.sys (Version: 7.0.18.12988)
+00:00:00.117513            C:\WINDOWS\system32\DRIVERS\VBoxSup.sys (Version: 7.0.18.12988)
+00:00:00.118106            C:\WINDOWS\System32\drivers\VBoxNetAdp6.sys (Version: 7.0.18.12988)
+00:00:00.131537          Loading settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:00.137404          usbLibGetDevices: Starting USB device enumeration
+00:00:00.146745          usbLibGetDevices: Found 3 USB devices, 0 captured
+00:00:00.268654          netIfIsWireless: CreateFile on '\\.\{5F18FC30-5DFA-425B-8262-928B24C15A39}' failed with rcWin=2 (0x2) - ignoring
+00:00:00.275796          HostDnsMonitor: initializing
+00:00:00.281363          HostDnsMonitor: updating information
+00:00:00.281832          HostDnsMonitor: old information
+00:00:00.281833            no server entries
+00:00:00.281833            no domain set
+00:00:00.281834            no search string entries
+00:00:00.281834          HostDnsMonitor: new information
+00:00:00.281834            server 1: 10.2.4.250
+00:00:00.281835            server 2: 8.8.8.8
+00:00:00.281835            domain: informatica.comercio
+00:00:00.281836            no search string entries
+00:00:00.338046          VD: VDInit finished with VINF_SUCCESS
+00:00:00.548078          Loading settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:00.565542          Loading settings file "D:\2 GS DAW\máquinas\Debian12_MFF\Debian12_MFF.vbox" with version "1.19-windows"
+00:00:00.598007          OCI: Local config file 'C:\Users\Vespertino\.VirtualBox\oci_config' does not exist
+00:00:00.598073          OCI: Original config file 'C:\Users\Vespertino\.oci\config' does not exist
+00:00:00.598074          OCI: Reading profiles finished with status ERROR_SUCCESS
+00:00:00.598630          ExtPack: Created cloud provider 'OCI' (hrc=ERROR_SUCCESS)
+00:00:00.599155          VirtualBox: object created
+00:00:00.650168          Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:00.653524          Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:00:00.653927          Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:00.655905          Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:00:00.656098          Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:00.658106          Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:00:02.465409          netIfIsWireless: CreateFile on '\\.\{5F18FC30-5DFA-425B-8262-928B24C15A39}' failed with rcWin=2 (0x2) - ignoring
+00:00:02.749545          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Saved)}, preserve=false aResultDetail=0
+00:00:05.142443          Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:05.144567          Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:00:05.214482          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:05.403307          Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:05.405901          Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:00:05.469825          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Saved)}, preserve=false aResultDetail=0
+00:00:05.636193          Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:00:05.638589          Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:00:05.707446          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:08.605719          Launched VM: 2855100448 pid: 8064 (0x1f80) frontend: GUI/Qt name: Ubuntu22_MFF
+00:00:08.624296          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:13.391207          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:13.838109          Load [C:\Program Files\Oracle\VirtualBox\ExtensionPacks\Oracle_VM_VirtualBox_Extension_Pack\win.amd64\VBoxHostWebcam.DLL] vrc=VINF_SUCCESS
+00:00:16.230344          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:00:16.524873          netIfIsWireless: CreateFile on '\\.\{5F18FC30-5DFA-425B-8262-928B24C15A39}' failed with rcWin=2 (0x2) - ignoring
+00:00:16.832039          VM 'Ubuntu22_MFF' starts using NAT network 'RedInterna'
+00:00:16.837793          NetworkServiceRunning: started 'VBoxNetNAT.exe', pid 000030bc
+00:00:16.837910          Started NAT network 'RedInterna'
+00:00:16.837985          VM 'Ubuntu22_MFF' starts using NAT network 'RedInterna'
+00:00:16.839149          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:17.020533          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:17.031324          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={The machine is not mutable or saved (state is Starting)}, preserve=false aResultDetail=0
+00:00:17.034393          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:17.215932          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:17.318003          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
+00:00:17.993118          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:00:18.112329          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:19.731584          HostDnsMonitorProxy::GetNameServers:
+00:00:19.731594            name server 1: 10.2.4.250
+00:00:19.731597            name server 2: 8.8.8.8
+00:00:20.824470          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:21.002650          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:21.053704          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:21.325047          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:21.500545          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:21.545118          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:26.091845          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:26.272578          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:26.313128          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:31.153637          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:31.332033          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:31.413207          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:00:37.886261          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:00:38.064926          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:00:38.109562          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:01:12.825974          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:13.030425          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:13.170468          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:01:34.748381          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:34.923180          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:34.973076          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:01:44.032117          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:44.206110          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:44.209588          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:44.391432          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:44.538633          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:01:44.714705          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:44.894866          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:44.898319          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:45.091604          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:45.184508          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:01:46.171840          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:46.343471          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:46.389931          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:01:50.872693          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:01:51.044365          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:01:51.092940          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:03:44.882495          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:03:45.062688          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:03:45.066214          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:03:45.253809          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:03:45.406342          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:03:48.211573          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:03:48.390312          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:03:48.393418          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:03:48.572597          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:03:48.689245          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:07.783538          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:07.956435          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:07.982235          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:08.176976          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:08.376548          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:08.512062          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:08.708360          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:08.806144          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:09.087979          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:09.093290          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:09.287543          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:09.499171          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:09.660035          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:09.863591          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:09.867983          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:10.048261          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:10.183136          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:10.534229          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:10.704044          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:10.707510          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:10.883559          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:11.022439          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:15.981072          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:16.153319          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:16.159392          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:16.343054          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:16.508457          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:25.977686          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
+00:04:28.042987          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:28.250536          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:28.361767          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:04:29.547039 Watcher  VM 'Ubuntu22_MFF' stops using NAT network 'RedInterna'
+00:04:29.547063 Watcher  VM 'Ubuntu22_MFF' stops using NAT network 'RedInterna'
+00:04:29.581540 Watcher  NetworkServiceRunning: VBoxNetNAT.exe (pid 000030bc) stopped: iStatus=0 enmReason=1
+00:04:29.581585 Watcher  Stopped NAT network 'RedInterna'
+00:04:29.646211          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:04:31.653765          Launched VM: 2903424864 pid: 9484 (0x250c) frontend: GUI/Qt name: Ubuntu22_MFF
+00:04:31.671856          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:04:36.217760          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:04:36.676514          Load [C:\Program Files\Oracle\VirtualBox\ExtensionPacks\Oracle_VM_VirtualBox_Extension_Pack\win.amd64\VBoxHostWebcam.DLL] vrc=VINF_SUCCESS
+00:04:40.151373          ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
+00:04:40.599101          netIfIsWireless: CreateFile on '\\.\{5F18FC30-5DFA-425B-8262-928B24C15A39}' failed with rcWin=2 (0x2) - ignoring
+00:04:40.851003          VM 'Ubuntu22_MFF' starts using NAT network 'RedInterna'
+00:04:40.853588          NetworkServiceRunning: started 'VBoxNetNAT.exe', pid 00002210
+00:04:40.853648          Started NAT network 'RedInterna'
+00:04:40.853661          VM 'Ubuntu22_MFF' starts using NAT network 'RedInterna'
+00:04:40.854015          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:04:41.026201          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:04:41.043544          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={The machine is not mutable or saved (state is Starting)}, preserve=false aResultDetail=0
+00:04:41.121912          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
+00:04:41.908397          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:04:42.051196          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:04:43.809973          HostDnsMonitorProxy::GetNameServers:
+00:04:43.809983            name server 1: 10.2.4.250
+00:04:43.809987            name server 2: 8.8.8.8
+00:09:15.821373          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
+00:09:16.802903          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:09:17.051440          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:09:17.168036          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:09:17.808612 Watcher  VM 'Ubuntu22_MFF' stops using NAT network 'RedInterna'
+00:09:17.808639 Watcher  VM 'Ubuntu22_MFF' stops using NAT network 'RedInterna'
+00:09:17.844028 Watcher  NetworkServiceRunning: VBoxNetNAT.exe (pid 00002210) stopped: iStatus=0 enmReason=1
+00:09:17.844051 Watcher  Stopped NAT network 'RedInterna'
+00:09:17.927729          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:09:21.872992 RestoreSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:09:22.043828 RestoreSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:09:22.102609 RestoreSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:09:22.263068 RestoreSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:09:22.263272 RestoreSnap Saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml" with version "1.14-windows"
+00:09:22.266499 RestoreSnap Finished saving settings file "C:\Users\Vespertino\.VirtualBox\VirtualBox.xml"
+00:09:22.475638          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Saved)}, preserve=false aResultDetail=0
+00:09:23.357591          Launched VM: 2904429648 pid: 12368 (0x3050) frontend: GUI/Qt name: Ubuntu22_MFF
+00:09:23.369221          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Saved)}, preserve=false aResultDetail=0
+00:09:27.721181          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Saved)}, preserve=false aResultDetail=0
+00:09:28.164479          Load [C:\Program Files\Oracle\VirtualBox\ExtensionPacks\Oracle_VM_VirtualBox_Extension_Pack\win.amd64\VBoxHostWebcam.DLL] vrc=VINF_SUCCESS
+00:09:31.797187          VM 'Ubuntu22_MFF' starts using NAT network 'RedInterna'
+00:09:31.799180          NetworkServiceRunning: started 'VBoxNetNAT.exe', pid 000007a4
+00:09:31.799214          Started NAT network 'RedInterna'
+00:09:31.799225          VM 'Ubuntu22_MFF' starts using NAT network 'RedInterna'
+00:09:31.799526          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:09:31.963200          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:09:32.043650          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={The machine is not mutable or saved (state is Restoring)}, preserve=false aResultDetail=0
+00:09:32.094658          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Restoring)}, preserve=false aResultDetail=0
+00:09:32.838157          ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
+00:09:34.686522          HostDnsMonitorProxy::GetNameServers:
+00:09:34.686532            name server 1: 10.2.4.250
+00:09:34.686535            name server 2: 8.8.8.8
+00:09:37.581901          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:09:37.742923          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:09:37.910804          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:10:46.026400          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:10:46.189134          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:10:46.234032          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:10:47.122380          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:10:47.286499          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:10:47.329134          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:18:33.086999 TakeSnap Taking snapshot Instantánea 1
+00:18:33.089992 TakeSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:18:33.285112 TakeSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:18:33.417990          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is OnlineSnapshotting)}, preserve=false aResultDetail=0
+00:18:38.785958 TakeSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:18:38.945313 TakeSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:18:38.946336 TakeSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:18:39.108100 TakeSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:18:39.109170 TakeSnap Finished taking snapshot Instantánea 1
+00:18:39.309109          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:30:23.545107 TakeSnap Taking snapshot Instantánea 2da
+00:30:23.546031 TakeSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:30:23.744103 TakeSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:30:23.860015          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is OnlineSnapshotting)}, preserve=false aResultDetail=0
+00:30:29.374329 TakeSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:30:29.531063 TakeSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:30:29.532959 TakeSnap Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:30:29.695359 TakeSnap Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:30:29.697083 TakeSnap Finished taking snapshot Instantánea 2da
+00:30:29.892783          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:30:30.774980          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
+00:30:31.787999          Saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox" with version "1.19-windows"
+00:30:31.982560          Finished saving settings file "D:\2 GS DAW\máquinas\Ubuntu22_MFF\Ubuntu22_MFF.vbox"
+00:30:32.091463          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:30:33.290694 Watcher  VM 'Ubuntu22_MFF' stops using NAT network 'RedInterna'
+00:30:33.290718 Watcher  VM 'Ubuntu22_MFF' stops using NAT network 'RedInterna'
+00:30:33.335729 Watcher  NetworkServiceRunning: VBoxNetNAT.exe (pid 000007a4) stopped: iStatus=0 enmReason=1
+00:30:33.335870 Watcher  Stopped NAT network 'RedInterna'
+00:30:33.395649          ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:30:41.049673 main     VirtualBox: object deletion starts
+00:30:41.050341 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium 'D:\2 GS DAW\máquinas\Ubuntu22_MFF\Snapshots\{8a185d0c-2b00-43c7-affb-1e1f705037be}.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:30:41.055068 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.056524 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.058225 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.060307 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.060876 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.062037 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium 'D:\2 GS DAW\máquinas\Debian12_MFF\Snapshots/{fd12e31a-9a39-4e96-8d4a-477d78f4cec1}.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:30:41.066840 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.067023 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.073062 main     HostDnsMonitor: shutting down ...
+00:30:41.073400 main     HostDnsMonitor: shut down
+00:30:41.082380 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={7682d5eb-f00e-44f1-8ca2-99d08b1cd607} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:30:41.082706 main     VirtualBox: object deleted

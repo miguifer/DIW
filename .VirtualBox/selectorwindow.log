@@ -1,0 +1,63 @@
+00:00:00.780917 VirtualBox GUI VM Selector Window 7.0.18 r162988 win.amd64 (May  2 2024 10:02:33) release log
+00:00:00.780919 Log opened 2024-11-11T19:19:30.916074200Z
+00:00:00.780919 Build Type: release
+00:00:00.780922 OS Product: Windows 10
+00:00:00.780923 OS Release: 10.0.19045
+00:00:00.780923 OS Service Pack: 
+00:00:00.791783 DMI Product Name: OptiPlex 7080
+00:00:00.794173 DMI Product Version: 
+00:00:00.794182 Firmware type: UEFI
+00:00:00.794397 Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.794414 Host RAM: 7906MB (7.7GB) total, 2272MB (2.2GB) available
+00:00:00.794416 Executable: C:\Program Files\Oracle\VirtualBox\VirtualBox.exe
+00:00:00.794417 Process ID: 5644
+00:00:00.794417 Package type: WINDOWS_64BITS_GENERIC
+00:00:00.794516 Qt version: 5.15.2
+00:00:00.795118 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.817714 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:03.632785 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:17.457431 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:21.196770 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:21.684912 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:26.455468 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:31.550718 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:38.250511 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:13.259433 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:35.115961 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:44.681639 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:45.290731 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:45.328429 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:46.533580 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:01:51.236021 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:03:45.504300 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:03:45.550154 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:03:48.775396 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:03:48.831726 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:08.372490 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:08.498582 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:09.479198 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:09.642598 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:10.260557 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:10.326043 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:11.113352 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:11.164282 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:04:16.650930 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:09:22.436561 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:09:22.553988 GUI: Updating snapshot tree after RESTORING snapshot with MachineID={{ab41fa63-1936-4055-838a-9b7833a3fe6a}}, SnapshotID={{113c848d-b7fa-4c69-b824-22169e496eb4}}...
+00:09:22.569886 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:09:22.603866 GUI: Snapshot tree update successful!
+00:09:22.612517 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:10:46.374681 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:10:47.472826 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:18:33.557224 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:18:39.278743 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:18:39.383208 GUI: Updating snapshot tree after TAKING snapshot with MachineID={{ab41fa63-1936-4055-838a-9b7833a3fe6a}}, SnapshotID={{4f8ef6f0-d66c-48fa-aa21-419cc9739b7f}}...
+00:18:39.383814 GUI: Snapshot tree update failed! Rebuilding from scratch...
+00:18:39.448774 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:30:23.999444 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:30:29.863603 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:30:29.968262 GUI: Updating snapshot tree after TAKING snapshot with MachineID={{ab41fa63-1936-4055-838a-9b7833a3fe6a}}, SnapshotID={{e02983ca-9042-49fe-a6a0-41e50ccc1817}}...
+00:30:29.968465 GUI: Snapshot tree update failed! Rebuilding from scratch...
+00:30:30.033461 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:30:35.174158 GUI: UICommon: Handling aboutToQuit request..
+00:30:36.195894 GUI: UICommon: aboutToQuit request handled!

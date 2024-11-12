@@ -23,25 +23,39 @@
 }
 
 #soundBtn {
-    width: 32px;
-    height: 32px;
-    border: none;
-    background-color: rgb(0, 0, 0, 0);
-    background-color: green;
-    cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+  background-color: green;
+  cursor: pointer;
 }
 
 #soundBtn:hover {
-    background-color: red;
+  background-color: red;
 }
 
 #myBtn {
-    width: 200px;
-    height: 50px;
-    background-color: green;
-    cursor: pointer;
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  cursor: pointer;
 }
 
 #myBtn:hover {
-    background-color: red;
+  background-color: red;
+}
+
+.video-tittle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba (0, 0, 0, 0.7);
+  background-color: rgba(0, 00, 0, 0.5);
+  padding: 10px;
+  display: none;
 }

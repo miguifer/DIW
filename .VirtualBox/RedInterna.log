@@ -1,0 +1,21 @@
+00:00:00.360456 VirtualBox NAT Network 7.0.18 r162988 win.amd64 (May  2 2024 10:02:33) release log
+00:00:00.360458 Log opened 2024-11-11T19:29:04.879439700Z
+00:00:00.360458 Build Type: release
+00:00:00.360461 OS Product: Windows 10
+00:00:00.360462 OS Release: 10.0.19045
+00:00:00.360462 OS Service Pack: 
+00:00:00.428963 DMI Product Name: OptiPlex 7080
+00:00:00.431631 DMI Product Version: 
+00:00:00.431646 Firmware type: UEFI
+00:00:00.432032 Secure Boot: VERR_PRIVILEGE_NOT_HELD
+00:00:00.432049 Host RAM: 7906MB (7.7GB) total, 2299MB (2.2GB) available
+00:00:00.432053 Executable: C:\Program Files\Oracle\VirtualBox\VBoxNetNAT.exe
+00:00:00.432053 Process ID: 12492
+00:00:00.432053 Package type: WINDOWS_64BITS_GENERIC
+00:00:00.445861 IPv4 loopback mapping 0: 127.0.0.1=2
+00:00:00.511518 SUP: Opened VMMR0.r0 (C:\Program Files\Oracle\VirtualBox\VMMR0.r0) at 0xXXXXXXXXXXXXXXXX loaded by the native ring-0 loader.
+00:00:00.511533 SUP: windbg> .reload /f C:\Program Files\Oracle\VirtualBox\VMMR0.r0=0xXXXXXXXXXXXXXXXX
+00:00:00.513654 netif NT0: mac 52:54:00:12:35:00
+00:00:00.513664 netif NT0: inet 192.168.14.1 netmask 255.255.255.0
+00:20:59.053271 run: shutdown
+00:20:59.053444 Terminating

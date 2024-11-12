@@ -28,3 +28,15 @@ function soundMute() {
     soundImg.alt = "Sound off";
   }
 }
+
+var videoTittle = document.getElementById("videoTittle");
+
+var showTime = 0;
+
+video.addEventListener("timeupdate", function () {
+  if (video.currentTime >= showTime && video.currentTime < showTime + 5) {
+    videoTittle.style.display = "block";
+  } else {
+    videoTittle.style.display = "none";
+  }
+});

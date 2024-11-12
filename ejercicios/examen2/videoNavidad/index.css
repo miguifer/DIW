@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#myVideo {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  float: left;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(46, 42, 42, 0.25);
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+#soundBtn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    background-color: green;
+    cursor: pointer;
+}
+
+#soundBtn:hover {
+    background-color: red;
+}
+
+#myBtn {
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background-color: red;
+}

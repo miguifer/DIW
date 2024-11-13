@@ -62,9 +62,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-margin-top: 20px;
-margin-bottom: 20px;
-
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #site_content {
@@ -122,4 +121,5 @@ ul {
   color: white;
   padding: 20px;
   display: block;
+  text-align: center;
 }

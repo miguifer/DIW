@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enunciado examen</title>
+</head>
+<body>
+
+    <style>
+        *{margin: 10px;}
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+        }
+    </style>
+
+    <img src="examen.png" width="100%"/>
+
+    <h1>ENUNCIADO</h1>
+    <ul>
+        <li><em>Restricciones:</em>No se pueden usar posiciones absolutas ni relativas.</li>
+        <li>La paleta de colores elegida es:
+            <ul>
+                <li>negro: #000000 //
+                gris-oscuro: #333333 //
+                gris-medio: #666666 //
+                gris-claro: #CCCCCC //
+                marron-oscuro: #3E2723 //
+                <em>personalizado: ????</em> -> Cada uno tendréis un color personalizado que tendréis que nombrar:</li>
+                    <ul>
+                        <li>Alexander: #929b10</li>
+                        <li>Pablo: #f761e9</li>
+                        <li>Ángel: #1ce2c9</li>
+                        <li>Cheng: #4caf08</li>
+                        <li>Sergio Morillas: #23b8ab</li>
+                        <li>Adrés: #24d25f</li>
+                        <li>César: #06f749</li>
+                        <li>Sergio Ortiz: #d8f72a</li>
+                        <li>Miguel: #a6c809</li>
+                        <li>Hugo: #e58e4a</li>
+                        <li>Javier: #89c2d1</li>
+                        <li>Martín: #e58e4a</li>
+                    </ul>
+                <li> Recuerda que los puedes definir arriba con :root y definir las variables con "--" delante.</li>
+                <li>Las imágenes que usarás en la práctica (todas excepto examen.PNG) están dentro de un directorio llamado <em>imgs</em></li>
+            </ul>
+        </li>
+        <li>Toda la página tiene las siguientes características:
+            <ul>
+                <li>border-box</li>
+                <li>margin y padding 0</li>
+                <li>fuentes: "trebuchet ms", arial, sans-serif</li>
+            </ul>
+        </li>
+        <li>
+            Todos los hijos directos del body tienen paddingarriba y abajo de 20px e izqda y dercha de 50px
+        </li>
+        <li>Header:
+            <ul>
+                <li>El fondo es gris-oscuro</li>
+                <li>Toda la tipografía es gris-claro</li>
+                <li>Aunque haga scroll todo el header se queda fijo arriba</li>
+                <li>h2 tiene un margen top de 10px</li>
+                <li>El navegador ocupa el 25%</li>
+                <li>Cada link del nav ocupa el 25% de su contenedor tiene una altura de 40px y están separados por 20px entre sí</li>
+                <li>El fondo del nav es mostaza y el color gris-oscuro en negrita y 18px</li>
+            </ul>
+        </li>
+        <li>
+            Main: ocupa el 100% y tiene una sección de presentación y otra de bares
+            <ul>
+                <li>Presentación
+                    <ul>
+                        <li>El texto alojado en la sección presentación tiene un line-height de 1.5 y ocupa el 70% (incluyendo un margen del 3% a la dercha)</li>
+                        <li>La imagen ocupa un 30% del total de la sección y abarca todo el ancho de su contenedor</li>
+                        <li>La descripción de la foto tiene un padding por arriba y abajo de 5px, color gris-oscuro y 12px</li>
+                        <li>Los artículos dentro de presentación tienen un padding del 2% y un margen por abajo del 1%. Los artículos pares tienen fondo gris-medio y los impares gris-claro y todos un radio en el borde de 10px.</li>
+                        <li>La lista dentro del article de .presentacion tiene un margen izquierdo de 2% y una imagen ico-list sustituyendo al disc. Esa imagen es de 20x20 px (no te olvides de añadir las propiedades de display y background-size)... Alguna más hay que debes saber.</li>
+                    </ul>
+                </li>
+                <li>Bares
+                    <ul>
+                        <li>Cada artículo de la sección bares ocupa el 25% incluyendo un margen de 2% por todos sus lados</li>
+                        <li>Cada artículo de la sección bares tiene una sombra marron-oscuro con 5px desplazamiento horizontal, 10px desplazamiento vertical y 8px de radio desenfoque</li>
+                        <li>Cada figura tiene un fondo en gris-medio</gris-m></li>
+                        <li>Cada articulo de la sección bares tiene una imagen que ocupa el 100% del contenedor con fondo gris-medio</li>
+                        <li>La descripción de cada imagen tiene un margen abajo de 5px y un padding de 5px arriba y abajo y 15px izquierda</li>
+                        <li>El nombre del pincho está definido con un h3 en color mostaza de 16px. Y a continuación llevan diferentes estrellas:
+                            <ul>
+                                <li>
+                                    Champiñón a la plancha -> 2 estrellas ⭐⭐
+                                </li>
+                                <li>
+                                    Cojonudo -> 3 estrellas ⭐⭐⭐
+                                </li>
+                                <li>
+                                    Explosión de huevo -> 1 estrella ⭐
+                                </li>
+                                <li>
+                                    Tío Agus -> 5 estrellas ⭐⭐⭐⭐⭐
+                                </li>
+                            </ul>
+                        </li>
+                            
+                        <li>El nombre del bar también se encuentra en las descripciones de las fotos de los bares tienen un margen de 5px por todos lados. Además están definidas en h4, con una fuente de 14px italica y en color negro.</li>
+                        <li>El apartado de información adicional se encuentra en un div con fondo gris-oscuro y padding 10px</li>
+                        <li>El link de "Más información" es de color gris-claro con un cursor pointer. Cuando se visita pasa a color negro.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Footer: ocupa el 100%
+            <ul>
+                <li>
+                    Fondo de color gris-oscuro con la letra negrita y mostaza
+                </li>
+                <li>
+                    Realizarlo con float
+                </li>
+                <li>
+                    Cada apartado ocupa lo mismo y sus elementos están alineados al centro horizontalmente
+                </li>
+                <li>
+                    El logo del IES Comercio tiene una anchura del 18%
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>EVALUACIÓN</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Puntuación</th>
+                <th>✔️ / ❌</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td colspan="3"><strong>Header</strong></td>
+            <tr><td>Nav</td><td>1 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td>Apariencia header final</td><td>2 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td colspan="3"><strong>Main</strong></td>
+            <tr><td colspan="3"><em>Apartado .presentación</em></td>
+            <tr><td>Estilos aplicados</td><td>1,5 punto</td><td>✔️ / ❌</td></tr>
+            <tr><td>Lista</td><td>1 punto</td><td>✔️ / ❌</td></tr>
+            <tr><td colspan="3"><em>Apartado .bares</em></td>
+            <tr><td>Estilos aplicados</td><td>1 punto</td><td>✔️ / ❌</td></tr>
+            <tr><td>Disposición</td><td>1,5 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td>Estrellas</td><td>1 puntos</td><td>✔️ / ❌</td></tr>
+            <tr><td><strong>Footer</strong></td><td>1 punto</td><td>✔️ / ❌</td></tr>
+            <tr><td><strong>TOTAL</strong></td><td><strong>10 puntos</strong></td><td></td></tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+:root {
+  --azulHeader: #072146;
+  --negro: black;
+  --blanco: white;
+  --tamanoFuente: 16px;
+  --fuente: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --amarilloNav: #f8cd51;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--negro);
+  font-size: var(--tamanoFuente);
+  font-family: var(--fuente);
+}
+
+nav {
+  background-color: var(--azulHeader);
+  color: var(--blanco);
+  width: 100%;
+  align-content: center;
+}
+
+nav * {
+  height: 6rem;
+}
+
+.cabecera {
+  display: flex;
+}
+
+.logoLetra {
+  display: flex;
+  width: 33.3%;
+  justify-content: center;
+  align-items: center;
+}
+
+.d1 {
+  width: 33.3%;
+  align-content: center;
+}
+
+.logoLetra h1 {
+  align-content: center;
+  margin-left: 1rem;
+}
+.logo {
+  width: auto;
+  height: 4rem;
+}
+
+.navegacion {
+  align-content: center;
+  width: 33.3%;
+  justify-items: right;
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.navegacion li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-content: center;
+}
+
+.navegacion li:hover {
+  border-bottom: 2px solid var(--amarilloNav);
+}
+
+.navegacion ul li a {
+  text-decoration: none;
+  color: var(--amarilloNav);
+}
+
+footer {
+    background-color: var(--azulHeader);
+    
+}

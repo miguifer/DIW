@@ -22,9 +22,9 @@
                 </div>
                 <div class="navegacion">
                     <ul>
-                        <li><a href="#">Apartado1</a></li>
-                        <li><a href="#">Apartado2</a></li>
-                        <li><a href="#">Apartado3</a></li>
+                        <li><a href="#iframe">Iframe</a></li>
+                        <li><a href="#myVideo">Video Nuestro</a></li>
+                        <li><a href="#svg">SVG</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,10 +36,11 @@
     <main>
         <div class="lateral">
             <div class="iframe">
-                <iframe width="100%" height="350" src="https://www.youtube.com/embed/Esde5ek_Yao?si=uUK_b9V7VGeGSf-t"
+                <iframe width="100%" height="350"
+                    src="https://www.youtube.com/embed/Esde5ek_Yao?si=uUK_b9V7VGeGSf-t&autoplay=1&mute=1"
                     title="YouTube video player" frameborder="0" allow="autoplay"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="iframe"></iframe>
                 <p>
                     El phishing es un tipo común de ciberataque que se dirige a las personas a través del correo
                     electrónico, mensajes de texto, llamadas telefónicas y otras formas de comunicación. El término
@@ -55,7 +56,7 @@
             </div>
 
             <div class="videoNuestro">
-                <video src="videos/VideoDefinitivo.mp4" width="100%" height="50%" autoplay muted loop id="myVideo" >
+                <video src="videos/VideoDefinitivo.mp4" width="100%" height="50%" autoplay muted loop id="myVideo">
                     <track src="subtt.vtt" kind="captions" srclang="es" label="Español" default>
                 </video>
 
@@ -93,7 +94,23 @@
                 tarjetas
                 de crédito.
             </p>
-            <img src="imgs/img1.jpg" width="100%">
+            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 626 417" id="svg">
+                <!-- Definir la imagen -->
+                <defs>
+                    <pattern id="imgPattern2" patternUnits="userSpaceOnUse" width="626" height="417">
+                        <image href="imgs/photoph.jpg" width="626" height="417" />
+                    </pattern>
+                </defs>
+
+                <mask id="maskDividida2">
+                    <rect x="0" y="0" width="626" height="129" fill="white" rx="15" ry="15" />
+                    <rect x="0" y="144" width="626" height="129" fill="white" rx="15" ry="15" />
+                    <rect x="0" y="288" width="626" height="129" fill="white" rx="15" ry="15" />
+                </mask>
+
+                <!-- Aplicar la imagen con la máscara -->
+                <rect x="0" y="0" width="626" height="417" fill="url(#imgPattern2)" mask="url(#maskDividida2)" />
+            </svg>
 
             <h2> Cómo funciona el phishing
             </h2>
@@ -130,14 +147,10 @@
                 <img src="imgs/logo.png" class="logo">
                 <h1>PHISING</h1>
             </div>
-
-            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.
+            </p>
 
         </div>
-
-
-
-
 
     </footer>
     <script src="index.js"></script>

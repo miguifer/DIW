@@ -5,6 +5,7 @@
   --tamanoFuente: 16px;
   --fuente: Arial, sans-serif;
   --amarilloNav: #f8cd51;
+  --grisClaro: rgb(219, 219, 219);
 }
 
 * {
@@ -68,10 +69,11 @@ nav * {
 
 .navegacion li {
   align-content: center;
+  
 }
 
 .navegacion li:hover {
-  border-bottom: 4px solid var(--amarilloNav);
+  border-bottom: 0.2rem solid var(--amarilloNav);
 }
 
 .navegacion ul li a {
@@ -93,9 +95,9 @@ nav * {
 
 .banner p {
   text-align: center;
-  font-size: 65px;
+  font-size: 3rem;
   font-weight: bold;
-  color: white;
+  color: var(--blanco);
 }
 
 main {
@@ -106,32 +108,32 @@ main {
 
 .lateral {
   width: 50%;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .lateral2 {
   width: 50%;
   align-content: center;
-  padding: 10px;
+  padding: 1rem;
 }
 .iframe {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .lateral p {
-  background-color: rgb(219, 219, 219);
+  background-color: var(--grisClaro);
   padding: 1rem;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 
 .lateral2 p {
-  background-color: rgb(219, 219, 219);
+  background-color: var(--grisClaro);
   padding: 1rem;
-  border-radius: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .lateral2 h2 {
@@ -140,7 +142,8 @@ main {
 
 .videoNuestro {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 .imagenMascara {
   width: 100%;
@@ -152,36 +155,40 @@ main {
 }
 
 .content {
-  background-color: rgb(46, 42, 42, 0.25);
-  color: white;
+  color: var(--blanco);
   width: 100%;
   align-content: center;
   text-align: center;
-}
-
-#soundBtn {
-  width: 32px;
-  height: 32px;
-  border: none;
-  background-color: rgb(0, 0, 0, 0);
-  background-color: #f8cd51;
-  cursor: pointer;
+  display: flex;
   align-items: center;
 }
 
+#soundBtn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--negro);
+  background-color: var(--azulHeader);
+  background-color: var(--amarilloNav);
+  cursor: pointer;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
 #soundBtn:hover {
-  background-color: #072146;
+  background-color: var(--azulHeader);
 }
 
 #myBtn {
   width: 100px;
-  height: 32px;
-  background-color: #f8cd51;
-  cursor: pointer;  
+  height: 50px;
+  background-color: var(--amarilloNav);
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
 #myBtn:hover {
-  background-color: #072146;
+  background-color: var(--azulHeader);
 }
 
 footer {
@@ -202,7 +209,7 @@ footer {
 
 @media (max-width: 600px) {
   * {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   main {
@@ -240,11 +247,11 @@ footer {
   }
 
   .lateral {
-    background-color: white;
+    background-color: var(--blanco);
   }
 
   .lateral2 {
-    background-color: white;
+    background-color: var(--blanco);
   }
 
   footer {

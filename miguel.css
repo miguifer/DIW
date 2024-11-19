@@ -3,150 +3,164 @@
   box-sizing: border-box;
 }
 
+/* miguel.css */
+
+/* General Styles */
 body {
-  background-color: rgb(243, 243, 247);
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  
 }
 
 header {
-  margin-top: 50px;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-h1,
-h2,
-h3 {
-  color: #333;
-  font-weight: 700;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-h1 {
-  font-size: 36px;
+header h2 {
+  margin: 5px 0 0 0;
+  font-size: 1.5rem;
 }
 
-h2 {
-  font-size: 28px;
-  color: #555;
-}
-
-h3 {
-  font-size: 22px;
-  color: #444;
-}
-
+/* Layout */
 .contenedor {
   display: flex;
-  margin-top: 30px;
-}
-
-.barraLateral {
-  background-color: white;
-  width: 30%;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-}
-
-.barraTitulo h3 {
-  background-color: rgb(192, 27, 123);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 0;
-}
-
-.barraContenido p {
-  color: #555;
-  font-size: 16px;
-}
-
-.main {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-}
-
-.info-personal {
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.infoTitulo h3 {
-  background-color: rgb(144, 204, 32);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 0;
-}
-
-.infoContenido p {
-  font-size: 16px;
-  color: #333;
-}
-
-.trabajos {
-  background-color: white;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.trabajosTitulo h3 {
-  background-color: rgb(0, 123, 255);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 0;
-}
-
-.trabajosContenido {
-  margin-top: 15px;
-}
-
-.trabajosContenido .boton {
-  display: inline-block;
-  padding: 10px 15px;
-  margin: 5px 0;
-  background-color: rgb(0, 123, 255);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.boton:hover {
-  background-color: #0056b3;
-}
-
-.boton:hover {
-  background-color: #004099;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra en hover */
-}
-
-.trabajos-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  flex-wrap: wrap;
+  margin: 20px;
   gap: 20px;
 }
 
-.trabajosContenido img {
-  width: 100%;
-  height: 95%;
-  border: 2px solid #0056b3;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra en hover */
-
+.barraLateral {
+  flex: 1 1 300px;
+  background-color: #e6e6e6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.trabajo img:hover {
+.barraTitulo h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: #003366;
+}
+
+.barraContenido p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Main Section */
+.main {
+  flex: 3 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.info-personal, .trabajos {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.infoTitulo h3, .trabajosTitulo h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+.infoContenido p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.infoContenido .correo {
+  color: #0066cc;
+  font-weight: bold;
+}
+
+/* Trabajos Section */
+.trabajos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.trabajo {
+  flex: 1 1 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trabajo:hover {
   transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.trabajo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Estilos para el acordeón */
+.accordion {
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.accordion:hover {
+  background-color: #0055a5;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f4f4f9;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.panel p {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+  }
+
+  .barraLateral, .main {
+    flex: 1 1 100%;
+  }
+}
+

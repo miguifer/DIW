@@ -1,77 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio de Miguel</title>
-    <link href="miguel.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <h1>GitHub 2DAW - Diseño de Interfaces Web</h1>
-      <h2>Miguel Fernández Fernández</h2>
-    </header>
 
-    <div class="contenedor">
-      <aside class="barraLateral">
-        <div class="barraTitulo">
-          <h3>Detalles Profesionales</h3>
-        </div>
-        <div class="barraContenido">
-          <p>Título de grado medio en Sistemas Microinformáticos y Redes.</p>
-          <p>Título de grado superior en Desarrollo de Aplicaciones Web.</p>
-        </div>
-      </aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Miguel</title>
+  <link href="miguel.css" rel="stylesheet" type="text/css" />
+</head>
 
-      <main class="main">
-        <div class="info-personal">
-          <div class="infoTitulo">
-            <h3>Sobre Mí</h3>
-          </div>
-          <div class="infoContenido">
-            <p><strong>Teléfonos:</strong> 640-374-956 / 941-500-499</p>
-            <p><strong>Localidad:</strong> Logroño, La Rioja</p>
-            <p><strong>Dirección:</strong> c/Garcilaso de la Vega nº2 3ºC</p>
-            <p class="correo">
-              <strong>Correo Electrónico:</strong> miguifer03@gmail.com
-            </p>
-            <p><strong>Fecha de Nacimiento:</strong> 28 de octubre de 2003</p>
+<body>
+
+
+  <header>
+    <h1>GitHub 2DAW - Diseño de Interfaces Web</h1>
+    <h2>Miguel Fernández Fernández</h2>
+  </header>
+
+  <div class="contenedor">
+    <aside class="barraLateral">
+      <div class="barraTitulo">
+        <h3>Detalles Profesionales</h3>
+      </div>
+      <div class="barraContenido">
+        <!-- Primer título -->
+        <div class="detalle">
+          <button class="accordion">Título de grado medio en Sistemas Microinformáticos y Redes</button>
+          <div class="panel">
+            <p><strong>Centro:</strong> IES Comercio</p>
+            <p><strong>Años:</strong> 2021 - 2023</p>
+            <p><strong>Descripción:</strong> Formación en mantenimiento de redes y sistemas informáticos.</p>
           </div>
         </div>
-
-        <section class="trabajos">
-          <div class="trabajosTitulo">
-            <h3>Proyectos</h3>
+    
+        <!-- Segundo título -->
+        <div class="detalle">
+          <button class="accordion">Título de grado superior en Desarrollo de Aplicaciones Web</button>
+          <div class="panel">
+            <p><strong>Centro:</strong> IES Comercio</p>
+            <p><strong>Años:</strong> 2023 - 2025</p>
+            <p><strong>Descripción:</strong> Especialización en diseño y programación web.</p>
           </div>
-          <div class="trabajosContenido">
-            <div class="trabajos-list">
-              <div class="trabajo">
-                <a href="Club-Escalada/">
-                  <img src="Club-Escalada/media/pagina.png" />
-                </a>
-              </div>
+        </div>
+      </div>
+    </aside>
+    
 
-              <div class="trabajo">
-                <a href="instagram/">
-                  <img src="instagram/media/pagina.png" />
-                </a>
-              </div>
+    <main class="main">
+      <div class="info-personal">
+        <div class="infoTitulo">
+          <h3>Sobre Mí</h3>
+        </div>
+        <div class="infoContenido">
+          <p><strong>Teléfonos:</strong> 640-374-956</p>
+          <p><strong>Localidad:</strong> Logroño, La Rioja</p>
+          <p><strong>Dirección:</strong> c/Garcilaso de la Vega nº2 3ºC</p>
+          <p class="correo">
+            <strong>Correo Electrónico:</strong> miguifer03@gmail.com
+          </p>
+          <p><strong>Fecha de Nacimiento:</strong> 28 de octubre de 2003</p>
+        </div>
+      </div>
 
-              <div class="trabajo">
-                <a href="casa-encantada/">
-                  <img src="casa-encantada/media/pagina.png" />
-                </a>
-              </div>
+      <section class="trabajos">
+        <div class="trabajosTitulo">
+          <h3>Proyectos</h3>
+        </div>
+        <div class="trabajosContenido">
+          <div class="trabajos-list">
+            <div class="trabajo">
+              <a href="Club-Escalada/">
+                <img src="Club-Escalada/media/pagina.png" />
+              </a>
+            </div>
 
-              <div class="trabajo">
-                <a href="practicaEducativa/">
-                  <img src="practicaEducativa/imgs/pantalla.png" />
-                </a>
-              </div>
+            <div class="trabajo">
+              <a href="instagram/">
+                <img src="instagram/media/pagina.png" />
+              </a>
+            </div>
+
+            <div class="trabajo">
+              <a href="casa-encantada/">
+                <img src="casa-encantada/media/pagina.png" />
+              </a>
+            </div>
+
+            <div class="trabajo">
+              <a href="practicaEducativa/">
+                <img src="practicaEducativa/imgs/pantalla.png" />
+              </a>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
-  </body>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script>
+  // Seleccionamos todos los botones de acordeón
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", function () {
+      // Toggle la clase activa
+      this.classList.toggle("active");
+
+      // Mostrar o esconder el panel relacionado
+      const panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null; // Cierra el panel
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px"; // Abre el panel
+      }
+    });
+  });
+</script>
+
+
 </html>

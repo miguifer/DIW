@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+header {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+nav {
+  background-color: #a99f4e;
+  padding: 20px;
+}
+
+nav a:hover {
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: -10px;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+main {
+  width: 80%;
+  padding: 2%;
+  float: left;
+}
+
+.tit_list {
+  text-decoration: underline wavy 2px #797137;
+}
+
+main section {
+  float: left;
+  padding: 20px;
+  max-width: 50%;
+  margin-bottom: 40px;
+}
+
+aside {
+  width: 20%;
+  padding: 20px;
+  color: #333333;
+  background-color: #eeeeee;
+  float: right;
+}
+
+aside li {
+  list-style: none;
+}
+aside li::before {
+  content: "😂😂";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 20px;
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    border-bottom: none;
+  }
+
+  aside {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    padding: 2%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    border-bottom: none;
+  }
+  aside {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  main section {
+    float: none;
+    max-width: 100%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

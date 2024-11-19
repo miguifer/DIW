@@ -30,28 +30,95 @@
             </div>
         </nav>
         <div class="banner">
-
+            <p>¿Qué es el phishing?</p>
         </div>
     </header>
     <main>
         <div class="lateral">
             <div class="iframe">
-                <iframe width="100% " height="100%" src="https://www.youtube.com/embed/Esde5ek_Yao?si=LeWsAj95Q1POVLr4"
-                    title="YouTube video player" frameborder="0"
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/Esde5ek_Yao?si=uUK_b9V7VGeGSf-t"
+                    title="YouTube video player" frameborder="0" allow="autoplay"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>
+                    El phishing es un tipo común de ciberataque que se dirige a las personas a través del correo
+                    electrónico, mensajes de texto, llamadas telefónicas y otras formas de comunicación. El término
+                    phishing
+                    en inglés se pronuncia igual que la palabra fishing, literalmente pescar. Un ataque de phishing
+                    tiene
+                    como objetivo engañar al destinatario para que realice la acción deseada por el atacante, como
+                    revelar
+                    información financiera, credenciales de acceso al sistema u otra información sensible.
+                </p>
+
+
             </div>
+
             <div class="videoNuestro">
-                <iframe width="100% " height="100%" src="https://www.youtube.com/embed/Esde5ek_Yao?si=LeWsAj95Q1POVLr4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <video src="videos/VideoDefinitivo.mp4" width="100%" height="50%" autoplay muted loop id="myVideo" >
+                    <track src="subtt.vtt" kind="captions" srclang="es" label="Español" default>
+                </video>
+
+                <div class="content">
+                    <button id="myBtn" onclick="myFunction()">Pausa</button>
+                    <button id="soundBtn" onclick="soundMute()">
+                        <img src="imgs/mute.png" alt="sound/mute" id="soundImg">
+                    </button>
+                </div>
+
+                <p>
+                    Desde mediados de la década de 1990, el término phishing se ha utilizado para identificar a los
+                    hackers
+                    que utilizan correos electrónicos fraudulentos para “pescar” información de usuarios desprevenidos.
+                    Sin
+                    embargo, los ataques de phishing se han vuelto cada vez más sofisticados y ahora se dividen en
+                    diferentes tipos, entre los que se incluyen el correo de phishing, el spear phishing, el smishing,
+                    el
+                    vishing y el whaling. Cada tipo se caracteriza por canales y métodos de ejecución específicos, como
+                    correo electrónico, texto, voz, redes sociales, entre otros. Todos ellos con una intención
+                    subyacente
+                    similar.
+                </p>
             </div>
         </div>
         <div class="lateral2">
-            <div class="imagenMascara">
-                <img src="imgs/img1.jpg">
-            </div>
+            <p>
+                Siendo uno de los tipos más populares de ingeniería social, el phishing conlleva el uso de la
+                manipulación psicológica y el engaño mediante, los cuales los agentes de amenaza se hacen pasar por
+                entidades de buena reputación para embaucar a los usuarios y lograr que realicen acciones
+                específicas.
+                Estas acciones suelen implicar hacer clic en enlaces a sitios web falsos, descargar e instalar
+                archivos
+                malintencionados y divulgar información privada, como números de cuentas bancarias o datos de
+                tarjetas
+                de crédito.
+            </p>
+            <img src="imgs/img1.jpg" width="100%">
+
+            <h2> Cómo funciona el phishing
+            </h2>
+            <p>
+                Tanto si una campaña de phishing está altamente dirigida a un objetivo específico como si se envía a
+                tantas víctimas como sea posible, comienza con un mensaje malintencionado. El ataque se disfraza de
+                mensaje de una empresa legítima. Cuantos más aspectos del mensaje imiten a la empresa real, más
+                probabilidades tendrá el atacante de tener éxito.
+            </p>
+
+            <p>
+
+                Aunque los objetivos de los atacantes varían, el objetivo general es robar información personal o
+                credenciales. El ataque se facilita enfatizando un sentido de urgencia en el mensaje, que podría
+                amenazar con la suspensión de la cuenta, la pérdida de dinero o la pérdida del trabajo para el usuario
+                objetivo. Los usuarios engañados por las exigencias de un atacante no se toman el tiempo de pararse a
+                pensar si las exigencias parecen razonables o si la fuente es legítima.</p>
+            <p>
+
+                El phishing evoluciona continuamente para eludir los filtros de seguridad y la detección humana, por lo
+                que las organizaciones deben formar continuamente a su personal para que reconozca las últimas
+                estrategias de phishing. Basta con que una persona caiga en la trampa del phishing para que se produzca
+                una grave vulneración de datos. Por eso es una de las amenazas más críticas de mitigar y la más difícil,
+                ya que requiere defensas humanas.</p>
+
         </div>
 
 
@@ -70,8 +137,14 @@
 
 
 
+
+
     </footer>
+    <script src="index.js"></script>
 
 </body>
+
+
+
 
 </html>

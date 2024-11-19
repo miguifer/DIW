@@ -35,7 +35,7 @@ nav * {
 .cabecera {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 70%;
 }
 
 .logoLetra {
@@ -87,37 +87,63 @@ nav * {
   height: 20rem;
   background-repeat: no-repeat;
   background-size: cover;
+  align-content: center;
+  justify-items: center;
+}
+
+.banner p {
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  color: white;
 }
 
 main {
-  width: 60%;
+  width: 70%;
   justify-self: center;
   display: flex;
 }
 
 .lateral {
   width: 50%;
+  padding: 10px;
 }
 
 .lateral2 {
   width: 50%;
   align-content: center;
+  padding: 10px;
 }
-
 .iframe {
   width: 100%;
-  height: 300px;
-  background-color: rgb(207, 205, 205);
   border-radius: 10px;
 }
+
+.lateral p {
+  background-color: rgb(219, 219, 219);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.lateral2 p {
+  background-color: rgb(219, 219, 219);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lateral2 h2 {
+  padding: 1rem;
+}
+
 .videoNuestro {
   width: 100%;
-  height: 300px;
   border-radius: 10px;
 }
 .imagenMascara {
   width: 100%;
-  background-color: rgb(207, 205, 205);
 }
 
 .imagenMascara img {
@@ -125,9 +151,42 @@ main {
   height: 100%;
 }
 
+.content {
+  background-color: rgb(46, 42, 42, 0.25);
+  color: white;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+#soundBtn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+  background-color: #f8cd51;
+  cursor: pointer;
+  align-items: center;
+}
+
+#soundBtn:hover {
+  background-color: #072146;
+}
+
+#myBtn {
+  width: 100px;
+  height: 32px;
+  background-color: #f8cd51;
+  cursor: pointer;  
+}
+
+#myBtn:hover {
+  background-color: #072146;
+}
+
 footer {
   background-color: var(--azulHeader);
-  height: 10rem;
+  height: 8rem;
   color: var(--blanco);
   align-content: center;
 }
@@ -136,7 +195,70 @@ footer {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
   justify-self: center;
-  height: 10rem;
+  height: 8rem;
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 20px;
+  }
+
+  main {
+    display: block;
+  }
+
+  .lateral {
+    width: 100%;
+  }
+
+  .lateral2 {
+    width: 100%;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .navegacion {
+    display: none;
+  }
+
+  .cabecera {
+    justify-content: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  body {
+    background-image: url("imgs/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .lateral {
+    background-color: white;
+  }
+
+  .lateral2 {
+    background-color: white;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footerContenido {
+    display: block;
+    text-align: center;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .footerContenido p {
+    margin-top: 2rem;
+  }
 }

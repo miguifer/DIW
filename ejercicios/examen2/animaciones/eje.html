@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .division {}
+
+        article {
+            display: flex;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            margin: 20px;
+            display: block;
+        }
+
+        .division article div {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border: 1px solid green;
+            margin: 20px;
+            border-radius: 50%;
+        }
+
+        .caja-trans {
+            transition: transform 2s ease;
+        }
+
+        .caja-trans:hover {
+            transform: translate(200px, 20px);
+            
+        }
+
+        .img-trans {
+            transform: translate(200px, 10px);
+        }
+
+        .caja-rot2d:hover {
+            transform: rotate(45deg) scale(1.5);
+        }
+
+        .img-rot2d {
+            transform: rotate(45deg) scale(1.5);
+        }
+
+        .caja-rot3d:hover {
+            transform: rotateZ(60deg);
+        }
+
+        .img-rot3d {
+            transform: rotateX(60deg);
+        }
+
+        .caja-skew:hover {
+            transform: skewX(20deg);
+        }
+
+        .img-skew {
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Propiedad translate (2D)</h2>
+    <div class="division">
+        <article>
+            <div class="caja"></div>
+            <div class="caja-trans"></div>
+        </article>
+        <article>
+            <img src="paquirri2.jpg" class="img">
+            <img src="paquirri2.jpg" class="img-trans">
+        </article>
+
+    </div>
+    <hr>
+    <h2>Propiedad rotate (2D)</h2>
+    <div class="division">
+        <article>
+            <div class="caja"></div>
+            <div class="caja-rot2d"></div>
+        </article>
+        <article>
+            <img src="paquirrin.gif" class="img">
+            <img src="paquirrin.gif" class="img-rot2d">
+        </article>
+
+    </div>
+    <hr>
+    <h2>Propiedad rotate (3D)</h2>
+    <div class="division">
+        <article>
+            <div class="caja"></div>
+            <div class="caja-rot3d"></div>
+        </article>
+        <article>
+            <img src="paquirrin.gif" class="img">
+            <img src="paquirrin.gif" class="img-rot3d">
+        </article>
+        <hr>
+
+    </div>
+
+    <h2>Propiedad skew (200px)</h2>
+    <div class="division">
+        <article>
+            <div class="caja"></div>
+            <div class="caja-skew"></div>
+        </article>
+        <article>
+            <img src="paquirrin.gif" class="img">
+            <img src="paquirrin.gif" class="img-skew">
+        </article>
+        <hr>
+
+    </div>
+
+</body>
+
+</html>

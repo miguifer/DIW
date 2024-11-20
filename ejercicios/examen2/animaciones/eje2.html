@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .division {
+            display: flex;
+        }
+
+        article {
+            display: flex;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            margin: 20px;
+            display: block;
+        }
+
+        .division article div {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border: 1px solid green;
+            margin: 20px;
+            border-radius: 50%;
+        }
+
+        
+       
+
+        .caja-trans{
+            transform: translate(200px, 20px);
+            transition: transform 1s ease;
+        }
+
+        .img-trans {
+            transform: translate(200px, 10px);
+        }
+
+        .caja-rot2d {
+            transform: rotate(45deg) scale(1.5);
+        }
+
+        .img-rot2d {
+            transform: rotate(45deg) scale(1.5);
+        }
+
+        .caja-rot3d {
+            transform: rotateZ(60deg);
+        }
+
+        .img-rot3d {
+            transform: rotateX(60deg);
+        }
+
+        .caja-skew {
+            transform: skewX(20deg);
+        }
+
+        .img-skew {
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JAVASCRIPT TRANSITIONS</h2>
+    <div class="division">
+        <article>
+            <div class="caja"></div>
+        </article>
+        <article>
+            <img src="paquirri2.jpg" class="img">
+        </article>
+
+    </div>
+    <button onclick="translateCaja()" id="translate">
+        Translate elementos
+    </button>
+    <button onclick="rotate2d()" id="rotate2d">
+        Rotate 2D elementos
+    </button>
+    <button onclick="rotate3d()" id="rotate3d">
+        Rotate 3D elementos
+    </button>
+    <button onclick="skew()" id="skew">
+        Skew elementos
+    </button>
+
+</body>
+
+<script>
+    function translateCaja() {
+        const caja = document.querySelector('.caja');
+        caja.classList.toggle('caja-trans');
+    }
+
+</script>
+
+</html>

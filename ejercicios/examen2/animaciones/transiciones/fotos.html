@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .linea1,
+        .linea2,
+        .linea3 {
+            display: flex;
+
+        }
+
+        .img1,
+        .img2,
+        .img3,
+        .img4,
+        .img5,
+        .img6 {
+            background-image: url("../../EJERCICIO2/imgs/gato.jpg");
+            width: 400px;
+            height: 200px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 30px;
+            margin-bottom: 20px;
+            align-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: red;
+            border: 2px solid red;
+            /**/
+
+            transition: transform 0.3s ease;
+        }
+
+        .img1 {
+            transform-origin: top left;
+
+        }
+
+        .img2 {
+            transform-origin: top right;
+
+        }
+
+        .img3 {
+            transform-origin: center left;
+
+        }
+
+        .img4 {
+            transform-origin: center right;
+
+        }
+
+        .img5 {
+            transform-origin: bottom left;
+
+        }
+
+        .img6 {
+            transform-origin: bottom right;
+
+        }
+
+
+        .img1:hover,
+        .img2:hover,
+        .img3:hover,
+        .img4:hover,
+        .img5:hover,
+        .img6:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="linea1">
+            <div class="img1">
+                <p>GATO PEPE</p>
+            </div>
+            <div class="img2">
+                <p>GATO PEPE</p>
+            </div>
+        </div>
+        <div class="linea2">
+            <div class="img3">
+                <p>GATO PEPE</p>
+            </div>
+            <div class="img4">
+                <p>GATO PEPE</p>
+            </div>
+        </div>
+        <div class="linea3">
+            <div class="img5">
+                <p>GATO PEPE</p>
+            </div>
+            <div class="img6">
+                <p>GATO PEPE</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

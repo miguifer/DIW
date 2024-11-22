@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .puzzle {
+            position: relative;
+            width: 500px;
+            height: 500px;
+   
+
+        }
+
+        .puzzle:hover .pieza1,
+        .puzzle:hover .pieza2,
+        .puzzle:hover .pieza3 {
+            transform: translate(0vw);
+            transition: 2s ease;
+
+        }
+
+        .pieza1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-100vw);
+         
+        }
+
+
+        .pieza2 {
+            position: absolute;
+            top: 0;
+            left: 220px;
+            transform: translateX(+100vw);
+            
+
+        }
+
+
+        .pieza3 {
+            position: absolute;
+            top: 225px;
+            left: 30px;
+            transform: translateY(+100vw);
+
+
+        }
+
+        .pieza3:hover {}
+    </style>
+</head>
+
+<body>
+    <div class="puzzle">
+        <img src="imgs/pieza1.png" class="pieza1">
+        <img src="imgs/pieza2.png" class="pieza2">
+        <img src="imgs/pieza3.png" class="pieza3">
+    </div>
+
+</body>
+
+</html>

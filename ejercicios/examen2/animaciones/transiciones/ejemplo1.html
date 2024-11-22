@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hola {
+            color: magenta;
+            transition: color 200ms ease-in 50ms;
+            width: 10vw;
+            height: 10vw;
+            transition: width 200ms ease-out 50ms;
+            /* le dices como quieres que vuelva */
+        }
+
+        .hola:hover {
+            color: aquamarine;
+            width: 40vh;
+            transform: width 40vh 5s ease 1s, color 5s ease-out 1s;
+            /* el ultimo segundo es cuanto tarda en reaccionar desde que yo me pongo encima*/
+            /* propiedad, tarda en hacerlo ,formato y delay */
+        }
+    </style>
+</head>
+
+<body>
+    <button class="hola">Hola</button>
+</body>
+
+</html>

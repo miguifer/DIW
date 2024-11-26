@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .contenedor {
+            position: relative;
+        }
+
+        .anverso {
+            width: 300px;
+            height: 300px;
+            background-image: url("imgs/chiquito.webp");
+            background-size: 100% 100%;
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            align-content: center;
+            text-align: center;
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 3rem;
+            box-sizing: border-box;
+            border: 0.5rem solid blueviolet;
+            z-index: 1;
+            transition: all 2s ease, z-index 2s ease;
+
+        }
+
+        .reverso {
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px;
+            z-index: 0;
+            transform: rotateX(180deg);
+            transition: all 2s ease, z-index 2s ease;
+
+        }
+
+        .reverso h2 {
+            text-align: center;
+        }
+
+        .reverso li::before {
+            content: "";
+            display: inline-block;
+            background-image: url("imgs/chiquito.webp");
+            width: 1rem;
+            height: 1rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .reverso ul {
+            list-style: none;
+        }
+
+        .contenedor:hover .anverso {
+
+            transform: rotateX(180deg);
+            z-index: 0;
+
+        }
+
+        .contenedor:hover .reverso {
+
+            transform: rotateX(0deg);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="anverso">
+            <p>Chiquito de la calzada</p>
+        </div>
+        <div class="reverso">
+            <h2>Canciones Más Famosas</h2>
+            <ul>
+                <li>¿Te das cuen?</li>
+                <li>Pecador de la pradera</li>
+                <li>¡Fistro!</li>
+                <li>¡Cobarde!</li>
+                <li>No puedor</li>
+                <li>Hasta luego, Lucas</li>
+                <li>Te va a doler la cara de ser tan guapo</li>
+                <li>¡Al ataquer!</li>
+                <li>¿Quién eres? ¡No te conozco!</li>
+                <li>Jarl</li>
+            </ul>
+        </div>
+    </div>
+
+</html>

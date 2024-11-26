@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
         body {
             display: flex;
+
         }
+
         img {
             width: 300px;
             height: 300px;
@@ -17,16 +18,31 @@
 
         .contenedor {
             position: relative;
+            margin-right: 1rem;
+        }
+
+        .anverso.chiquito {
+            background-image: url("imgs/chiquito.webp");
+
+        }
+
+        .anverso.esteso {
+            background-image: url("imgs/esteso.webp");
+
+        }
+
+        .anverso.fary {
+            background-image: url("imgs/fary.jpg");
+
         }
 
         .anverso {
             width: 300px;
             height: 300px;
-            background-image: url("imgs/chiquito.webp");
             background-size: 100% 100%;
             /* background-size: cover; */
             background-repeat: no-repeat;
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
             border-radius: 20px;
@@ -38,7 +54,7 @@
             box-sizing: border-box;
             border: 0.5rem solid blueviolet;
             z-index: 1;
-            transition: all 2s ease, z-index 2s ease;
+            transition: all 1s ease, z-index 1s ease;
 
         }
 
@@ -52,7 +68,7 @@
             border-radius: 20px;
             z-index: 0;
             transform: rotateX(180deg);
-            transition: all 2s ease, z-index 2s ease;
+            transition: all 1s ease, z-index 1s ease;
 
         }
 
@@ -63,7 +79,7 @@
         .reverso li::before {
             content: "";
             display: inline-block;
-            background-image: url("imgs/chiquito.webp");
+            background-image: url("imgs/torrente.avif");
             width: 1rem;
             height: 1rem;
             background-size: contain;
@@ -89,16 +105,16 @@
     </style>
 </head>
 
+
 <body>
     <div class="contenedor">
-        <div class="anverso">
+        <div class="anverso chiquito">
             <p>Chiquito de la calzada</p>
         </div>
         <div class="reverso">
             <h2>Canciones Más Famosas</h2>
             <ul>
                 <li>¿Te das cuen?</li>
-                <li>Pecador de la pradera</li>
                 <li>¡Fistro!</li>
                 <li>¡Cobarde!</li>
                 <li>No puedor</li>
@@ -110,5 +126,41 @@
             </ul>
         </div>
     </div>
+
+    <div class="contenedor">
+        <div class="anverso esteso">
+            <p>Fernando Esteso</p>
+        </div>
+        <div class="reverso">
+            <h2>Canciones Más Famosas</h2>
+            <ul>
+                <li>La Ramona</li>
+                <li>Qué pasa contigo</li>
+                <li>Rumbas con amor</li>
+                <li>El pelotazo</li>
+                <li>Esteso en la calle</li>
+                <li>Un beso y una flor</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="anverso fary">
+            <p>El Fary</p>
+        </div>
+        <div class="reverso">
+            <h2>Canciones Más Famosas</h2>
+            <ul>
+                <li>El Torito</li>
+                <li>La espada de los valientes</li>
+                <li>La barca de oro</li>
+                <li>El fary siempre es el mejor</li>
+                <li>Y ahora que te vas</li>
+                <li>Vivir la vida</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
 
 </html>

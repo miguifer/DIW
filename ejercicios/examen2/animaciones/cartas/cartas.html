@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid {
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .contenedor {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+        }
+
+        .as {
+            background-image: url("as.jpg");
+        }
+
+        .caballo {
+            background-image: url("caballo.jpg");
+        }
+
+        .cinco {
+            background-image: url("cinco.jpg");
+        }
+
+        .cuatro {
+            background-image: url("cuatro.jpg");
+        }
+
+        .dos {
+            background-image: url("dos.jpg");
+        }
+
+        .nueve {
+            background-image: url("nueve.jpg");
+        }
+
+        .carta {
+            width: 200px;
+            height: 310px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            z-index: 1;
+            transition: all 1s ease;
+        }
+
+        .cartaReverso {
+            width: 200px;
+            height: 310px;
+            background-image: url("reverso.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px;
+            z-index: 0;
+            transition: all 1s ease;
+        }
+
+        .contenedor:hover .carta {
+            z-index: 0;
+            transform: rotateY(180deg);
+
+        }
+
+        .contenedor:hover .cartaReverso {
+            z-index: 1;
+            transform: rotateY(180deg);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="contenedor">
+            <div class="carta as"></div>
+            <div class="cartaReverso"></div>
+        </div>
+        <div class="contenedor">
+            <div class="carta caballo"></div>
+            <div class="cartaReverso"></div>
+        </div>
+        <div class="contenedor">
+            <div class="carta cinco"></div>
+            <div class="cartaReverso"></div>
+        </div>
+        <div class="contenedor">
+            <div class="carta cuatro"></div>
+            <div class="cartaReverso"></div>
+        </div>
+        <div class="contenedor">
+            <div class="carta dos"></div>
+            <div class="cartaReverso"></div>
+        </div>
+        <div class="contenedor">
+            <div class="carta nueve"></div>
+            <div class="cartaReverso"></div>
+        </div>
+    </div>
+</body>
+
+</html>

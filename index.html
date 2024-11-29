@@ -22,9 +22,8 @@
         <h3>Detalles Profesionales</h3>
       </div>
       <div class="barraContenido">
-        <!-- Primer título -->
         <div class="detalle">
-          <button class="accordion">Título de grado medio en Sistemas Microinformáticos y Redes</button>
+          <div class="titulo">Título de grado medio en Sistemas Microinformáticos y Redes</div>
           <div class="panel">
             <p><strong>Centro:</strong> IES Comercio</p>
             <p><strong>Años:</strong> 2021 - 2023</p>
@@ -32,9 +31,8 @@
           </div>
         </div>
     
-        <!-- Segundo título -->
         <div class="detalle">
-          <button class="accordion">Título de grado superior en Desarrollo de Aplicaciones Web</button>
+          <div class="titulo">Título de grado superior en Desarrollo de Aplicaciones Web</div>
           <div class="panel">
             <p><strong>Centro:</strong> IES Comercio</p>
             <p><strong>Años:</strong> 2023 - 2025</p>
@@ -96,26 +94,6 @@
     </main>
   </div>
 </body>
-<script>
-  
-  // Seleccionamos todos los botones de acordeón
-  const accordions = document.querySelectorAll(".accordion");
-
-  accordions.forEach((accordion) => {
-    accordion.addEventListener("click", function () {
-      // Toggle la clase activa
-      this.classList.toggle("active");
-
-      // Mostrar o esconder el panel relacionado
-      const panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null; // Cierra el panel
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px"; // Abre el panel
-      }
-    });
-  });
-</script>
 
 
 </html>

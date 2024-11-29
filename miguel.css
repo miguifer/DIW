@@ -1,18 +1,14 @@
+
 * {
-  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* miguel.css */
-
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f9;
   color: #333;
-  
 }
 
 header {
@@ -23,16 +19,14 @@ header {
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
 }
 
 header h2 {
-  margin: 5px 0 0 0;
   font-size: 1.5rem;
 }
 
-/* Layout */
+
 .contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +43,6 @@ header h2 {
 }
 
 .barraTitulo h3 {
-  margin: 0 0 10px 0;
   font-size: 1.3rem;
   color: #003366;
 }
@@ -59,13 +52,12 @@ header h2 {
   line-height: 1.6;
 }
 
-/* Main Section */
+
 .main {
   flex: 3 1 600px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 
 .info-personal, .trabajos {
@@ -76,7 +68,6 @@ header h2 {
 }
 
 .infoTitulo h3, .trabajosTitulo h3 {
-  margin: 0 0 15px 0;
   font-size: 1.5rem;
   color: #003366;
 }
@@ -91,7 +82,6 @@ header h2 {
   font-weight: bold;
 }
 
-/* Trabajos Section */
 .trabajos-list {
   display: flex;
   flex-wrap: wrap;
@@ -118,49 +108,13 @@ header h2 {
   display: block;
 }
 
-/* Estilos para el acordeón */
-.accordion {
+.titulo {
+  margin-top: 10px;
   background-color: #003366;
   color: white;
-  cursor: pointer;
-  padding: 10px 15px;
-  text-align: left;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  transition: background-color 0.3s ease;
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.accordion:hover {
-  background-color: #0055a5;
-}
-
-.panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-  background-color: #f4f4f9;
-  padding: 0 15px;
-  border-radius: 5px;
-}
-
-.panel p {
-  margin: 10px 0;
-  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 
-/* Responsiveness */
-@media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column;
-  }
-
-  .barraLateral, .main {
-    flex: 1 1 100%;
-  }
-}
 

@@ -24,29 +24,18 @@
             position: relative;
         }
 
-        .as {
+        #as .carta {
             background-image: url("as.jpg");
         }
 
-        .caballo {
+        #caballo .carta {
             background-image: url("caballo.jpg");
         }
 
-        .cinco {
+        #cinco .carta {
             background-image: url("cinco.jpg");
         }
 
-        .cuatro {
-            background-image: url("cuatro.jpg");
-        }
-
-        .dos {
-            background-image: url("dos.jpg");
-        }
-
-        .nueve {
-            background-image: url("nueve.jpg");
-        }
 
         .carta {
             width: 200px;
@@ -58,8 +47,9 @@
             top: 0;
             left: 0;
             border-radius: 10px;
-            z-index: 1;
-            transition: all 1s ease;
+            z-index: 0;
+            transition: transform 0.5s ease, z-index 0.5s ease;
+            opacity: 0;
         }
 
         .cartaReverso {
@@ -73,20 +63,36 @@
             top: 0;
             left: 0;
             border-radius: 10px;
-            z-index: 0;
-            transition: all 1s ease;
+            z-index: 1;
+            transition: transform 0.5s ease, z-index 0.5s ease;
+            opacity: 0.5;
+
         }
 
         .contenedor:hover .carta {
-            z-index: 0;
-            transform: rotateY(180deg);
-
+            /* z-index: 0; */
+            /* transform: rotateY(180deg); */
         }
 
         .contenedor:hover .cartaReverso {
-            z-index: 1;
-            transform: rotateY(180deg);
+            /* z-index: 1; */
+            /* transform: rotateY(180deg); */
+            opacity: 1;
 
+
+        }
+
+        .girada .carta {
+
+            transform: rotateY(180deg);
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .girada .cartaReverso {
+
+            transform: rotateY(180deg);
+            z-index: 0;
         }
     </style>
 </head>
@@ -94,31 +100,83 @@
 <body>
 
     <div class="grid">
-        <div class="contenedor">
-            <div class="carta as"></div>
+        <div class="contenedor" onclick="girarCarta(this)" id="as">
+            <div class="carta"></div>
             <div class="cartaReverso"></div>
         </div>
-        <div class="contenedor">
-            <div class="carta caballo"></div>
+        <div class="contenedor" onclick="girarCarta(this)" id="caballo">
+            <div class="carta"></div>
             <div class="cartaReverso"></div>
         </div>
-        <div class="contenedor">
-            <div class="carta cinco"></div>
+        <div class="contenedor" onclick="girarCarta(this)" id="cinco">
+            <div class="carta"></div>
             <div class="cartaReverso"></div>
         </div>
-        <div class="contenedor">
-            <div class="carta cuatro"></div>
+        <div class="contenedor" onclick="girarCarta(this)" id="as">
+            <div class="carta"></div>
             <div class="cartaReverso"></div>
         </div>
-        <div class="contenedor">
-            <div class="carta dos"></div>
+        <div class="contenedor" onclick="girarCarta(this)" id="cinco">
+            <div class="carta"></div>
             <div class="cartaReverso"></div>
         </div>
-        <div class="contenedor">
-            <div class="carta nueve"></div>
+        <div class="contenedor" onclick="girarCarta(this)" id="caballo">
+            <div class="carta"></div>
             <div class="cartaReverso"></div>
         </div>
     </div>
+    <div>
+        <p>Intentos: <a id="contador-fallos">0</a></p>
+    </div>
+    <div>
+        <button id="tema" onclick="cambiarTema()"></button>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+        
+
+        var auxCarta = null;
+        let fallos = 0;
+
+        function girarCarta(cartaGirada) {
+            if (!cartaGirada.classList.contains('girada')) {
+                cartaGirada.classList.add('girada');
+                setTimeout(comparar, 1000, cartaGirada);
+            }
+
+
+        }
+
+        function comparar(carta2) {
+
+
+            if (auxCarta == null) {
+                auxCarta = carta2;
+            } else {
+                fallos++;
+                document.getElementById('contador-fallos').textContent = fallos;
+
+                if (auxCarta.id == carta2.id) {
+
+                } else {
+
+                    auxCarta.classList.remove('girada');
+                    carta2.classList.remove('girada');
+
+                }
+                auxCarta = null;
+            }
+
+
+
+
+
+        }
+
+
+    </script>
 </body>
 
 </html>

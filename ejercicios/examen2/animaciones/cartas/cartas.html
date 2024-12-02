@@ -135,19 +135,21 @@
     <!-- <script src="script.js"></script> -->
     <script>
 
-        
+
 
         var auxCarta = null;
         let fallos = 0;
 
         function girarCarta(cartaGirada) {
-            if (!cartaGirada.classList.contains('girada')) {
-                cartaGirada.classList.add('girada');
-                setTimeout(comparar, 1000, cartaGirada);
-            }
+            // if (!cartaGirada.classList.contains('girada')) {
+            cartaGirada.classList.toggle('girada');
+            setTimeout(comparar, 1000, cartaGirada); //add //existe !important 
+            // }
 
 
         }
+
+        
 
         function comparar(carta2) {
 

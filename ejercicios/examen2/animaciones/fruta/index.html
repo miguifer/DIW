@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .ficha {
+            width: 500px;
+            height: 800px;
+            background-color: rgb(10, 133, 10);
+            border-radius: 20px;
+            /*overflow: hidden;
+            position: relative;
+            /* todo lo q salga lo oculta */
+
+        }
+
+        .ficha::after {
+            content: 'Oferta';
+            position: absolute;
+            top: 270px;
+            left: -25px;
+            font-size: 200px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            align-content: center;
+            color: rgb(5, 82, 5);
+        }
+
+        .ficha::before {
+            content: ' ';
+            clip-path: circle(250px at 80% 20%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(164, 197, 17);
+
+        }
+
+        .img {
+            background-image: url("platano.png");
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 170px;
+            left: 100px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 1;
+        }
+
+        .titulo {
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 600px;
+            left: 30px;
+            font-weight: bold;
+        }
+
+        .content{
+            background-color: aqua;
+            width: 400px;
+            height: 350px;
+            position: absolute;
+            top: 700px;
+            left: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ficha">
+        <div class="img"></div>
+        <div class="titulo">Platano de Canarias</div>
+        <div class="content">
+            <div class="tit"></div>
+            <div class="tamaño">
+                <h3>Tamaño:</h3>
+                <span>Pequeño<br>1kg</span>
+            </div>
+            <div class="unidades"></div>
+            <div class="precio"></div>
+        </div>
+    </div>  
+</body>
+<script>
+
+
+
+</script>
+
+</html>

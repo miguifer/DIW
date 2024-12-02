@@ -1,0 +1,2 @@
+javascript Onclick añadir clase quitar clase
+crear uo de cada, translate, rotate

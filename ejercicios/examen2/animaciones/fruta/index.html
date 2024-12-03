@@ -12,21 +12,44 @@
             box-sizing: border-box;
         }
 
+
         .ficha {
             width: 500px;
             height: 800px;
             background-color: rgb(10, 133, 10);
-            border-radius: 20px;
-            overflow: hidden;
             position: relative;
+            border-radius: 20px;
+
+            overflow: hidden;
             /* todo lo q salga lo oculta */
 
         }
 
         .ficha:hover .content {
             transform: translateY(-270px);
-            transition: transform 0.5s ease-in;
+            opacity: 100;
+            transition: all 0.5s ease-in;
+
         }
+
+        .ficha:hover .titulo {
+            transform: translateY(-225px);
+            transition: transform 0.5s ease-in;
+
+        }
+
+        .ficha:hover::before {
+            clip-path: circle(350px at 80% 0%);
+        }
+
+
+        .ficha:hover .img {
+            transform: translateY(-50px);
+            transition: transform 0.5s ease-in;
+
+
+        }
+
         .ficha::after {
             content: 'Oferta';
             position: absolute;
@@ -41,7 +64,7 @@
         }
 
         .ficha::before {
-            content: ' ';
+            content: '';
             clip-path: circle(250px at 80% 20%);
             position: absolute;
             top: 0;
@@ -49,7 +72,8 @@
             width: 100%;
             height: 100%;
             background-color: rgb(164, 197, 17);
-            
+            transition: all 0.5s ease-in;
+
         }
 
         .img {
@@ -62,6 +86,8 @@
             background-repeat: no-repeat;
             background-size: contain;
             z-index: 1;
+            transition: transform 0.5s ease-in;
+
         }
 
         .titulo {
@@ -71,17 +97,113 @@
             top: 600px;
             left: 30px;
             font-weight: bold;
+            transition: transform 0.5s ease-in;
+            z-index: 4;
         }
 
-        .content{
-            background-color: aqua;
+        .content {
             width: 400px;
-            height: 350px;
+            height: 250px;
             position: absolute;
-            top: 700px;
+            top: 780px;
             left: 45px;
-            transition: transform 0.5s ease-in;
+            opacity: 0;
+            transition: all 0.5s ease-in;
+            color: white;
+            font-size: 25px;
+        }
 
+        .tamaño {
+            width: 100%;
+            height: 33.3%;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pequeño,
+        .mediano,
+        .grande {
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+            width: 80px;
+            height: 50px;
+            align-content: center;
+            text-align: center;
+            font-size: 17px;
+            cursor: pointer;
+
+        }
+
+        .pequeño:hover,
+        .mediano:hover,
+        .grande:hover {
+            border: 2px solid yellow;
+        }
+
+        .seleccionado {
+            background-color: yellow;
+            color: green;
+        }
+
+        .unidades {
+            width: 100%;
+            height: 33.3%;
+            padding: 10px;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .unidades input {
+
+            width: 35px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: yellow;
+            color: green;
+            text-align: center;
+
+        }
+
+        #mas,
+        #menos {
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .precio {
+            width: 100%;
+            height: 33.3%;
+            align-content: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .euros {
+            background-color: yellow;
+            color: green;
+            width: 60px;
+            height: 40px;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        /* quita las flechas al input*/
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
         }
     </style>
 </head>
@@ -91,19 +213,40 @@
         <div class="img"></div>
         <div class="titulo">Platano de Canarias</div>
         <div class="content">
-            <div class="tit"></div>
             <div class="tamaño">
                 <h3>Tamaño:</h3>
-                <span>Pequeño<br>1kg</span>
+                <div class="pequeño" onclick="seleccionar(this)">Pequeño<br>1 Kg</div>
+                <div class="mediano" onclick="seleccionar(this)">Mediano<br>1,5 Kg</div>
+                <div class="grande" onclick="seleccionar(this)">Grande<br>2 Kg</div>
             </div>
-            <div class="unidades"></div>
-            <div class="precio"></div>
+            <div class="unidades">
+                <h3>Unidad</h3>
+                <div id="mas" onclick="sumar()">+</div>
+                <input type="number" id="inputNumero" min="0" max="99">
+                <div id="menos" onclick="restar()">-</div>
+            </div>
+            <div class="precio">
+                <h3>Precio:&nbsp;</h3>
+                <div class="euros">
+                    <div>3</div>€
+                </div>
+            </div>
         </div>
-    </div>  
+    </div>
 </body>
 <script>
 
+    function seleccionar(div) {
+        div.classList.toggle('seleccionado');
+    }
+    function sumar(){
+        document.getElementById("inputNumero").stepUp(1);
 
+    }
+    function restar(){
+        document.getElementById("inputNumero").stepDown(1);
+
+    }
 
 </script>
 

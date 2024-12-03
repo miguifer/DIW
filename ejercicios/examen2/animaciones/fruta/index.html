@@ -166,6 +166,7 @@
             background-color: yellow;
             color: green;
             text-align: center;
+            border: none;
 
         }
 
@@ -183,13 +184,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
 
         .euros {
             background-color: yellow;
             color: green;
-            width: 60px;
+            width: 40px;
             height: 40px;
             font-size: 25px;
             display: flex;
@@ -215,36 +216,74 @@
         <div class="content">
             <div class="tamaño">
                 <h3>Tamaño:</h3>
-                <div class="pequeño" onclick="seleccionar(this)">Pequeño<br>1 Kg</div>
-                <div class="mediano" onclick="seleccionar(this)">Mediano<br>1,5 Kg</div>
-                <div class="grande" onclick="seleccionar(this)">Grande<br>2 Kg</div>
+                <div id="peq" class="pequeño" onclick="seleccionar(this)">Pequeño<br>1 Kg</div>
+                <div id="med" class="mediano" onclick="seleccionar(this)">Mediano<br>1,5 Kg</div>
+                <div id="gra" class="grande" onclick="seleccionar(this)">Grande<br>2 Kg</div>
             </div>
             <div class="unidades">
                 <h3>Unidad</h3>
                 <div id="mas" onclick="sumar()">+</div>
-                <input type="number" id="inputNumero" min="0" max="99">
+                <input type="number" id="inputNumero" default="1" min="0" max="99">
                 <div id="menos" onclick="restar()">-</div>
             </div>
             <div class="precio">
                 <h3>Precio:&nbsp;</h3>
                 <div class="euros">
-                    <div>3</div>€
+                    <div class="resultado" id="resultado">0</div>€
                 </div>
             </div>
         </div>
     </div>
 </body>
 <script>
+    let valor = 0;
 
     function seleccionar(div) {
-        div.classList.toggle('seleccionado');
-    }
-    function sumar(){
-        document.getElementById("inputNumero").stepUp(1);
+
+        let tamaños = document.querySelectorAll('.pequeño, .mediano, .grande');
+        console.log(div.id);
+        tamaños.forEach(element => {
+            element.classList.remove('seleccionado');
+        });
+
+        div.classList.add('seleccionado');
+
+
+        if (div.id == 'peq') {
+            valor = 1;
+            resultado();
+        } else if (div.id == 'med') {
+            valor = 1.5;
+            resultado();
+        } else {
+            valor = 2;
+            resultado();
+        }
+
+
 
     }
-    function restar(){
+
+
+    function sumar() {
+        document.getElementById("inputNumero").stepUp(1);
+        resultado();
+
+    }
+    function restar() {
         document.getElementById("inputNumero").stepDown(1);
+        resultado();
+
+    }
+
+    function resultado() {
+
+        let i = document.getElementById('inputNumero').value;
+        let r = document.getElementById('resultado');
+        r.innerHTML = valor * i;
+
+        console.log(i);
+
 
     }
 

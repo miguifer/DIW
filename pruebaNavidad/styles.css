@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "FuenteNavidad";
+  src: url("fonts/Christmas\ Bell\ -\ Personal\ Use.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "FuenteNavidad", sans-serif;
+}
+
+body > * {
+  display: block;
+}
+
+.enunciado,
+.enunciado * {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+.enunciado {
+  margin: 5vh 5vw;
+}
+.enunciado ul {
+  margin-left: 2vw;
+}
+
+.postal {
+  margin: 5vh 5vw;
+  width: 1500px;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+.postal .marco {
+  position: absolute;
+  width: 1500px;
+  height: 900px;
+  z-index: 1;
+}
+
+aside {
+  position: absolute;
+  right: 0;
+  background-color: rgb(36, 59, 137);
+  height: 100%;
+  width: 20%;
+  color: whitesmoke;
+  font-family: "FuenteNavidad";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+aside div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+aside div h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+aside div h3 {
+  font-size: 2rem;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+main {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+}
+
+main * {
+  position: absolute;
+}
+
+.fondo {
+  height: 100%;
+}
+
+.nube {
+  width: 45%;
+  left: 15%;
+  top: 10%;
+}
+
+.copos:hover .copo:nth-of-type(odd) {
+  transform: translateY(100vh);
+  transition: transform 5s ease;
+}
+
+.copos:hover .copo:nth-of-type(even) {
+  transform: translateY(100vh);
+  transition: transform 8s ease;
+}
+
+.copos {
+  /* border: 2px solid red; */
+  width: 45%;
+  height: 25%;
+  left: 15%;
+  top: 10%;
+  z-index: 3;
+}
+
+.copo {
+  width: 12.5%;
+}
+
+.copos .copo:nth-of-type(1) {
+  left: 15%;
+  top: 50%;
+}
+.copos .copo:nth-of-type(2) {
+  left: 40%;
+  top: 15%;
+}
+.copos .copo:nth-of-type(3) {
+  left: 55%;
+  top: 55%;
+}
+.copos .copo:nth-of-type(4) {
+  left: 80%;
+  top: 45%;
+}
+
+.pino {
+  height: 50%;
+  bottom: 10%;
+  right: 15%;
+}
+
+.estrella {
+  /*border: 2px solid red;*/
+  width: 8%;
+  bottom: 57%;
+  right: 29%;
+  transition: transform 1s ease 0.5s;
+
+  z-index: 2;
+}
+
+.estrella:hover {
+  transform: translate(150px, -150px) scale(0.5);
+  transition: transform 1s ease 0.5s;
+}
+
+.bolas {
+  width: 29%;
+  height: 40%;
+  right: 18%;
+  bottom: 18%;
+  z-index: 2;
+}
+
+.bola {
+  width: 15%;
+}
+
+.bolas .bola:nth-of-type(1) {
+  bottom: 5%;
+  right: 15%;
+}
+.bolas .bola:nth-of-type(2) {
+  bottom: 10%;
+  right: 70%;
+}
+.bolas .bola:nth-of-type(3) {
+  bottom: 18%;
+  right: 36%;
+}
+.bolas .bola:nth-of-type(4) {
+  bottom: 35%;
+  right: 60%;
+}
+.bolas .bola:nth-of-type(5) {
+  bottom: 50%;
+  right: 35%;
+}
+.bolas .bola:nth-of-type(6) {
+  bottom: 70%;
+  right: 50%;
+}
+
+.bolas:hover .bola:nth-of-type(odd) {
+  transform: rotateZ(360deg);
+  transition: transform 1s ease;
+}
+
+.bolas:hover .bola:nth-of-type(even) {
+  transform: rotateZ(-360deg);
+  transition: transform 1s ease;
+}
+
+
+.regalos {
+  /* border: 2px solid red; */
+  width: 12%;
+  height: 15%;
+  bottom: 13%;
+  left: 35%;
+  z-index: 2;
+}
+
+.regalos .regalo:nth-of-type(1) {
+  bottom: 0%;
+  left: 5%;
+  width: 90%;
+}
+.regalos .regalo:nth-of-type(2) {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.contenido {
+  left: -15%;
+  width: 100%;
+  opacity: 0;
+}
+
+.regalos:hover .regalo:nth-of-type(2) {
+  transform: translateY(-130px);
+  transition: transform 1s ease;
+}
+
+.regalos:hover .contenido {
+  transform: translateY(-90px);
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease 0.5s;
+}
+
+.santa {
+  width: 30%;
+  height: 40%;
+  top: 50%;
+  left: 2%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.santa .papa_noel,
+.santa .destellos {
+  width: auto;
+  height: 100%;
+}
+
+.santa .destellos {
+  opacity: 0;
+}
+
+.visible2 {
+  opacity: 1 !important;
+  transform: rotateY(360deg) skew(20deg);
+  transition: all 1s ease;
+}
+
+.santa .hohoho {
+  left: 75%;
+  top: -10%;
+  width: 50%;
+  height: auto;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: rotateZ(360deg);
+  transition: all 1s ease;
+}
+
+.santa h1 {
+  top: 95%;
+  left: 33%;
+  color: rgb(36, 59, 137);
+}
+
+.renos {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  top: -100px;
+  left: -400px;
+}
+
+.volar {
+  transform: translate(1300px, -600px);
+  transition: transform 6s ease;
+}
+
+.santa h1:hover {
+  background-color: gold;
+  transition: 0.5s;
+}
+
+audio {
+  display: none;
+}

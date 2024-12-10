@@ -9,11 +9,10 @@
 <body>
 
     <div class="postal">
-        <main>s
-            
+        <main>
             <img class="telon" src="media/telon.png">  
-            <img class="baston" src="media/baston.png">
-            <img class="bolaNavidad" src="media/bola_navidad.png">
+            <img class="baston" src="media/baston.png" onclick="baston(this)">
+            <img class="bolaNavidad" src="media/bola_navidad.png" onclick="bolaNavidad(this)">
 
         </main>
     
@@ -24,9 +23,10 @@
                 <h3>2º DAW</h3>
             </div>
             <div>
-                <div id="iniciarJuego" onclick="iniciarJuego()"><h3>Iniciar Juego</h3></div>
+                <button id="iniciarJuego" onclick="iniciarJuego(this)">Iniciar Juego</button>
+                
                 <h3>Objetos a buscar:</h3>
-                <h3>RENO</h3>
+                <div class="objeto">baston</div>
                 <h3>Aciertos: </h3>
                 <h3>Errores: </h3>
 

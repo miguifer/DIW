@@ -115,6 +115,16 @@ main * {
   cursor: pointer;
 }
 
+.calcetin {
+  position: absolute;
+  top: 280px;
+  left: 400px;
+  width: 5%;
+  height: auto;
+  z-index: 2;
+  cursor: pointer;
+}
+
 .objeto {
   width: 200px;
   height: fit-content;

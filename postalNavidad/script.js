@@ -1,5 +1,8 @@
 const objetos = ["baston", "bolaNavidad"];
 
+let aciertos = 0;
+let errores = 0;
+
 function iniciarJuego(botIniciar) {
   let telon = document.querySelector(".telon");
   telon.classList.add("telonIdo");
@@ -9,11 +12,16 @@ function iniciarJuego(botIniciar) {
   }
 }
 
-let aciertos = 0;
-let errores = 0;
+let objeto = document.querySelector(".objeto");
+objeto.textContent = objetos[0];
 
-function baston(baston) {
+function fotoClick(foto) {
+  let objeto = document.querySelector(".objeto");
 
-    baston.classList.add('seleccionado');
-
+  if (objeto.textContent == "baston" && foto.name == 'baston') {
+    baston.classList.add("seleccionado");
+    objeto.textContent = objetos[1];
+  } else if (objeto.textContent == "bolaNavidad" && foto.name == 'bolaNavidad') {
+    bolaNavidad.classList.add("seleccionado");
+  }
 }

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        div {
+            margin: 4vh 2vw;
+        }
+
+        .caja_color {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            opacity: 1;
+            animation: cambiarColor 5s infinite alternate, cambiarOpacidad 1s 0s 2 backwards reverse;
+        }
+
+        .caja_desp {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: relative;
+            animation: mover 5s ease infinite;
+        }
+
+        .caja_rot {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            position: relative;
+            animation: rotar 0.5s linear infinite;
+        }
+
+        .caja_esc {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(128, 0, 117);
+            position: relative;
+            animation: escalar 0.5s linear infinite;
+        }
+
+        .caja_desp_rot {
+            width: 500px;
+            height: 500px;
+            background-image: url("../animaciones/imgs/chiquito.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            animation: escalar 0.5s linear infinite, rotar 2s linear infinite, mover 5s linear infinite;
+            border-radius: 50%;
+
+        }
+
+        @keyframes escalar {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(2);
+
+            }
+        }
+
+        @keyframes rotar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+
+            }
+        }
+
+        @keyframes mover {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 80%;
+            }
+        }
+
+        @keyframes cambiarOpacidad {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes cambiarColor {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caja_color"></div>
+    <div class="caja_desp"></div>
+    <div class="caja_rot"></div>
+    <div class="caja_esc"></div>
+    <div class="caja_desp_rot"></div>
+</body>
+<script>
+
+</script>
+
+</html>

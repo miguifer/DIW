@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.pedal {
+  position: absolute;
+  z-index: 5;
+  left: 1260px;
+  top: 580px;
+  transition: transform 1s ease;
+}
+
+.pedal:hover {
+  transform: translateY(50px);
+  transition: transform 1s ease;
+}
+
+.pedal:hover ~ .papel {
+  animation: tirar 2s 0s linear forwards;
+}
+
+.pedal:hover ~ .superior {
+  transform: rotate(28deg) translateX(65px) translateY(-70px);
+  transition: transform 1s ease;
+}
+
+@keyframes tirar {
+  0% {
+    left: 500px;
+    top: 900px;
+  }
+
+  50% {
+    left: 1695px;
+    top: 245px;
+  }
+
+  100% {
+    left: 1700px;
+    top: 575px;
+  }
+
+}
+
+.inferior {
+  position: absolute;
+  z-index: 3;
+  left: 1500px;
+  top: 400px;
+}
+
+.superior {
+  position: absolute;
+  z-index: 2;
+  left: 1555px;
+  top: -9px;
+  transform: rotate(-28deg) translateX(-65px) translateY(50px);
+  transition: transform 1s ease;
+}
+
+.papel {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  left: 500px;
+  top: 900px;
+  z-index: 2;
+}

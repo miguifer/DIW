@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --rotacion: 0deg;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contenedor {
+            position: relative;
+        }
+
+        .ruleta {
+            z-index: 1;
+            transition: transform 3s ease-in-out;
+            transform: rotate(var(--rotacion));
+        }
+
+        .flecha {
+            position: absolute;
+            top: 300px;
+            left: 0px;
+            width: 60px;
+            height: 40px;
+            background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+            z-index: 2;
+        }
+
+        #boton {
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="flecha"></div>
+        <div class="ruleta">
+            <img src="ruleta.png">
+        </div>
+    </div>
+    <button onclick="girar()" id="boton">Girar</button>
+</body>
+<script>
+
+    function girar() {
+        let vueltasAletorias = Math.floor(Math.random() * 4 + 1);
+        let gradosAletorias = Math.floor(Math.random() * 360);
+        let gradosTotales = gradosAletorias + (360 * vueltasAletorias);
+        console.log(gradosTotales);
+        document.documentElement.style.setProperty('--rotacion', `${gradosTotales}deg`);
+        //elemento.style.estilo = ''
+    }
+
+</script>
+
+</html>

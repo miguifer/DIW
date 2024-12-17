@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .barra {
+            width: 80vh;
+            height: 100px;
+            background-image: url("mario.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            margin: 50px;
+        }
+
+        .barra h2 {
+            opacity: 0;
+        }
+
+        .caracol {
+            position: absolute;
+            width: 10%;
+        }
+
+        .caracol1 {
+            top: 50px;
+            left: 550px;
+        }
+
+        .caracol2 {
+            top: 250px;
+            left: 550px;
+        }
+
+        .caracol3 {
+            top: 450px;
+            left: 550px;
+        }
     </style>
 </head>
+
 <body>
-    
+
+    <div class="barra barra1">
+        <h2>Winner!</h2>
+        <img src="churu.gif" class="caracol caracol1">
+    </div>
+    <div class="barra barra1">
+        <h2>Winner!</h2>
+        <img src="churu.gif" class="caracol caracol2">
+    </div>
+    <div class="barra barra1">
+        <h2>Winner!</h2>
+        <img src="churu.gif" class="caracol caracol3">
+    </div>
+
+
+
 </body>
 <script>
 
 </script>
+
 </html>

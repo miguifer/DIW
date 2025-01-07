@@ -53,7 +53,7 @@
   width: 90px;
   top: 780px;
   left: 140px;
-  animation: girarRuedas 1s infinite linear, pararRuedas 2s linear forwards;
+  animation: girarRuedas 1s infinite linear, pararRuedas 2s linear 2s forwards;
 }
 
 .rueda2 {
@@ -76,19 +76,18 @@
 .coche {
   z-index: 2;
   width: 100px;
-  border: 2px solid green;
   position: absolute;
   top: 0px;
   left: 0px;
-  animation: moverCoche 2s linear forwards, achatarCoche 2s linear 2s forwards;
+  animation: moverCoche 2s linear forwards, achatarCoche 1s linear 2s forwards;
 }
 
 @keyframes achatarCoche {
   0% {
-    transform: scaleX(1);
+    transform: rotateY(0deg);
   }
   100% {
-    transform: scaleX(0.5);
+    transform: rotateZ(170deg);
   }
 }
 
@@ -125,15 +124,15 @@
   width: 600px;
   top: 0px;
   left: 0px;
-  animation: explotar 1s linear 1.5s;
+  animation: explotar 1s linear 2s forwards;
 }
 
 @keyframes explotar {
   0% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 

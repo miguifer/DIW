@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor {
+            position: relative;
+            background-image: url("circuito.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 610px;
+            height: 250px;
+        }
+
+        .coche {
+            position: absolute;
+            top: 40px;
+            left: 310px;
+            width: 100px;
+            margin: 1px solid black;
+            animation: coche 5s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .coche:hover {
+            animation-play-state: running;
+        }
+
+        @keyframes coche {
+            0% {
+                top: 15px;
+                left: 280px;
+            }
+
+            20% {
+                top: 40px;
+                left: 470px;
+                
+            }
+
+            40% {
+                top: 180px;
+                left: 470px;
+                transform: rotate(180deg);
+            }
+
+            60% {
+                top: 180px;
+                left: 35px;
+                transform: rotate(180deg);
+
+            }
+
+            80% {
+                top: 15px;
+                left: 35px;
+                transform: rotate(360deg);
+
+            }
+
+            100% {
+                top: 15px;
+                left: 280px;
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <img src="coche.png" alt="coche" class="coche">
+    </div>
+</body>
+
+</html>

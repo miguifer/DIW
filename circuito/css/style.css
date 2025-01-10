@@ -1,0 +1,391 @@
+.contenedor {
+  background-image: url("../img/circuito.jpg");
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coche {
+  position: absolute;
+  left: 220px;
+  width: 30px;
+}
+
+.c1 {
+  top: 60px;
+  animation: coche1 9s linear 2s;
+}
+
+.c2 {
+  top: 75px;
+  animation: coche2 17s linear 2s;
+}
+
+.c3 {
+  top: 90px;
+  animation: coche3 13s linear 2s;
+}
+
+.flag {
+  opacity: 0;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  animation: bandera 8s linear 11s;
+}
+
+@keyframes bandera {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes coche1 {
+  0% {
+    top: 60px;
+    left: 220px;
+    transform: rotate(0deg);
+  }
+  10% {
+    top: 75px;
+    left: 530px;
+    transform: rotate(0deg);
+  }
+
+  15% {
+    top: 100px;
+    left: 575px;
+    transform: rotate(80deg);
+  }
+
+  20% {
+    top: 145px;
+    left: 540px;
+    transform: rotate(160deg);
+  }
+
+  30% {
+    top: 220px;
+    left: 290px;
+    transform: rotate(160deg);
+  }
+
+  35% {
+    top: 260px;
+    left: 260px;
+    transform: rotate(80deg);
+  }
+
+  40% {
+    top: 290px;
+    left: 290px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 290px;
+    left: 560px;
+    transform: rotate(0deg);
+  }
+
+  52.5% {
+    top: 325px;
+    left: 600px;
+    transform: rotate(60deg);
+  }
+
+  57.5% {
+    top: 375px;
+    left: 600px;
+    transform: rotate(120deg);
+  }
+
+  60% {
+    top: 410px;
+    left: 560px;
+    transform: rotate(180deg);
+  }
+
+  70% {
+    top: 405px;
+    left: 200px;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    top: 380px;
+    left: 130px;
+    transform: rotate(225deg);
+  }
+
+  80% {
+    top: 340px;
+    left: 115px;
+    transform: rotate(270deg);
+  }
+
+  90% {
+    top: 160px;
+    left: 115px;
+    transform: rotate(270deg);
+  }
+
+  95% {
+    top: 110px;
+    left: 135px;
+    transform: rotate(315deg);
+  }
+
+  100% {
+    top: 60px;
+    left: 220px;
+    transform: rotate(360deg);
+  }
+}
+@keyframes coche2 {
+  0% {
+    top: 75px;
+    left: 220px;
+    transform: rotate(0deg);
+  }
+  10% {
+    top: 60px;
+    left: 530px;
+    transform: rotate(0deg);
+  }
+
+  15% {
+    top: 100px;
+    left: 580px;
+    transform: rotate(80deg);
+  }
+
+  20% {
+    top: 145px;
+    left: 540px;
+    transform: rotate(160deg);
+  }
+
+  30% {
+    top: 220px;
+    left: 290px;
+    transform: rotate(160deg);
+  }
+
+  35% {
+    top: 260px;
+    left: 260px;
+    transform: rotate(80deg);
+  }
+
+  40% {
+    top: 290px;
+    left: 290px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 290px;
+    left: 560px;
+    transform: rotate(0deg);
+  }
+
+  52.5% {
+    top: 325px;
+    left: 600px;
+    transform: rotate(60deg);
+  }
+
+  57.5% {
+    top: 375px;
+    left: 600px;
+    transform: rotate(120deg);
+  }
+
+  60% {
+    top: 410px;
+    left: 560px;
+    transform: rotate(180deg);
+  }
+
+  70% {
+    top: 405px;
+    left: 200px;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    top: 380px;
+    left: 130px;
+    transform: rotate(225deg);
+  }
+
+  80% {
+    top: 340px;
+    left: 115px;
+    transform: rotate(270deg);
+  }
+
+  90% {
+    top: 160px;
+    left: 115px;
+    transform: rotate(270deg);
+  }
+
+  95% {
+    top: 110px;
+    left: 135px;
+    transform: rotate(315deg);
+  }
+
+  100% {
+    top: 75px;
+    left: 220px;
+    transform: rotate(360deg);
+  }
+}
+@keyframes coche3 {
+  0% {
+    top: 90px;
+    left: 220px;
+    transform: rotate(0deg);
+  }
+  10% {
+    top: 90px;
+    left: 530px;
+    transform: rotate(0deg);
+  }
+
+  15% {
+    top: 100px;
+    left: 575px;
+    transform: rotate(80deg);
+  }
+
+  20% {
+    top: 145px;
+    left: 540px;
+    transform: rotate(160deg);
+  }
+
+  30% {
+    top: 220px;
+    left: 290px;
+    transform: rotate(160deg);
+  }
+
+  35% {
+    top: 260px;
+    left: 260px;
+    transform: rotate(80deg);
+  }
+
+  40% {
+    top: 290px;
+    left: 290px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 290px;
+    left: 560px;
+    transform: rotate(0deg);
+  }
+
+  52.5% {
+    top: 325px;
+    left: 600px;
+    transform: rotate(60deg);
+  }
+
+  57.5% {
+    top: 375px;
+    left: 600px;
+    transform: rotate(120deg);
+  }
+
+  60% {
+    top: 410px;
+    left: 560px;
+    transform: rotate(180deg);
+  }
+
+  70% {
+    top: 405px;
+    left: 200px;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    top: 380px;
+    left: 130px;
+    transform: rotate(225deg);
+  }
+
+  80% {
+    top: 340px;
+    left: 115px;
+    transform: rotate(270deg);
+  }
+
+  90% {
+    top: 160px;
+    left: 115px;
+    transform: rotate(270deg);
+  }
+
+  95% {
+    top: 110px;
+    left: 135px;
+    transform: rotate(315deg);
+  }
+
+  100% {
+    top: 90px;
+    left: 220px;
+    transform: rotate(360deg);
+  }
+}
+
+.semaforo {
+  position: relative;
+}
+
+.rojo {
+  position: absolute;
+  width: 100px;
+  top: 100px;
+  left: 220px;
+  animation: aparecer 1s linear;
+}
+
+.amarillo {
+  position: absolute;
+  width: 100px;
+  top: 100px;
+  left: 220px;
+  animation: aparecer 1s linear 1s;
+}
+
+.verde {
+  position: absolute;
+  width: 100px;
+  top: 100px;
+  left: 220px;
+  animation: aparecer 1s linear 2s;
+}
+
+@keyframes aparecer {
+  0% {
+    z-index: 1;
+  }
+
+  100% {
+    z-index: 2;
+  }
+}

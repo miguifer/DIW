@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            display: flex;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .contenedor img {
+            width: 800px;
+            height: 400px;
+            animation: slider 9s linear infinite;
+
+        }
+
+        @keyframes slider {
+            
+            0% {
+                transform: translateX(0%);
+            }
+
+            50%{
+                transform: translateX(-100%);
+
+            }
+
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <img src="img1.png" alt="Imagen1">
+        <img src="img2.jpg" alt="Imagen2">
+        <img src="img3.jpg" alt="Imagen3">
+    </div>
+</body>
+
+</html>

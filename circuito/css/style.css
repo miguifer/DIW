@@ -15,17 +15,17 @@
 
 .c1 {
   top: 60px;
-  animation: coche1 9s linear 2s;
+  animation: coche 9s linear 2s;
 }
 
 .c2 {
   top: 75px;
-  animation: coche2 17s linear 2s;
+  animation: coche 17s linear 2s;
 }
 
 .c3 {
   top: 90px;
-  animation: coche3 13s linear 2s;
+  animation: coche 13s linear 2s;
 }
 
 .flag {
@@ -45,310 +45,78 @@
     opacity: 1;
   }
 }
-@keyframes coche1 {
+@keyframes coche {
   0% {
     top: 60px;
     left: 220px;
-    transform: rotate(0deg);
+    transform: translateX(0px) translateY(0px) rotate(0deg);
   }
   10% {
-    top: 75px;
-    left: 530px;
-    transform: rotate(0deg);
+    transform: translateX(310px) translateY(15px) rotate(0deg);
   }
 
   15% {
-    top: 100px;
-    left: 575px;
-    transform: rotate(80deg);
+    transform: translateX(355px) translateY(40px) rotate(80deg);
   }
 
   20% {
-    top: 145px;
-    left: 540px;
-    transform: rotate(160deg);
+    transform: translateX(320px) translateY(85px) rotate(160deg);
   }
 
   30% {
-    top: 220px;
-    left: 290px;
-    transform: rotate(160deg);
+    transform: translateX(70px) translateY(160px) rotate(160deg);
   }
 
   35% {
-    top: 260px;
-    left: 260px;
-    transform: rotate(80deg);
+    transform: translateX(40px) translateY(200px) rotate(80deg);
   }
 
   40% {
-    top: 290px;
-    left: 290px;
-    transform: rotate(0deg);
+    transform: translateX(70px) translateY(230px) rotate(0deg);
   }
 
   50% {
-    top: 290px;
-    left: 560px;
-    transform: rotate(0deg);
+    transform: translateX(340px) translateY(230px) rotate(0deg);
   }
 
   52.5% {
-    top: 325px;
-    left: 600px;
-    transform: rotate(60deg);
+    transform: translateX(380px) translateY(265px) rotate(60deg);
+  }
+
+  55%{
+    transform: translateX(380px) translateY(290px) rotate(90deg);
   }
 
   57.5% {
-    top: 375px;
-    left: 600px;
-    transform: rotate(120deg);
+    transform: translateX(380px) translateY(315px) rotate(120deg);
   }
 
   60% {
-    top: 410px;
-    left: 560px;
-    transform: rotate(180deg);
+    transform: translateX(340px) translateY(350px) rotate(180deg);
   }
 
   70% {
-    top: 405px;
-    left: 200px;
-    transform: rotate(180deg);
+    transform: translateX(0px) translateY(345px) rotate(180deg);
   }
 
   75% {
-    top: 380px;
-    left: 130px;
-    transform: rotate(225deg);
+    transform: translateX(-90px) translateY(315px) rotate(225deg);
   }
 
   80% {
-    top: 340px;
-    left: 115px;
-    transform: rotate(270deg);
+    transform: translateX(-105px) translateY(275px) rotate(270deg);
   }
 
   90% {
-    top: 160px;
-    left: 115px;
-    transform: rotate(270deg);
+    transform: translateX(-120px) translateY(95px) rotate(270deg); 
   }
 
   95% {
-    top: 110px;
-    left: 135px;
-    transform: rotate(315deg);
+    transform: translateX(-90px) translateY(55px) rotate(315deg); 
   }
 
   100% {
-    top: 60px;
-    left: 220px;
-    transform: rotate(360deg);
-  }
-}
-@keyframes coche2 {
-  0% {
-    top: 75px;
-    left: 220px;
-    transform: rotate(0deg);
-  }
-  10% {
-    top: 60px;
-    left: 530px;
-    transform: rotate(0deg);
-  }
-
-  15% {
-    top: 100px;
-    left: 580px;
-    transform: rotate(80deg);
-  }
-
-  20% {
-    top: 145px;
-    left: 540px;
-    transform: rotate(160deg);
-  }
-
-  30% {
-    top: 220px;
-    left: 290px;
-    transform: rotate(160deg);
-  }
-
-  35% {
-    top: 260px;
-    left: 260px;
-    transform: rotate(80deg);
-  }
-
-  40% {
-    top: 290px;
-    left: 290px;
-    transform: rotate(0deg);
-  }
-
-  50% {
-    top: 290px;
-    left: 560px;
-    transform: rotate(0deg);
-  }
-
-  52.5% {
-    top: 325px;
-    left: 600px;
-    transform: rotate(60deg);
-  }
-
-  57.5% {
-    top: 375px;
-    left: 600px;
-    transform: rotate(120deg);
-  }
-
-  60% {
-    top: 410px;
-    left: 560px;
-    transform: rotate(180deg);
-  }
-
-  70% {
-    top: 405px;
-    left: 200px;
-    transform: rotate(180deg);
-  }
-
-  75% {
-    top: 380px;
-    left: 130px;
-    transform: rotate(225deg);
-  }
-
-  80% {
-    top: 340px;
-    left: 115px;
-    transform: rotate(270deg);
-  }
-
-  90% {
-    top: 160px;
-    left: 115px;
-    transform: rotate(270deg);
-  }
-
-  95% {
-    top: 110px;
-    left: 135px;
-    transform: rotate(315deg);
-  }
-
-  100% {
-    top: 75px;
-    left: 220px;
-    transform: rotate(360deg);
-  }
-}
-@keyframes coche3 {
-  0% {
-    top: 90px;
-    left: 220px;
-    transform: rotate(0deg);
-  }
-  10% {
-    top: 90px;
-    left: 530px;
-    transform: rotate(0deg);
-  }
-
-  15% {
-    top: 100px;
-    left: 575px;
-    transform: rotate(80deg);
-  }
-
-  20% {
-    top: 145px;
-    left: 540px;
-    transform: rotate(160deg);
-  }
-
-  30% {
-    top: 220px;
-    left: 290px;
-    transform: rotate(160deg);
-  }
-
-  35% {
-    top: 260px;
-    left: 260px;
-    transform: rotate(80deg);
-  }
-
-  40% {
-    top: 290px;
-    left: 290px;
-    transform: rotate(0deg);
-  }
-
-  50% {
-    top: 290px;
-    left: 560px;
-    transform: rotate(0deg);
-  }
-
-  52.5% {
-    top: 325px;
-    left: 600px;
-    transform: rotate(60deg);
-  }
-
-  57.5% {
-    top: 375px;
-    left: 600px;
-    transform: rotate(120deg);
-  }
-
-  60% {
-    top: 410px;
-    left: 560px;
-    transform: rotate(180deg);
-  }
-
-  70% {
-    top: 405px;
-    left: 200px;
-    transform: rotate(180deg);
-  }
-
-  75% {
-    top: 380px;
-    left: 130px;
-    transform: rotate(225deg);
-  }
-
-  80% {
-    top: 340px;
-    left: 115px;
-    transform: rotate(270deg);
-  }
-
-  90% {
-    top: 160px;
-    left: 115px;
-    transform: rotate(270deg);
-  }
-
-  95% {
-    top: 110px;
-    left: 135px;
-    transform: rotate(315deg);
-  }
-
-  100% {
-    top: 90px;
-    left: 220px;
-    transform: rotate(360deg);
+    transform: translateX(0px) translateY(0px) rotate(360deg);
   }
 }
 

@@ -15,17 +15,17 @@
 
 .c1 {
   top: 60px;
-  animation: coche 9s linear 2s;
+  animation: coche 9s linear 2s 2;
 }
 
 .c2 {
   top: 75px;
-  animation: coche 17s linear 2s;
+  animation: coche 17s linear 2s 2;
 }
 
 .c3 {
   top: 90px;
-  animation: coche 13s linear 2s;
+  animation: coche 13s linear 2s 2;
 }
 
 .flag {
@@ -34,7 +34,7 @@
   position: absolute;
   top: 0px;
   left: 200px;
-  animation: bandera 8s linear 11s;
+  animation: bandera 16s linear 20s;
 }
 
 @keyframes bandera {
@@ -83,7 +83,7 @@
     transform: translateX(380px) translateY(265px) rotate(60deg);
   }
 
-  55%{
+  55% {
     transform: translateX(380px) translateY(290px) rotate(90deg);
   }
 
@@ -108,11 +108,11 @@
   }
 
   90% {
-    transform: translateX(-120px) translateY(95px) rotate(270deg); 
+    transform: translateX(-125px) translateY(95px) rotate(270deg);
   }
 
   95% {
-    transform: translateX(-90px) translateY(55px) rotate(315deg); 
+    transform: translateX(-95px) translateY(40px) rotate(315deg);
   }
 
   100% {

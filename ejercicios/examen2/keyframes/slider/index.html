@@ -14,30 +14,44 @@
 
         .contenedor {
             display: flex;
-            width: 800px;
+            flex-direction: row;
+            width: 680px;
             height: 400px;
+            border: 5px solid black;
+            align-content: center;
             overflow: hidden;
         }
 
         .contenedor img {
-            width: 800px;
-            height: 400px;
-            animation: slider 9s linear infinite;
+            width: 680px;
+            height: auto;
+            animation: slider 10s linear infinite;
 
         }
 
+
         @keyframes slider {
-            
             0% {
                 transform: translateX(0%);
             }
 
-            50%{
-                transform: translateX(-100%);
-
+            33% {
+                transform: translateX(0%);
             }
 
-            100% {
+            34% {
+                transform: translateX(-100%);
+            }
+
+            66% {
+                transform: translateX(-100%);
+            }
+
+            67% {
+                transform: translateX(-200%);
+            }
+
+            95% {
                 transform: translateX(-200%);
             }
         }
@@ -46,7 +60,7 @@
 
 <body>
     <div class="contenedor">
-        <img src="img1.png" alt="Imagen1">
+        <img src="img1.webp" alt="Imagen1">
         <img src="img2.jpg" alt="Imagen2">
         <img src="img3.jpg" alt="Imagen3">
     </div>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: grey;
+            display: flex;
+        }
+
+        .cargando1 {
+            width: 80px;
+            height: 80px;
+            border: 5px solid white;
+            border-radius: 50%;
+            border-bottom: 5px solid red;
+            animation: cargar 2s infinite linear;
+            margin: 50px;
+
+        }
+
+        .cargando2 {
+            width: 80px;
+            height: 80px;
+            border: 5px solid white;
+            border-radius: 50%;
+            border-bottom: 5px solid transparent;
+            animation: cargar 2s infinite linear;
+            margin: 50px;
+
+        }
+
+        .cargando3 {
+            width: 80px;
+            height: 80px;
+            border: 5px solid white;
+            border-radius: 50%;
+            border-bottom: 5px solid transparent;
+            animation: cargar 2s infinite linear;
+            margin: 50px;
+
+        }
+
+        .cargando3::after {
+            content: "";
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            transform: translate(-50% -50%);
+            border: 5px solid transparent;
+            border-radius: 50%;
+            border-bottom-color: red;
+        }
+
+        .cargando4 {
+            width: 80px;
+            height: 80px;
+            border: 3px solid #FFF;
+            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+            box-sizing: border-box;
+            animation: cargar 1s linear infinite;
+        }
+
+        .cargando4::after {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-bottom-color: red;
+        }
+
+
+        @keyframes cargar {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cargando1"></div>
+    <div class="cargando2"></div>
+    <div class="cargando3"></div>
+    <div class="cargando4"></div>
+
+    <!-- https://cssloaders.github.io/ -->
+
+</body>
+
+</html>

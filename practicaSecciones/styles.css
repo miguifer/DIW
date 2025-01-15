@@ -8,7 +8,7 @@ section {
   width: 50%;
   height: 50%;
   font-size: 2rem;
-  cursor: pointer;
+  cursor: default; /* Cambiar cursor a default para que no sea pointer cuando no está expandido */
   transition: all 0.3s ease;
   align-content: center;
 }
@@ -45,7 +45,21 @@ section:nth-child(4) {
 }
 
 .is-expanded .close-section {
-  opacity: 1; 
+  opacity: 1;
+}
+
+.is-expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  cursor: default; /* Evitar el cursor pointer en la sección expandida */
+}
+
+.is-expanded .close-section {
+  cursor: pointer; /* Solo el botón de cerrar tendrá pointer cuando la sección esté expandida */
 }
 
 .demo-box {
@@ -54,19 +68,10 @@ section:nth-child(4) {
   text-align: center;
 }
 
-.is-expanded {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 99; 
-}
-
 .minimizar {
   width: 50%;
   height: 50%;
-  z-index: 1; 
+  z-index: 1;
 }
 
 section {

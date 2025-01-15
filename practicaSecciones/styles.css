@@ -3,30 +3,31 @@
   padding: 0;
 }
 
-.section {
+section {
   position: absolute;
   width: 50%;
   height: 50%;
-  align-content: center;
   font-size: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+  align-content: center;
 }
 
-.section:nth-child(1) {
+section:nth-child(1) {
   background-color: red;
 }
 
-.section:nth-child(2) {
+section:nth-child(2) {
   background-color: blue;
   left: 50%;
 }
 
-.section:nth-child(3) {
+section:nth-child(3) {
   background-color: green;
   top: 50%;
 }
 
-.section:nth-child(4) {
+section:nth-child(4) {
   background-color: orange;
   left: 50%;
   top: 50%;
@@ -34,16 +35,17 @@
 
 .close-section {
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 10px;
   color: white;
   opacity: 0;
   cursor: pointer;
   font-size: 2rem;
+  transition: opacity 0.3s ease;
 }
 
 .is-expanded .close-section {
-  opacity: 1;
+  opacity: 1; 
 }
 
 .demo-box {
@@ -53,13 +55,20 @@
 }
 
 .is-expanded {
+  position: fixed; 
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 99;
+  z-index: 99; 
 }
 
 .minimizar {
-  width: 0vw;
-  height: 0vh;
-  z-index: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 1; 
+}
+
+section {
+  transition: all 0.3s ease;
 }

@@ -1,14 +1,22 @@
-function openSection(section) {
-    console.log(section.querySelector(".demo-box").textContent);
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const closeButtons = document.querySelectorAll(".close-section");
 
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(s => {
-        if (s != section) {
-            s.classList.add('minimizar');
-        }
+  sections.forEach((section) => {
+    section.addEventListener("click", () => {
+      if (section.classList.contains("is-expanded")) return;
+
+      sections.forEach((s) => s.classList.remove("is-expanded")); // Cerrar todas las secciones abiertas
+      section.classList.add("is-expanded");
     });
+  });
 
-    if (!section.classList.contains('is-expanded')) {
-        section.classList.add('is-expanded');
-    }
-}
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const section = event.target.closest("section");
+      section.classList.remove("is-expanded");
+      section.classList.add("minimizar");
+      event.stopPropagation();
+    });
+  });
+});

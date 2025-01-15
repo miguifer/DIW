@@ -26,6 +26,7 @@ function openSection(section) {
 }
 
 function closeSection(section) {
+    
     section.classList.remove('is-expanded');
 
     const sections = document.querySelectorAll('section');

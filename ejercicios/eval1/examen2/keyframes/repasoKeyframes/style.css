@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#sky {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(3, 1, 4);
+  animation: cielo 10s infinite;
+}
+
+@keyframes cielo {
+  0% {
+    background-color: rgb(3, 1, 4);
+  }
+  25% {
+    background-color: rgb(3, 1, 4);
+  }
+  50% {
+    background-color: rgb(94, 175, 225);
+  }
+  75% {
+    background-color: rgb(3, 1, 4);
+  }
+  100% {
+    background-color: rgb(3, 1, 4);
+  }
+}
+
+.cloud {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.834);
+  border-radius: 25%;
+  z-index: 3;
+  animation: nubes 5s infinite linear;
+}
+
+.cloud::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.834);
+  border-radius: 25%;
+  top: 15px;
+  left: 15px;
+  opacity: 50%;
+}
+
+.cloud::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.834);
+  border-radius: 25%;
+  top: -15px;
+  left: -15px;
+  opacity: 50%;
+}
+
+.cloud-1 {
+  position: absolute;
+  top: 50px;
+  left: 490px;
+}
+
+.cloud-2 {
+  position: absolute;
+  top: 290px;
+  left: 70px;
+}
+
+.cloud-3 {
+  position: absolute;
+  top: 180px;
+  left: 780px;
+}
+
+@keyframes nubes {
+  0% {
+    transform: translateX(-1700px);
+  }
+  100% {
+    transform: translateX(1700px);
+  }
+}
+
+#sun {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  animation: sol 10s infinite ease alternate;
+}
+
+@keyframes sol {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-450px) translateX(800px) scale(3);
+  }
+  100% {
+    transform: translateY(0) translateX(1600px);
+  }
+}

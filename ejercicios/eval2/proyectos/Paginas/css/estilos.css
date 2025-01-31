@@ -1,0 +1,25 @@
+#Titulo {
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+#Registrarse::before {
+  content: url("../img/search.svg");
+  position: relative;
+  align-content: center;
+  margin-right: 10%;
+  cursor: pointer;
+}
+
+#Registrarse a:hover {
+  background-color: grey;
+  color: white !important;
+}
+
+#Banner {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15rem;
+}

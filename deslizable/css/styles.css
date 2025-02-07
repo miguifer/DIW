@@ -26,31 +26,72 @@ body {
   overflow: hidden;
 }
 
+#slider1 {
+  background-color: brown;
+}
+
 #slider1 .jordan1 {
   width: 60%;
   position: relative;
-  left: 40%;
+  left: 45%;
   top: 25%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 #slider1 .jordan2 {
   width: 20%;
   position: relative;
-  top: -20%;
+  top: -30%;
   left: -45%;
   rotate: 15deg;
+  filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+}
+
+#slider1 .jordan3 {
+  width: 60%;
+  position: relative;
+  top: -20%;
+  left: 0%;
+  filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
 }
 
 /* https://codepen.io/_xXGalaxy-Gamer321Xx_/pen/XWJONJb */
 
+
+
+
+
+
+
+
+
+
+
+
 .slider-menu {
-  width: 20px;
-  height: 20px;
-  border: 1px solid red;
+  width: 50px;
+  height: 60px;
   position: relative;
-  top: 50%;
+  top: 55%;
   left: 1%;
+  z-index: 10;
 }
 
+.slider-menu-buttom {
+  background-color: rgb(231, 229, 229);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 50px;
+  height: 13px;
+  position: relative;
+  cursor: pointer;
+}
 
-.slider-menu-buttom
+.slider-menu-buttom:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.slider-menu-buttom:nth-child(2) {
+  margin-bottom: 10px;
+}
+

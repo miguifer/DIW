@@ -22,7 +22,6 @@ body {
 #slider3 {
   width: 100%;
   height: 100%;
-  background-color: aliceblue;
   overflow: hidden;
 }
 
@@ -36,6 +35,18 @@ body {
   left: 45%;
   top: 25%;
   filter: drop-shadow(2px 4px 6px black);
+  animation: apareceJordan1 1s linear;
+}
+
+@keyframes apareceJordan1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #slider1 .jordan2 {
@@ -45,6 +56,18 @@ body {
   left: -45%;
   rotate: 15deg;
   filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+  animation: apareceJordan2 1s linear;
+}
+
+@keyframes apareceJordan2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(360deg);
+  }
 }
 
 #slider1 .jordan3 {
@@ -53,20 +76,147 @@ body {
   top: -20%;
   left: 0%;
   filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+  animation: apareceJordan3 1s linear;
+}
+
+@keyframes apareceJordan3 {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* https://codepen.io/_xXGalaxy-Gamer321Xx_/pen/XWJONJb */
 
+#slider2 {
+  background-color: rgb(224, 189, 34);
+}
 
+#slider2 .lebron1 {
+  width: 70%;
+  position: relative;
+  left: 45%;
+  top: 20%;
+  filter: drop-shadow(2px 4px 10px black);
+  animation: apareceLebron1 1s linear;
+}
 
+@keyframes apareceLebron1 {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+#slider2 .lebron2 {
+  width: 20%;
+  position: relative;
+  top: -45%;
+  left: -50%;
+  filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+  animation: apareceLebron2 1s linear;
+}
 
+@keyframes apareceLebron2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(360deg);
+  }
+}
 
+#slider2 .lebron3 {
+  width: 50%;
+  position: relative;
+  top: -30%;
+  left: 5%;
+  filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+  animation: apareceLebron3 1s linear;
+}
 
+@keyframes apareceLebron3 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+/* ******************************** */
 
+#slider3 {
+  background-color: rgb(97, 8, 119);
+}
 
+#slider3 .kobe1 {
+  width: 70%;
+  position: relative;
+  left: 45%;
+  top: 20%;
+  filter: drop-shadow(2px 4px 10px black);
+  animation: apareceKobe1 1s linear;
+}
 
+@keyframes apareceKobe1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#slider3 .kobe2 {
+  width: 20%;
+  position: relative;
+  top: -120%;
+  left: -50%;
+  filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+  animation: apareceKobe2 1s linear;
+}
+
+@keyframes apareceKobe2 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#slider3 .kobe3 {
+  width: 50%;
+  position: relative;
+  top: -160%;
+  left: 5%;
+  filter: drop-shadow(2px 2px 4px rgb(224, 222, 222));
+  animation: apareceKobe3 1s linear;
+}
+
+@keyframes apareceKobe3 {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ******************************** */
 
 .slider-menu {
   width: 50px;
@@ -95,3 +245,8 @@ body {
   margin-bottom: 10px;
 }
 
+.slider-menu-buttom.selected {
+  background-color: #8a8d8c; 
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 200ms linear;
+}

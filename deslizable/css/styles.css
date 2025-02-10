@@ -128,7 +128,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateX(0) rotate(360deg);
+    transform: translateX(0);
   }
 }
 
@@ -250,3 +250,4 @@ body {
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
   transition: background-color 200ms linear;
 }
+

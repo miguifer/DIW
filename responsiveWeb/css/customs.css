@@ -1,0 +1,41 @@
+#entradas {
+  background-color: #dbb33b;
+}
+
+#entradas:hover {
+  background-color: rgb(204, 166, 52);
+  transition: background-color 150ms linear;
+}
+
+#buscar {
+  border: 1px solid rgb(11, 35, 64);
+}
+
+#buscar:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgb(11, 35, 64);
+  transition: box-shadow 150ms linear;
+}
+
+#Suscribirse {
+  background-color: rgb(175, 38, 48);
+  color: white;
+}
+
+#newsletter1 {
+  border: 1px solid rgb(175, 38, 48);
+}
+
+#newsletter1:focus {
+  outline: none;
+  box-shadow: 0 0 2px rgb(175, 38, 48);
+  transition: box-shadow 150ms linear;
+}
+
+#titulo {
+  color: rgb(11, 35, 64);
+}
+
+th {
+  color: rgb(165, 132, 33) !important;
+}

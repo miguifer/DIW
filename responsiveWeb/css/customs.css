@@ -39,3 +39,11 @@
 th {
   color: rgb(165, 132, 33) !important;
 }
+
+#banner {
+  /* ocacidad */
+}
+
+#bannerImg {
+  filter: drop-shadow(2px 4px 5px black);
+}

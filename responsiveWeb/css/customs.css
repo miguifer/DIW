@@ -34,16 +34,20 @@
 
 #titulo {
   color: rgb(11, 35, 64);
+  transition: scale 150ms linear;
+}
+
+#titulo:hover {
+  scale: 1.05;
+  transition: scale 200ms linear;
 }
 
 th {
   color: rgb(165, 132, 33) !important;
 }
 
-#banner {
-  /* ocacidad */
-}
-
 #bannerImg {
   filter: drop-shadow(2px 4px 5px black);
 }
+
+

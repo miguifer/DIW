@@ -28,7 +28,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link" href="formulario.html">Prepare su visita</a>
+              <a class="nav-link fw-semibold" href="formulario.html">Prepare su visita</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="carrousel.html">El monumento</a>
@@ -54,6 +54,9 @@
               </ul>
             </li>
           </ul>
+          <button type="button" class="btn btn-outline-secondary me-1 d-none d-xl-block">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </button>
           <form role="search">
             <input id="buscar" class="form-control" type="search" placeholder="Buscar" aria-label="Search" />
           </form>
@@ -64,7 +67,72 @@
   <!-- sepa -->
   <!-- CONTENIDO -->
 
-  
+
+  <div class="container-fluid justify-content-center d-flex"
+    style="background-image: url('img/hero-home-new.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+    <form class=" w-auto mt-5 mb-5 rounded p-4 bg-light">
+      <h2 class="text-center mb-4">Reserva tu Entrada para la Torre Eiffel</h2>
+
+      <div class="row mb-3">
+        <label for="inputName" class="col-sm-2 col-form-label">Nombre Completo</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputName" placeholder="Ingresa tu nombre completo" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Correo Electrónico</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="inputPhone" class="col-sm-2 col-form-label">Teléfono</label>
+        <div class="col-sm-10">
+          <input type="tel" class="form-control" id="inputPhone" placeholder="Ingresa tu número de teléfono" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="visitDate" class="col-sm-2 col-form-label">Fecha de Visita</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="visitDate" required>
+        </div>
+      </div>
+
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Tipo de Entrada</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="ticketType" id="ticketStandard" value="standard" checked>
+            <label class="form-check-label" for="ticketStandard">
+              Entrada Estándar
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="ticketType" id="ticketVIP" value="vip">
+            <label class="form-check-label" for="ticketVIP">
+              Entrada VIP
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+            <label class="form-check-label" for="privacyPolicy">
+              He leído y acepto la política de privacidad: <a href="#" class="link">Política de privacidad</a>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Reservar Entrada</button>
+    </form>
+  </div>
 
 
   <!-- CONTENIDO -->
